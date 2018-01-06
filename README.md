@@ -6,4 +6,4 @@ Wherever possible, edits should be made to the child theme, which is the active 
 
 ## Using this code
 
-Clone this repository into the 'themes' directory within a working WordPress install.
+Clone this repository into the 'themes' directory within a working WordPress install. Activate the theme via the WordPress admin panel.
