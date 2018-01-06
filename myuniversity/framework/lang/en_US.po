@@ -1,0 +1,3532 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SD Theme\n"
+"POT-Creation-Date: 2014-10-13 00:44+0200\n"
+"PO-Revision-Date: 2014-10-13 00:46+0200\n"
+"Last-Translator: Skat Design <royal.flush@rocketmail.com>\n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.9\n"
+"X-Poedit-Basepath: ../\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:21 ../404.php:22
+msgid "Back to Homepage"
+msgstr ""
+
+#: ../404.php:24
+msgid "We are really sorry, but the page you requested was not found."
+msgstr ""
+
+#: ../404.php:28
+msgid ""
+"It seems that the page you were trying to reach does not exist anymore or "
+"maybe it has just been moved."
+msgstr ""
+
+#: ../404.php:29
+msgid ""
+"If you're looking for something try using the search form the top or just "
+"click on the image to go to the homepage."
+msgstr ""
+
+#: ../404.php:32
+msgid "Sorry for the inconvenience."
+msgstr ""
+
+#: ../admin/ReduxCore/extensions/customizer/extension_customizer.php:473
+#: ../admin/ReduxCore/framework.php:1946
+msgid "You have changes that are not saved. Would you like to save them now?"
+msgstr ""
+
+#: ../admin/ReduxCore/extensions/customizer/extension_customizer.php:474
+#: ../admin/ReduxCore/framework.php:1954
+msgid "Are you sure? Resetting will lose all custom values."
+msgstr ""
+
+#: ../admin/ReduxCore/extensions/customizer/extension_customizer.php:475
+#: ../admin/ReduxCore/framework.php:1970
+msgid ""
+"Your current options will be replaced with the values of this preset. Would "
+"you like to proceed?"
+msgstr ""
+
+#: ../admin/ReduxCore/extensions/customizer/extension_customizer.php:508
+msgid "You have changes that are not saved.  Would you like to save them now?"
+msgstr ""
+
+#: ../admin/ReduxCore/extensions/customizer/extension_customizer.php:509
+msgid "Are you sure?  Resetting will lose all custom values."
+msgstr ""
+
+#: ../admin/ReduxCore/extensions/customizer/extension_customizer.php:510
+msgid ""
+"Your current options will be replaced with the values of this preset.  Would "
+"you like to proceed?"
+msgstr ""
+
+#: ../admin/ReduxCore/framework.php:213
+#, php-format
+msgid "Options panel created using %1$s"
+msgstr ""
+
+#: ../admin/ReduxCore/framework.php:213
+msgid "Redux Framework"
+msgstr ""
+
+#: ../admin/ReduxCore/framework.php:217 ../admin/ReduxCore/framework.php:221
+msgid "Options"
+msgstr ""
+
+#: ../admin/ReduxCore/framework.php:1365 ../admin/ReduxCore/framework.php:1366
+#: ../admin/ReduxCore/framework.php:3575 ../admin/ReduxCore/framework.php:3654
+msgid "System Info"
+msgstr ""
+
+#: ../admin/ReduxCore/framework.php:1962
+msgid "Are you sure? Resetting will lose all custom values in this section."
+msgstr ""
+
+#: ../admin/ReduxCore/framework.php:1977
+msgid "Please Wait"
+msgstr ""
+
+#: ../admin/ReduxCore/framework.php:2102
+msgid "Enable"
+msgstr ""
+
+#: ../admin/ReduxCore/framework.php:2107
+msgid "Disable"
+msgstr ""
+
+#: ../admin/ReduxCore/framework.php:2113
+msgid "moving the mouse over"
+msgstr ""
+
+#: ../admin/ReduxCore/framework.php:2115
+msgid "clicking"
+msgstr ""
+
+#: ../admin/ReduxCore/framework.php:2119
+#, php-format
+msgid ""
+"Hints are tooltips that popup when %d the hint icon, offering addition "
+"information about the field in which they appear.  They can be %d d by using "
+"the link below."
+msgstr ""
+
+#: ../admin/ReduxCore/framework.php:2124
+msgid "Hints"
+msgstr ""
+
+#: ../admin/ReduxCore/framework.php:2249
+msgid "Default"
+msgstr ""
+
+#: ../admin/ReduxCore/framework.php:3322
+msgid "Warning- This options panel will not work properly without javascript!"
+msgstr ""
+
+#: ../admin/ReduxCore/framework.php:3373
+msgid "Developer Mode Enabled"
+msgstr ""
+
+#: ../admin/ReduxCore/framework.php:3401
+msgid "Expand"
+msgstr ""
+
+#: ../admin/ReduxCore/framework.php:3403 ../admin/ReduxCore/framework.php:3711
+msgid "Save Changes"
+msgstr ""
+
+#: ../admin/ReduxCore/framework.php:3407 ../admin/ReduxCore/framework.php:3715
+msgid "Reset Section"
+msgstr ""
+
+#: ../admin/ReduxCore/framework.php:3409 ../admin/ReduxCore/framework.php:3717
+msgid "Reset All"
+msgstr ""
+
+#: ../admin/ReduxCore/framework.php:3414 ../admin/ReduxCore/framework.php:3722
+msgid "Working..."
+msgstr ""
+
+#: ../admin/ReduxCore/framework.php:3434
+msgid "Settings Imported!"
+msgstr ""
+
+#: ../admin/ReduxCore/framework.php:3449
+msgid "All Defaults Restored!"
+msgstr ""
+
+#: ../admin/ReduxCore/framework.php:3463
+msgid "Section Defaults Restored!"
+msgstr ""
+
+#: ../admin/ReduxCore/framework.php:3477
+msgid "Settings Saved!"
+msgstr ""
+
+#: ../admin/ReduxCore/framework.php:3495
+msgid "Settings have changed, you should save them!"
+msgstr ""
+
+#: ../admin/ReduxCore/framework.php:3503
+msgid "error(s) were found!"
+msgstr ""
+
+#: ../admin/ReduxCore/framework.php:3511
+msgid "warning(s) were found!"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/class.redux_filesystem.php:22
+msgid "Unable to create a required directory. Please ensure that"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/class.redux_filesystem.php:24
+msgid ""
+"has the proper read/write permissions or enter your FTP information below."
+msgstr ""
+
+#: ../admin/ReduxCore/inc/class.redux_functions.php:253
+msgid "Dismiss"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/class.redux_themecheck.php:61
+#, php-format
+msgid ""
+"The theme you are testing has %s embedded. We invite you to read the %sTheme-"
+"Check Documentation%s to understand some warnings you will see because of "
+"Redux."
+msgstr ""
+
+#: ../admin/ReduxCore/inc/class.redux_themecheck.php:109
+msgid ""
+"The following directories & files are still located in your <strong>Redux</"
+"strong>  directory. They may cause errors in Theme-Check."
+msgstr ""
+
+#: ../admin/ReduxCore/inc/debug.php:41 ../admin/ReduxCore/inc/debug.php:69
+#: ../admin/ReduxCore/inc/debug.php:76 ../admin/ReduxCore/inc/debug.php:77
+msgid "Options Object"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/debug.php:54
+msgid "Show Object in Javascript Console Object"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/background/field_background.php:124
+#: ../admin/ReduxCore/inc/fields/color/field_color.php:72
+#: ../admin/ReduxCore/inc/fields/color_gradient/field_color_gradient.php:79
+#: ../admin/ReduxCore/inc/fields/color_gradient/field_color_gradient.php:91
+#: ../admin/ReduxCore/inc/fields/color_rgba/field_color_rgba.php:77
+msgid "Transparent"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/background/field_background.php:141
+msgid "Background Repeat"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/background/field_background.php:157
+msgid "Background Clip"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/background/field_background.php:173
+msgid "Background Origin"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/background/field_background.php:188
+msgid "Background Size"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/background/field_background.php:203
+msgid "Background Attachment"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/background/field_background.php:223
+msgid "Background Position"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/background/field_background.php:277
+#: ../admin/ReduxCore/inc/fields/media/field_media.php:149
+msgid "No media selected"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/background/field_background.php:314
+#: ../admin/ReduxCore/inc/fields/media/field_media.php:193
+#: ../admin/ReduxCore/inc/fields/slides/field_slides.php:126
+#: ../admin/ReduxCore/inc/fields/slides/field_slides.php:188
+msgid "Upload"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/background/field_background.php:321
+#: ../admin/ReduxCore/inc/fields/media/field_media.php:200
+#: ../admin/ReduxCore/inc/fields/multi_text/field_multi_text.php:69
+#: ../admin/ReduxCore/inc/fields/multi_text/field_multi_text.php:73
+#: ../admin/ReduxCore/inc/fields/multi_text/field_multi_text.php:76
+#: ../admin/ReduxCore/inc/fields/slides/field_slides.php:133
+#: ../admin/ReduxCore/inc/fields/slides/field_slides.php:190
+#: ../framework/inc/metabox/inc/fields/file-input.php:42
+msgid "Remove"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/border/field_border.php:114
+#: ../admin/ReduxCore/inc/fields/spacing/field_spacing.php:191
+#: ../professors.php:32 ../three-columns-portfolio.php:18
+msgid "All"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/border/field_border.php:127
+#: ../admin/ReduxCore/inc/fields/spacing/field_spacing.php:215
+msgid "Top"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/border/field_border.php:134
+#: ../admin/ReduxCore/inc/fields/spacing/field_spacing.php:222
+msgid "Right"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/border/field_border.php:141
+#: ../admin/ReduxCore/inc/fields/spacing/field_spacing.php:229
+msgid "Bottom"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/border/field_border.php:148
+#: ../admin/ReduxCore/inc/fields/spacing/field_spacing.php:236
+msgid "Left"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/border/field_border.php:162
+msgid "Border style"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/color_gradient/field_color_gradient.php:68
+msgid "From "
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/color_gradient/field_color_gradient.php:82
+msgid "To "
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/dimensions/field_dimensions.php:161
+msgid "Width"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/dimensions/field_dimensions.php:177
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:436
+msgid "Height"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/dimensions/field_dimensions.php:188
+#: ../admin/ReduxCore/inc/fields/dimensions/field_dimensions.php:189
+#: ../admin/ReduxCore/inc/fields/spacing/field_spacing.php:245
+#: ../admin/ReduxCore/inc/fields/spacing/field_spacing.php:246
+msgid "Units"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/gallery/field_gallery.php:73
+msgid "Add/Edit Gallery"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/gallery/field_gallery.php:74
+msgid "Clear Gallery"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/link_color/field_link_color.php:87
+msgid "Regular"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/link_color/field_link_color.php:91
+msgid "Hover"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/link_color/field_link_color.php:95
+msgid "Visited"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/link_color/field_link_color.php:99
+msgid "Active"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/multi_text/field_multi_text.php:61
+msgid "Add More"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/password/field_password.php:62
+msgid "Password"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/password/field_password.php:63
+msgid "Username"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/select/field_select.php:82
+#: ../admin/ReduxCore/inc/fields/select_image/field_select_image.php:62
+msgid "Select an item"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/select/field_select.php:126
+#: ../admin/ReduxCore/inc/fields/select_image/field_select_image.php:143
+msgid "No items of this type were found."
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/slides/field_slides.php:68
+msgid "Slide"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/slides/field_slides.php:73
+#, php-format
+msgid "New %s"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/slides/field_slides.php:145
+#: ../admin/ReduxCore/inc/fields/slides/field_slides.php:200
+msgid "Title"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/slides/field_slides.php:149
+#: ../admin/ReduxCore/inc/fields/slides/field_slides.php:204
+msgid "Description"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/slides/field_slides.php:153
+#: ../admin/ReduxCore/inc/fields/slides/field_slides.php:207
+msgid "URL"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/slides/field_slides.php:167
+#: ../admin/ReduxCore/inc/fields/slides/field_slides.php:220
+msgid "Delete"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/slides/field_slides.php:223
+#, php-format
+msgid "Add %s"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/switch/field_switch.php:41
+msgid "On"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/switch/field_switch.php:44
+msgid "Off"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:227
+msgid "Font Family"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:228
+msgid "Font family"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:254
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:255
+msgid "Backup Font Family"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:269
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:276
+msgid "Font style"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:270
+msgid "Font Weight &amp; Style"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:276
+msgid "Style"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:316
+msgid "Font subsets"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:318
+msgid "Font Subsets"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:319
+msgid "Subsets"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:319
+msgid "Font script"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:336
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:337
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:338
+msgid "Text Align"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:359
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:360
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:361
+msgid "Text Transform"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:382
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:383
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:384
+msgid "Font Variant"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:402
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:403
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:404
+msgid "Text Decoration"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:426
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:427
+msgid "Font Size"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:427
+msgid "Size"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:435
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:436
+msgid "Line Height"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:444
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:445
+msgid "Word Spacing"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:453
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:454
+msgid "Letter Spacing"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:472
+msgid "Font Color"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:474
+msgid "Font color"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:841
+msgid "Standard Fonts"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/fields/typography/field_typography.php:942
+msgid "Google Webfonts"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/import_export.php:78
+msgid "Import / Export Options"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/import_export.php:81
+msgid "Import Options"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/import_export.php:82
+msgid "Import from file"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/import_export.php:82
+msgid "Import from URL"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/import_export.php:85
+msgid ""
+"Input your backup file below and hit Import to restore your sites options "
+"from a backup."
+msgstr ""
+
+#: ../admin/ReduxCore/inc/import_export.php:90
+msgid ""
+"Input the URL to another sites options set and hit Import to load the "
+"options from that site."
+msgstr ""
+
+#: ../admin/ReduxCore/inc/import_export.php:94
+msgid "Import"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/import_export.php:94
+msgid ""
+"WARNING! This will overwrite all existing option values, please proceed with "
+"caution!"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/import_export.php:97
+msgid "Export Options"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/import_export.php:100
+msgid ""
+"Here you can copy/download your current option settings. Keep this safe as "
+"you can use it as a backup should anything go wrong, or you can use it to "
+"restore your settings on this site (or any other site)."
+msgstr ""
+
+#: ../admin/ReduxCore/inc/import_export.php:104
+msgid "Copy"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/import_export.php:104
+msgid "Download"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/import_export.php:104
+msgid "Copy Link"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/import_export.php:140
+#: ../admin/ReduxCore/inc/import_export.php:149
+#: ../admin/ReduxCore/inc/import_export.php:150
+msgid "Import / Export"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/tracking.php:129
+msgid "Help improve Our Panel"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/tracking.php:130
+msgid ""
+"Please helps us improve our panel by allowing us to gather anonymous usage "
+"stats so we know which configurations, plugins and themes to test to ensure "
+"compatibility."
+msgstr ""
+
+#: ../admin/ReduxCore/inc/tracking.php:135
+msgid "Allow tracking"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/tracking.php:140
+msgid "Do not allow tracking"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/tracking.php:151
+msgid "Welcome to the Redux Demo Panel"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/tracking.php:152
+#: ../admin/ReduxCore/inc/welcome.php:139
+msgid "Getting Started"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/tracking.php:152
+#, php-format
+msgid ""
+"This panel demonstrates the many features of Redux.  Before digging in, we "
+"suggest you get up to speed by reviewing %1$s."
+msgstr ""
+
+#: ../admin/ReduxCore/inc/tracking.php:152
+msgid "our documentation"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/tracking.php:153
+msgid "Redux Generator"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/tracking.php:153
+#, php-format
+msgid ""
+"Want to get a head start? Use the %1$s. It will create a customized "
+"boilerplate theme or a standalone admin folder complete with all things "
+"Redux (with the help of Underscores and TGM). Save yourself a headache and "
+"try it today."
+msgstr ""
+
+#: ../admin/ReduxCore/inc/tracking.php:154
+msgid "Redux Extensions"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/tracking.php:154
+#, php-format
+msgid ""
+"Did you know we have extensions, which greatly enhance the features of "
+"Redux?  Visit our %1$s to learn more!"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/tracking.php:154
+msgid "extensions directory"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/tracking.php:155
+msgid "Like Redux?"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/tracking.php:155
+#, php-format
+msgid ""
+"If so, please %1$s and consider making a %2$s to keep development of Redux "
+"moving forward."
+msgstr ""
+
+#: ../admin/ReduxCore/inc/tracking.php:155
+msgid "leave us a favorable review on WordPress.org"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/tracking.php:155
+msgid "donation"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/tracking.php:156
+#: ../admin/sd-admin-options/sd-admin-options.php:1039
+msgid "Newsletter"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/tracking.php:156
+msgid ""
+"If you'd like to keep up to with all things Redux, please subscribe to our "
+"newsletter"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/tracking.php:157
+msgid "Email address"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/tracking.php:157
+msgid "Subscribe"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/tracking.php:166
+msgid "Close"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/validation/color/validation_color.php:15
+#: ../admin/ReduxCore/inc/validation/color_rgba/validation_color_rgba.php:14
+#: ../admin/ReduxCore/inc/validation/colorrgba/validation_colorrgba.php:16
+msgid "This field must be a valid color value."
+msgstr ""
+
+#: ../admin/ReduxCore/inc/validation/comma_numeric/validation_comma_numeric.php:16
+msgid ""
+"You must provide a comma separated list of numerical values for this option."
+msgstr ""
+
+#: ../admin/ReduxCore/inc/validation/date/validation_date.php:16
+msgid "This field must be a valid date."
+msgstr ""
+
+#: ../admin/ReduxCore/inc/validation/email/validation_email.php:16
+#: ../admin/ReduxCore/inc/validation/email_not_empty/validation_email_not_empty.php:16
+msgid "You must provide a valid email for this option."
+msgstr ""
+
+#: ../admin/ReduxCore/inc/validation/no_html/validation_no_html.php:15
+msgid ""
+"You must not enter any HTML in this field, all HTML tags have been removed."
+msgstr ""
+
+#: ../admin/ReduxCore/inc/validation/no_special_chars/validation_no_special_chars.php:16
+msgid ""
+"You must not enter any special characters in this field, all special "
+"characters have been removed."
+msgstr ""
+
+#: ../admin/ReduxCore/inc/validation/not_empty/validation_not_empty.php:16
+msgid "This field cannot be empty. Please provide a value."
+msgstr ""
+
+#: ../admin/ReduxCore/inc/validation/numeric/validation_numeric.php:16
+#: ../admin/ReduxCore/inc/validation/numeric_not_empty/validation_numeric_not_empty.php:16
+msgid "You must provide a numerical value for this option."
+msgstr ""
+
+#: ../admin/ReduxCore/inc/validation/url/validation_url.php:16
+msgid "You must provide a valid URL for this option."
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:40
+msgid "Welcome to Redux Framework"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:48
+#: ../admin/ReduxCore/inc/welcome.php:295
+msgid "Redux Framework Changelog"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:56
+msgid "Getting started with Redux Framework"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:64
+msgid "The people that develop Redux Framework"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:135
+msgid "What's New"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:143
+msgid "Changelog"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:147
+msgid "Credits"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:164
+#: ../admin/ReduxCore/inc/welcome.php:333
+#: ../admin/ReduxCore/inc/welcome.php:471
+#, php-format
+msgid "Welcome to Redux Framework %s"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:167
+#, php-format
+msgid ""
+"Thank you for updating to the latest version! Redux Framework %s is ready to "
+"<add description>"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:169
+#: ../admin/ReduxCore/inc/welcome.php:300
+#: ../admin/ReduxCore/inc/welcome.php:338
+#: ../admin/ReduxCore/inc/welcome.php:476
+#: ../admin/sd-admin-options/sd-admin-options.php:194
+#, php-format
+msgid "Version %s"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:174
+msgid "Some Feature"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:178
+#: ../admin/ReduxCore/inc/welcome.php:182
+#: ../admin/ReduxCore/inc/welcome.php:195
+#: ../admin/ReduxCore/inc/welcome.php:199
+#: ../admin/ReduxCore/inc/welcome.php:203
+#: ../admin/ReduxCore/inc/welcome.php:208
+#: ../admin/ReduxCore/inc/welcome.php:221
+#: ../admin/ReduxCore/inc/welcome.php:225
+#: ../admin/ReduxCore/inc/welcome.php:230
+msgid "Feature"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:190
+msgid "Some feature"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:217
+msgid "More Features"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:223
+#: ../admin/ReduxCore/inc/welcome.php:227
+#: ../admin/ReduxCore/inc/welcome.php:232
+msgid "description"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:238
+msgid "Additional Updates"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:242
+#: ../admin/ReduxCore/inc/welcome.php:246
+#: ../admin/ReduxCore/inc/welcome.php:252
+#: ../admin/ReduxCore/inc/welcome.php:256
+#: ../admin/ReduxCore/inc/welcome.php:262
+#: ../admin/ReduxCore/inc/welcome.php:266
+msgid "Cool thing"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:244
+#: ../admin/ReduxCore/inc/welcome.php:248
+#: ../admin/ReduxCore/inc/welcome.php:254
+#: ../admin/ReduxCore/inc/welcome.php:258
+#: ../admin/ReduxCore/inc/welcome.php:264
+#: ../admin/ReduxCore/inc/welcome.php:268
+msgid "cool thing description."
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:277
+#: ../admin/ReduxCore/inc/welcome.php:316
+msgid "Go to Redux Framework"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:278
+msgid "View the Full Changelog"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:298
+#: ../admin/ReduxCore/inc/welcome.php:336
+#: ../admin/ReduxCore/inc/welcome.php:474
+#, php-format
+msgid ""
+"Thank you for updating to the latest version! Redux Framework %s is ready to "
+"make your <description>"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:305
+msgid "Full Changelog"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:342
+msgid ""
+"Use the tips below to get started using Redux Framework. You'll be up and "
+"running in no time!"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:345
+msgid "Creating Your First Panel"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:350
+#, php-format
+msgid "<a href=\"%s\">%s &rarr; Add New</a>"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:352
+#, php-format
+msgid ""
+"The %s menu is your access point for all aspects of your Easy Digital "
+"Downloads product creation and setup. To create your first product, simply "
+"click Add New and then fill out the product details."
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:354
+msgid "Product Price"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:356
+msgid ""
+"Products can have simple prices or variable prices if you wish to have more "
+"than one price point for a product. For a single price, simply enter the "
+"price. For multiple price points, click <em>Enable variable pricing</em> and "
+"enter the options."
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:358
+msgid "Download Files"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:360
+msgid ""
+"Uploading the downloadable files is simple. Click <em>Upload File</em> in "
+"the Download Files section and choose your download file. To add more than "
+"one file, simply click the <em>Add New</em> button."
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:366
+msgid "Display a Product Grid"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:373
+msgid "Flexible Product Grids"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:375
+msgid ""
+"The [downloads] shortcode will display a product grid that works with any "
+"theme, no matter the size. It is even responsive!"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:377
+msgid "Change the Number of Columns"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:379
+msgid ""
+"You can easily change the number of columns by adding the columns=\"x\" "
+"parameter:"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:385
+msgid "Additional Display Options"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:387
+#, php-format
+msgid ""
+"The product grids can be customized in any way you wish and there is <a href="
+"\"%s\">extensive documentation</a> to assist you."
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:392
+msgid "Purchase Buttons Anywhere"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:397
+msgid "The <em>[purchase_link]</em> Shortcode"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:399
+msgid ""
+"With easily accessible shortcodes to display purchase buttons, you can add a "
+"Buy Now or Add to Cart button for any product anywhere on your site in "
+"seconds."
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:401
+msgid "Buy Now Buttons"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:403
+msgid ""
+"Purchase buttons can behave as either Add to Cart or Buy Now buttons. With "
+"Buy Now buttons customers are taken straight to PayPal, giving them the most "
+"frictionless purchasing experience possible."
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:409
+msgid "Need Help?"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:413
+msgid "Phenomenal Support"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:415
+msgid ""
+"We do our best to provide the best support we can. If you encounter a "
+"problem or have a question, post a question in the <a href=\"https://"
+"easydigitaldownloads.com/support\">support forums</a>."
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:417
+msgid "Need Even Faster Support?"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:419
+msgid ""
+"Our <a href=\"https://easydigitaldownloads.com/support/pricing/\">Priority "
+"Support forums</a> are there for customers that need faster and/or more in-"
+"depth assistance."
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:425
+msgid "Stay Up to Date"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:429
+msgid "Get Notified of Extension Releases"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:431
+msgid ""
+"New extensions that make Easy Digital Downloads even more powerful are "
+"released nearly every single week. Subscribe to the newsletter to stay up to "
+"date with our latest releases. <a href=\"http://eepurl.com/kaerz\" target="
+"\"_blank\">Signup now</a> to ensure you do not miss a release!"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:433
+msgid "Get Alerted About New Tutorials"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:435
+msgid ""
+"<a href=\"http://eepurl.com/kaerz\" target=\"_blank\">Signup now</a> to hear "
+"about the latest tutorial releases that explain how to take Easy Digital "
+"Downloads further."
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:441
+msgid "Extensions for Everything"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:445
+msgid "Over 250 Extensions"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:447
+msgid ""
+"Add-on plugins are available that greatly extend the default functionality "
+"of Easy Digital Downloads. There are extensions for payment processors, such "
+"as Stripe and PayPal, extensions for newsletter integrations, and many, many "
+"more."
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:449
+msgid "Visit the Extension Store"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:451
+msgid ""
+"<a href=\"https://asydigitaldownloads.com/extensions\" target=\"_blank\">The "
+"Extensions store</a> has a list of all available extensions, including "
+"convenient category filters so you can find exactly what you are looking for."
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:480
+msgid ""
+"Redux Framework is created by a worldwide team of developers who <something "
+"witty here>"
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:500
+msgid "No valid changlog was found."
+msgstr ""
+
+#: ../admin/ReduxCore/inc/welcome.php:539
+#, php-format
+msgid "View %s"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:116
+msgid "Section via hook"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:117
+msgid ""
+"<p class=\"description\">This is a section created by adding a filter to the "
+"sections array. Can be used by child themes to add/remove sections from the "
+"options.</p>"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:176
+#, php-format
+msgid "Customize &#8220;%s&#8221;"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:193
+#, php-format
+msgid "By %s"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:195
+msgid "Tags"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:200
+#, php-format
+msgid "This <a href=\"%1$s\">child theme</a> requires its parent theme, %2$s."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:200
+msgid "http://codex.wordpress.org/Child_Themes"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:235
+msgid "General"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:242
+msgid "Custom Favicon"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:243
+msgid "Upload your custom site favicon."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:250
+msgid "Sidebar Location"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:251
+msgid "Select the location of the sidebar."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:267
+msgid "Pagination Type"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:268
+msgid "Select the type of pagination."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:269
+msgid ""
+"Pagination appears on blog, course, event pages and also on their archive "
+"pages."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:285
+msgid "Next Posts"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:286
+msgid "Next posts button text."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:293
+msgid "Previous Posts"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:294
+msgid "Previous posts button text."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:301
+msgid "Next Courses"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:302
+msgid "Next courses button text."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:309
+msgid "Previous Courses"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:310
+msgid "Previous courses button text."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:317
+msgid "Next Events"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:318
+msgid "Next events button text."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:325
+msgid "Previous Events"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:326
+msgid "Previous events button text."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:334
+#: ../admin/sd-admin-options/sd-admin-options.php:1051
+msgid "Homepage"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:342
+msgid "Homepage Slider"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:343
+msgid "Enable or disable the homepage slider."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:344
+msgid "Make sure that the slider's alias is \"homeslider\"."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:346
+#: ../admin/sd-admin-options/sd-admin-options.php:373
+#: ../admin/sd-admin-options/sd-admin-options.php:382
+#: ../admin/sd-admin-options/sd-admin-options.php:391
+#: ../admin/sd-admin-options/sd-admin-options.php:470
+#: ../admin/sd-admin-options/sd-admin-options.php:576
+#: ../admin/sd-admin-options/sd-admin-options.php:585
+#: ../admin/sd-admin-options/sd-admin-options.php:619
+#: ../admin/sd-admin-options/sd-admin-options.php:628
+#: ../admin/sd-admin-options/sd-admin-options.php:662
+#: ../admin/sd-admin-options/sd-admin-options.php:821
+#: ../admin/sd-admin-options/sd-admin-options.php:830
+#: ../admin/sd-admin-options/sd-admin-options.php:856
+#: ../admin/sd-admin-options/sd-admin-options.php:865
+#: ../admin/sd-admin-options/sd-admin-options.php:928
+#: ../admin/sd-admin-options/sd-admin-options.php:937
+#: ../admin/sd-admin-options/sd-admin-options.php:969
+#: ../admin/sd-admin-options/sd-admin-options.php:978
+#: ../admin/sd-admin-options/sd-admin-options.php:1012
+#: ../admin/sd-admin-options/sd-admin-options.php:1021
+#: ../admin/sd-admin-options/sd-admin-options.php:1120
+msgid "Enabled"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:347
+#: ../admin/sd-admin-options/sd-admin-options.php:374
+#: ../admin/sd-admin-options/sd-admin-options.php:383
+#: ../admin/sd-admin-options/sd-admin-options.php:392
+#: ../admin/sd-admin-options/sd-admin-options.php:471
+#: ../admin/sd-admin-options/sd-admin-options.php:577
+#: ../admin/sd-admin-options/sd-admin-options.php:586
+#: ../admin/sd-admin-options/sd-admin-options.php:620
+#: ../admin/sd-admin-options/sd-admin-options.php:629
+#: ../admin/sd-admin-options/sd-admin-options.php:663
+#: ../admin/sd-admin-options/sd-admin-options.php:822
+#: ../admin/sd-admin-options/sd-admin-options.php:831
+#: ../admin/sd-admin-options/sd-admin-options.php:857
+#: ../admin/sd-admin-options/sd-admin-options.php:866
+#: ../admin/sd-admin-options/sd-admin-options.php:929
+#: ../admin/sd-admin-options/sd-admin-options.php:938
+#: ../admin/sd-admin-options/sd-admin-options.php:970
+#: ../admin/sd-admin-options/sd-admin-options.php:979
+#: ../admin/sd-admin-options/sd-admin-options.php:1013
+#: ../admin/sd-admin-options/sd-admin-options.php:1022
+#: ../admin/sd-admin-options/sd-admin-options.php:1050
+#: ../admin/sd-admin-options/sd-admin-options.php:1121
+msgid "Disabled"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:353
+msgid "Header"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:361
+msgid "Header Height"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:362
+msgid "Adjust the height of the header."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:363
+msgid "Default: 135px"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:371
+msgid "Sticky Header"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:372
+msgid ""
+"Enable or disable the stycky header. Menu and logo will be sticky when user "
+"scrolls down."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:380
+msgid "Top Bar"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:381
+msgid "Enable or disable the top header bar."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:389
+msgid "Top Bar Left Fields"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:390
+msgid "Enable or disable the top bar left fields."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:400
+msgid "Top Bar First Field Icon"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:401
+msgid "Select an icon for the top bar first field."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:402
+#: ../admin/sd-admin-options/sd-admin-options.php:423
+msgid "Select none to hide the icon."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:411
+msgid "Top Bar First Field"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:412
+msgid "Insert a short content for the top bar first field."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:413
+#: ../admin/sd-admin-options/sd-admin-options.php:434
+#: ../admin/sd-admin-options/sd-admin-options.php:443
+msgid " Leave blank if you don't want to display it."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:421
+msgid "Top Bar Second Field Icon"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:422
+msgid "Select an icon for the top bar second field."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:432
+msgid "Top Bar Second Field"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:433
+msgid "Insert a short content for the top bar second field."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:441
+msgid "Top Header Short News"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:442
+msgid "Insert a short desc of your news."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:450
+msgid "Rename the \"News\" word"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:451
+msgid "Insert a custom word instead of \"News\"."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:460
+#: ../framework/inc/widgets/social-icons.php:19
+msgid "Social Icons"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:467
+#: ../admin/sd-admin-options/sd-admin-options.php:476
+msgid "Header Social Icons"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:468
+msgid "Enable or disable the header social icons."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:477
+msgid "Define and reorder the social icons however you want."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:478
+msgid "Leave any field blank if you don't want to display it ."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:511
+msgid "Logo"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:519
+msgid "Custom Logo"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:520
+msgid "Upload your custom logo image."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:529
+msgid "Logo Top Margin"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:530
+msgid "Adjust the top margin of the logo."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:531
+msgid "Default: 22px"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:545
+msgid "Courses"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:553
+msgid "Courses Slug"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:554
+msgid "Rename the slug of the courses."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:555
+#: ../admin/sd-admin-options/sd-admin-options.php:756
+#: ../admin/sd-admin-options/sd-admin-options.php:765
+#: ../admin/sd-admin-options/sd-admin-options.php:774
+#: ../admin/sd-admin-options/sd-admin-options.php:783
+#: ../admin/sd-admin-options/sd-admin-options.php:801
+#: ../admin/sd-admin-options/sd-admin-options.php:898
+msgid ""
+"After making changes to this field make sure you go to Settings > Permalinks "
+"and hit \"Save Changes\" to prevent any 404 errors."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:561
+msgid "Courses Layout"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:562
+msgid "Select the layout for the courses pages."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:563
+msgid ""
+"This includes courses page, single courses posts and courses archive pages."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:573
+#: ../admin/sd-admin-options/sd-admin-options.php:818
+#: ../admin/sd-admin-options/sd-admin-options.php:925
+msgid "Featured Image"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:574
+msgid "Enable or disable the featured image for courses posts."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:582
+msgid "Courses Post Meta"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:583
+msgid "Enable or disable the courses post meta."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:591
+msgid "Courses Post Meta Options"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:592
+msgid "Select what info do you want to display for the course meta."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:593
+#: ../admin/sd-admin-options/sd-admin-options.php:838
+msgid "This info appears right under the featured image."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:595
+msgid "ID"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:596
+msgid "Discipline"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:597
+msgid "Study level"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:598
+msgid "Course length"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:599
+msgid "Course location"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:600
+msgid "Professor"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:615
+msgid "Courses Comments"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:616
+msgid "Enable or disable the comments on the courses posts."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:617
+#: ../admin/sd-admin-options/sd-admin-options.php:854
+#: ../admin/sd-admin-options/sd-admin-options.php:967
+msgid ""
+"While enabled this option can be overrided by the option in the WordPress "
+"editor."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:625
+msgid "Next/Previous Course Links"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:626
+msgid ""
+"Enable or disable the next/previous links at the bottom of the course single "
+"post."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:634
+msgid "Next Course"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:635
+msgid "Next course button text."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:642
+msgid "Previous Course"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:643
+msgid "Previous course button text."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:652
+#: ../admin/sd-admin-options/sd-admin-options.php:659
+#: ../framework/inc/search-courses.php:3
+msgid "Search Courses"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:660
+msgid "Enable or disable the search courses box."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:669
+msgid "Course Search Results Page"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:670
+msgid "Select your course search resulsts page."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:671
+msgid ""
+"Make sure that the selected page has the \"Search Course Results\" page "
+"template assigned."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:676
+msgid "<strong>Search Fields Renaming</strong>"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:683
+#: ../admin/sd-admin-options/sd-admin-options.php:695
+#: ../admin/sd-admin-options/sd-admin-options.php:704
+#: ../admin/sd-admin-options/sd-admin-options.php:713
+msgid "Rename the field named \""
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:684
+#: ../admin/sd-admin-options/sd-admin-options.php:696
+#: ../admin/sd-admin-options/sd-admin-options.php:705
+#: ../admin/sd-admin-options/sd-admin-options.php:714
+msgid "Make sure you hit \"Save Changes\" right after you modify this field."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:687
+msgid ""
+"Note: The default name for this field is <strong>Discipline</strong>. This "
+"field is also a category for the professors section. Handle with care!"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:721
+msgid "<strong>Fields to Display</strong>"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:727
+msgid "Search Fields"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:728
+msgid "Select which fields to display in the search box."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:748
+msgid "<strong>Courses Categories Slugs</strong>"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:755
+#: ../admin/sd-admin-options/sd-admin-options.php:764
+#: ../admin/sd-admin-options/sd-admin-options.php:773
+#: ../admin/sd-admin-options/sd-admin-options.php:782
+msgid "Change the slug of \""
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:791
+msgid "Events"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:799
+msgid "Events Slug"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:800
+msgid "Rename the slug of the events."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:807
+msgid "Select the layout for the events pages."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:808
+msgid ""
+"This includes events page, single events posts and events archive pages."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:819
+msgid "Enable or disable the featured image for events posts."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:827
+msgid "Events Post Meta"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:828
+msgid "Enable or disable the events post meta."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:836
+msgid "Events Post Meta Options"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:837
+msgid "Select what info do you want to display for the events meta."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:852
+msgid "Event Comments"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:853
+msgid "Enable or disable the comments on the events posts."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:862
+msgid "Next/Previous Event Links"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:863
+msgid ""
+"Enable or disable the next/previous links at the bottom of the event single "
+"post."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:871
+msgid "Next Event"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:872
+msgid "Next event button text."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:879
+msgid "Previous Event"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:880
+msgid "Previous event button text."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:888
+msgid "Professors"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:896
+msgid "Professors Slug"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:897
+msgid "Rename the slug of the professors."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:905
+msgid "Blog"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:913
+msgid "Blog Layout"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:914
+msgid "Select the layout for the blog pages."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:915
+msgid ""
+"This includes blog page, single posts, archive pages, category pages, tags "
+"and search results pages."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:926
+msgid "Enable or disable the featured image for blog posts."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:934
+msgid "Blog Post Meta"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:935
+msgid "Enable or disable the blog post meta."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:943
+msgid "Blog Post Meta Options"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:944
+msgid "Select what info do you want to display for the blog meta."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:945
+msgid "This info appears right under the post title."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:965
+msgid "Blog Comments"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:966
+msgid "Enable or disable the comments on the blog posts."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:975
+msgid "Next/Previous Post Links"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:976
+msgid ""
+"Enable or disable the next/previous links at the bottom of the single post."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:984
+msgid "Next Post"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:985
+msgid "Next post button text."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:992
+msgid "Previous Post"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:993
+msgid "Previous post button text."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1001
+msgid "Footer"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1009
+msgid "Widgetized Footer"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1010
+msgid "Enable or disable the footer widgets section."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1018
+msgid "Copyright Box"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1019
+msgid "Enable or disable the footer copyright section."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1027
+msgid "Custom Copyright Text"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1028
+msgid "Insert your custom copyright text."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1046
+msgid "Display Newsletter Box"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1047
+msgid "Slelect how to display the footer newsletter box"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1052
+msgid "Sitewide"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1059
+msgid "Rename the \"Newsletter\" word"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1060
+msgid "Insert a custom word instead of \"Newsletter\"."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1067
+msgid "Rename the \"Subscribe\" word"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1068
+msgid "Insert a custom word instead of \"Subscribe\"."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1075
+msgid "Newsletter Form Code"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1076
+msgid "Insert the code of your newsletter form."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1077
+msgid "(MailChimp code naked)"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1110
+#: ../admin/sd-admin-options/sd-admin-options.php:1117
+msgid "Twitter Box"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1118
+msgid "Enable or disable the footer Twitter box."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1129
+msgid "Learn more about creating a Twitter APP"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1135
+msgid "Twitter Username"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1136
+msgid "Insert your Twitter username."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1142
+#: ../framework/inc/widgets/latest-tweets.php:171
+msgid "Consumer Key"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1143
+msgid "Insert your Twitter app. consumer key."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1149
+#: ../framework/inc/widgets/latest-tweets.php:177
+msgid "Consumer Secret"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1150
+msgid "Insert your Twitter app. consumer secret."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1156
+#: ../framework/inc/widgets/latest-tweets.php:183
+msgid "Access Token"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1157
+msgid "Insert your Twitter app. access token."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1163
+#: ../framework/inc/widgets/latest-tweets.php:189
+msgid "Access Token Secret"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1164
+msgid "Insert your Twitter app. access token secret."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1171
+msgid "Typography"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1179
+msgid "Body"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1180
+msgid "Specify the body font properties."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1192
+msgid "Headings"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1193
+msgid "Specify the headings font properties."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1194
+msgid "(h1, h2, h3, h4, h5, h6 headings)"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1207
+msgid "Menu"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1208
+msgid "Specify the menu font properties."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1221
+msgid "Page Titles"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1222
+msgid "Specify the page titles font properties."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1234
+msgid "Styling"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1242
+msgid "Theme's Main Color"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1243
+msgid "Select the main color of the theme."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1244
+#: ../admin/sd-admin-options/sd-admin-options.php:1399
+#: ../admin/sd-admin-options/sd-admin-options.php:1413
+#: ../admin/sd-admin-options/sd-admin-options.php:1464
+#: ../admin/sd-admin-options/sd-admin-options.php:1483
+#: ../admin/sd-admin-options/sd-admin-options.php:1625
+msgid "Default is #0191c6"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1255
+msgid "Theme's Links Color"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1256
+msgid "Select the main color of the links."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1257
+msgid "Default is #2f3c40"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1266
+msgid "Header Styling"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1271
+msgid "Header Background"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1272
+msgid "Select the header background color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1273
+#: ../admin/sd-admin-options/sd-admin-options.php:1282
+#: ../admin/sd-admin-options/sd-admin-options.php:1422
+#: ../admin/sd-admin-options/sd-admin-options.php:1440
+#: ../admin/sd-admin-options/sd-admin-options.php:1501
+#: ../admin/sd-admin-options/sd-admin-options.php:1524
+#: ../admin/sd-admin-options/sd-admin-options.php:1533
+#: ../admin/sd-admin-options/sd-admin-options.php:1607
+#: ../admin/sd-admin-options/sd-admin-options.php:1634
+msgid "Default is #ffffff"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1280
+msgid "Top Bar Background"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1281
+msgid "Select the header top bar background color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1289
+msgid "Top Bar Border"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1290
+msgid "Select the header top bar border color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1291
+msgid "Default is #e4e4e4"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1300
+msgid "Top Bar Text"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1301
+msgid "Select the header top bar text color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1302
+msgid "Default is #666565"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1309
+msgid "Top Bar \"News\" Word Background"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1310
+msgid "Select the header top bar \"News\" word background color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1311
+msgid "Default is #f96868"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1320
+msgid "Top Bar News Content Background"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1321
+msgid "Select the header top bar news content background color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1322
+msgid "Default is #e9e9e9"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1331
+msgid "Menu Styling"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1336
+msgid "Menu Top Margin"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1337
+msgid "Adjust the top margin of the menu."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1338
+msgid "Default is 28px"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1351
+msgid "Menu Links"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1352
+msgid "Select the menu color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1353
+msgid "Default is #62524c"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1360
+msgid "Menu Links Hover"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1361
+msgid "Select the hovering menu links color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1362
+msgid "Default is #fff"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1369
+msgid "Menu Background"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1370
+msgid "Select the menu background color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1371
+#: ../admin/sd-admin-options/sd-admin-options.php:1389
+#: ../admin/sd-admin-options/sd-admin-options.php:1431
+msgid "Default is #2a2e30"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1378
+msgid "Dropdown Menu Links"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1379
+msgid "Select the dropdown menu link color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1380
+msgid "Default is #e3edf1"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1387
+msgid "Dropdown Menu Background"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1388
+msgid "Select the dropdown menu background color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1397
+msgid "Dropdown Menu Hover Background"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1398
+msgid "Select the dropdown menu hover background color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1406
+msgid "Courses Search Box Styling"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1411
+msgid "Course Search Background"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1412
+msgid "Select the course search box background color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1420
+msgid "Search Boxt Title"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1421
+msgid "Select the course search box title color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1429
+msgid "Search Box Button"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1430
+msgid "Select the course search box button color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1438
+msgid "Search Box Button Text"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1439
+msgid "Select the course search box button text color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1448
+msgid "Newsletter Box Styling"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1453
+msgid "Newsletter Background"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1454
+msgid "Select the newsletter box background color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1455
+msgid "Default is #f6f8f8"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1462
+msgid "Newsletter Small Text"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1463
+msgid "Select the newsletter small text color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1471
+msgid "Newsletter Large Text"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1472
+msgid "Select the newsletter large text color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1473
+#: ../admin/sd-admin-options/sd-admin-options.php:1559
+msgid "Default is #13232c"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1481
+msgid "Newsletter Button"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1482
+msgid "Select the newsletter button color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1490
+msgid "Newsletter Button Border"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1491
+msgid "Select the newsletter button border color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1492
+msgid "Default is #02688d"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1499
+msgid "Newsletter Button Text"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1500
+msgid "Select the newsletter button text color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1508
+msgid "Twitter Box Styling"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1513
+msgid "Twitter Box Background"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1514
+msgid "Select the Twitter box background color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1515
+msgid "Default is #59d5fe"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1522
+msgid "Twitter Box Icon"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1523
+msgid "Select the Twitter box icon color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1531
+msgid "Twitter Box Text"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1532
+msgid "Select the Twitter box text color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1540
+msgid "Twitter Box Links"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1541
+msgid "Select the Twitter box link colors."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1542
+msgid "Default is #2c1d13 and #2c1d13"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1552
+msgid "Footer Styling"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1557
+msgid "Footer Background"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1558
+msgid "Select the footer background color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1566
+msgid "Footer Widget Titles"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1567
+msgid "Select the footer widget titles color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1568
+msgid "Default is #dcdcdc"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1575
+msgid "Footer Text"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1576
+msgid "Select the footer text color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1577
+msgid "Default is #3b5868"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1584
+msgid "Footer Links"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1585
+msgid "Select the footer link colors."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1586
+msgid "Default is #3b5868 and #ffffff"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1596
+msgid "Footer Form Fields Background"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1597
+msgid "Select the footer form fields background color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1598
+msgid "Default is #1e323d"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1605
+msgid "Footer Form Fields Text"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1606
+msgid "Select the footer form fields text color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1614
+msgid "Footer Form Fields Placeholders"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1615
+msgid "Select the footer form fields placeholders color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1616
+msgid "Default is #55656d"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1623
+msgid "Footer Form Button Border"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1624
+msgid "Select the footer form button color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1632
+msgid "Footer Form Button Text"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1633
+msgid "Select the footer form button text color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1641
+msgid "Copyright Background"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1642
+msgid "Select the copyright background color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1643
+msgid "Default is #06161f"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1650
+msgid "Copyright Text"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1651
+msgid "Select the copyright text color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1652
+msgid "Default is #213641"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1659
+msgid "Copyright Links"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1660
+msgid "Select the copyright link colors."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1661
+msgid "Default is #2f3c40 and #ffffff"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1671
+msgid "Page Top Titles Styling"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1676
+msgid "Page Title Padding"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1677
+msgid "Insert your custom page title paddings."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1678
+msgid "Defaults are: Top = 80px and Bottom = 70px"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1693
+msgid "Page Top Background"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1694
+msgid "Select the page top titles background color."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1695
+msgid "Default is #dbdbdb"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1702
+msgid "Custom CSS Styling"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1707
+msgid "Custom Styling"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1708
+msgid "Insert your custom CSS code here."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1719
+msgid "404 Page"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1727
+msgid "404 Page Layout"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1728
+msgid "Select the layout for the 404 error page."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1738
+msgid "404 Page Title"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1739
+msgid "Inert a custom 404 error page title."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1745
+msgid "404 Page Content"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1746
+msgid "Insert your custom content for the 404 error page."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1752
+msgid "Admin Page"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1761
+msgid "Custom Admin Logo"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1763
+msgid "Upload your custom admin logo image."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1771
+msgid "Logo Height"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1772
+msgid "Insert the height of your logo."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1779
+msgid "Admin logo URL"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1780
+msgid "Insert your custom admin logo URL."
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1781
+msgid "Always start with http://"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1798
+msgid "Theme Information 1"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1799
+#: ../admin/sd-admin-options/sd-admin-options.php:1805
+msgid "<p>This is the tab content, HTML is allowed.</p>"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1804
+msgid "Theme Information 2"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1809
+msgid "<p>This is the sidebar content, HTML is allowed.</p>"
+msgstr ""
+
+#: ../admin/sd-admin-options/sd-admin-options.php:1825
+#: ../admin/sd-admin-options/sd-admin-options.php:1829
+#: ../admin/sd-admin-options/sd-admin-options.php:1830
+msgid "Theme Options"
+msgstr ""
+
+#: ../archive.php:24 ../blog.php:36 ../courses.php:34 ../events.php:34
+#: ../full-width-page.php:21 ../index.php:35 ../page.php:29 ../search.php:22
+#: ../single-courses.php:22 ../single-events.php:22 ../single-portfolio.php:22
+#: ../single-professors.php:21 ../single.php:20
+#: ../taxonomy-course_discipline.php:24 ../taxonomy-course_id.php:24
+#: ../taxonomy-course_length.php:24 ../taxonomy-course_level.php:24
+#: ../taxonomy-course_location.php:24 ../taxonomy-event_location.php:24
+msgid "Sorry, no posts matched your criteria"
+msgstr ""
+
+#: ../comments.php:17
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: ../comments.php:28
+msgid "Leave a comment"
+msgstr ""
+
+#: ../comments.php:28 ../framework/inc/widgets/popular-posts.php:57
+msgid "1 comment"
+msgstr ""
+
+#: ../comments.php:28
+msgid "% Comments"
+msgstr ""
+
+#: ../comments.php:39
+msgid "Trackbacks/Pings"
+msgstr ""
+
+#: ../comments.php:62
+msgid "Comments are closed."
+msgstr ""
+
+#: ../comments.php:70
+msgid "Name (required)"
+msgstr ""
+
+#: ../comments.php:71
+msgid "E-mail (required)"
+msgstr ""
+
+#: ../comments.php:73
+msgid "Website"
+msgstr ""
+
+#: ../comments.php:77
+msgid "Reply"
+msgstr ""
+
+#: ../comments.php:78
+msgid "Cancel reply"
+msgstr ""
+
+#: ../comments.php:81
+msgid "Leave a reply"
+msgstr ""
+
+#: ../comments.php:82
+msgid "Comments (required)"
+msgstr ""
+
+#: ../comments.php:83
+msgid "Submit Comment!"
+msgstr ""
+
+#: ../framework/inc/author-box.php:16
+msgid "Author"
+msgstr ""
+
+#: ../framework/inc/enqueue.php:30
+msgid "Keywords"
+msgstr ""
+
+#: ../framework/inc/enqueue.php:34
+msgid "Enter your Email"
+msgstr ""
+
+#: ../framework/inc/enqueue.php:38
+msgid "search here"
+msgstr ""
+
+#: ../framework/inc/metabox/inc/field.php:225
+msgid "+"
+msgstr ""
+
+#: ../framework/inc/metabox/inc/field.php:235
+msgid "&#8211;"
+msgstr ""
+
+#: ../framework/inc/metabox/inc/fields/button.php:35
+msgid "Click me"
+msgstr ""
+
+#: ../framework/inc/metabox/inc/fields/file-advanced.php:23
+msgid "Select Files"
+msgstr ""
+
+#: ../framework/inc/metabox/inc/fields/file-input.php:17
+msgid "Select File"
+msgstr ""
+
+#: ../framework/inc/metabox/inc/fields/file-input.php:40
+msgid "Select"
+msgstr ""
+
+#: ../framework/inc/metabox/inc/fields/file.php:19
+#, php-format
+msgid "You may only upload maximum %d file"
+msgstr ""
+
+#: ../framework/inc/metabox/inc/fields/file.php:20
+#, php-format
+msgid "You may only upload maximum %d files"
+msgstr ""
+
+#: ../framework/inc/metabox/inc/fields/file.php:98
+msgid "Error: Cannot delete file"
+msgstr ""
+
+#: ../framework/inc/metabox/inc/fields/image-advanced.php:23
+msgid "Select Images"
+msgstr ""
+
+#: ../framework/inc/metabox/inc/fields/map.php:48
+msgid "Find Address"
+msgstr ""
+
+#: ../framework/inc/metabox/inc/fields/oembed.php:55
+msgid "Embed HTML not available."
+msgstr ""
+
+#: ../framework/inc/metabox/inc/fields/oembed.php:77
+msgid "Preview"
+msgstr ""
+
+#: ../framework/inc/metabox/inc/fields/post.php:52
+msgid "Post"
+msgstr ""
+
+#: ../framework/inc/metabox/inc/fields/post.php:66
+#: ../framework/inc/metabox/inc/fields/taxonomy.php:40
+#: ../framework/inc/metabox/inc/fields/user.php:62
+#, php-format
+msgid "Select a %s"
+msgstr ""
+
+#: ../framework/inc/metabox/inc/fields/user.php:54
+msgid "User"
+msgstr ""
+
+#: ../framework/inc/metabox/inc/meta-box.php:245
+msgid "Please correct the errors highlighted below and try again."
+msgstr ""
+
+#: ../framework/inc/metabox/the-meta-boxes.php:69
+msgid "Event Date"
+msgstr ""
+
+#: ../framework/inc/metabox/the-meta-boxes.php:72
+msgid "Insert the event date"
+msgstr ""
+
+#: ../framework/inc/metabox/the-meta-boxes.php:75
+msgid "MM d, yy"
+msgstr ""
+
+#: ../framework/inc/metabox/the-meta-boxes.php:81
+msgid "From"
+msgstr ""
+
+#: ../framework/inc/metabox/the-meta-boxes.php:90
+msgid "To"
+msgstr ""
+
+#: ../framework/inc/page-top.php:34
+msgid "Tagged as:"
+msgstr ""
+
+#: ../framework/inc/page-top.php:40 ../framework/inc/page-top.php:46
+#: ../framework/inc/page-top.php:51
+msgid "Archive for"
+msgstr ""
+
+#: ../framework/inc/page-top.php:57
+msgid "Archive"
+msgstr ""
+
+#: ../framework/inc/page-top.php:83
+msgid "Search Results for:"
+msgstr ""
+
+#: ../framework/inc/post-formats/content-audio.php:17
+#: ../framework/inc/post-formats/content-gallery.php:12
+#: ../framework/inc/post-formats/content-gallery.php:25
+#: ../framework/inc/post-formats/content.php:13
+#: ../framework/inc/post-formats/courses/content.php:13
+#: ../framework/inc/post-formats/events/content.php:30
+#: ../framework/inc/post-formats/latest-blog/content-audio.php:18
+#: ../framework/inc/post-formats/latest-blog/content-gallery.php:28
+#: ../framework/inc/post-formats/latest-blog/content-video.php:17
+#: ../framework/inc/post-formats/professors/single.php:12
+#: ../framework/inc/vc/shortcodes/sd-events.php:50
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: ../framework/inc/post-formats/content-audio.php:26
+#: ../framework/inc/post-formats/content-gallery.php:36
+#: ../framework/inc/post-formats/content-video.php:25
+#: ../framework/inc/post-formats/content.php:33
+#: ../framework/inc/post-formats/courses/content.php:34
+#: ../framework/inc/post-formats/events/content.php:40
+#: ../framework/inc/post-formats/professors/content.php:13
+#: ../framework/inc/sd-theme-functions/sd-functions.php:202
+#: ../professors.php:129
+msgid "Read More"
+msgstr ""
+
+#: ../framework/inc/post-formats/content-video.php:12
+#: ../framework/inc/post-formats/latest-blog/content.php:22
+#, php-format
+msgid "Permalink la %s"
+msgstr ""
+
+#: ../framework/inc/post-formats/single-link.php:13
+msgid "by"
+msgstr ""
+
+#: ../framework/inc/post-formats/single-link.php:17
+msgid "in: "
+msgstr ""
+
+#: ../framework/inc/post-formats/single-link.php:20
+#, php-format
+msgid "View all posts in %s"
+msgstr ""
+
+#: ../framework/inc/post-formats/single-link.php:34
+msgid "Tagged as: "
+msgstr ""
+
+#: ../framework/inc/post-formats/single-link.php:52
+msgid "About"
+msgstr ""
+
+#: ../framework/inc/post-formats/single-link.php:63
+msgid "&larr; Previous Post"
+msgstr ""
+
+#: ../framework/inc/post-formats/single-link.php:65
+msgid "Next Post &rarr;"
+msgstr ""
+
+#: ../framework/inc/post-meta-courses.php:12
+msgid "ID:"
+msgstr ""
+
+#: ../framework/inc/post-meta.php:42
+#: ../framework/inc/widgets/popular-posts.php:57
+msgid "0 comments"
+msgstr ""
+
+#: ../framework/inc/post-meta.php:42
+msgid "1 Comment"
+msgstr ""
+
+#: ../framework/inc/post-meta.php:42
+#, php-format
+msgid " % comments"
+msgstr ""
+
+#: ../framework/inc/post-meta.php:42
+msgid "closed"
+msgstr ""
+
+#: ../framework/inc/sd-theme-functions/sd-comments.php:50
+msgid "at"
+msgstr ""
+
+#: ../framework/inc/sd-theme-functions/sd-comments.php:55
+msgid "You comment awaits moderation."
+msgstr ""
+
+#: ../framework/inc/sd-theme-functions/sd-comments.php:59
+msgid "(Edit)"
+msgstr ""
+
+#: ../framework/inc/sd-theme-functions/sd-comments.php:64
+msgid "Reply <i class=\"fa fa-share\"></i>"
+msgstr ""
+
+#: ../framework/inc/sd-theme-functions/sd-custom-pagination.php:24
+msgid "First"
+msgstr ""
+
+#: ../framework/inc/sd-theme-functions/sd-custom-pagination.php:34
+msgid "Last"
+msgstr ""
+
+#: ../framework/inc/sd-theme-functions/sd-functions.php:254
+msgid "Google+ Url"
+msgstr ""
+
+#: ../framework/inc/sd-theme-functions/sd-functions.php:255
+msgid "Linked In"
+msgstr ""
+
+#: ../framework/inc/sd-theme-functions/sd-theme-menus.php:14
+msgid "Header Navigation"
+msgstr ""
+
+#: ../framework/inc/sd-theme-functions/sd-theme-sidebars.php:11
+msgid "Main Sidebar"
+msgstr ""
+
+#: ../framework/inc/sd-theme-functions/sd-theme-sidebars.php:13
+msgid "Main sidebar that appears on the right."
+msgstr ""
+
+#: ../framework/inc/sd-theme-functions/sd-theme-sidebars.php:22
+msgid "Footer Left Sidebar"
+msgstr ""
+
+#: ../framework/inc/sd-theme-functions/sd-theme-sidebars.php:24
+msgid "Appears in the left footer section of the site."
+msgstr ""
+
+#: ../framework/inc/sd-theme-functions/sd-theme-sidebars.php:33
+msgid "Footer Middle Sidebar"
+msgstr ""
+
+#: ../framework/inc/sd-theme-functions/sd-theme-sidebars.php:35
+msgid "Appears in the middle footer section of the site."
+msgstr ""
+
+#: ../framework/inc/sd-theme-functions/sd-theme-sidebars.php:44
+msgid "Footer Right Sidebar"
+msgstr ""
+
+#: ../framework/inc/sd-theme-functions/sd-theme-sidebars.php:46
+msgid "Appears in the right footer section of the site."
+msgstr ""
+
+#: ../framework/inc/share-icons.php:9
+msgid "SHARING IS CARING"
+msgstr ""
+
+#: ../framework/inc/share-icons.php:13 ../framework/inc/share-icons.php:14
+msgid "Facebook"
+msgstr ""
+
+#: ../framework/inc/share-icons.php:18 ../framework/inc/share-icons.php:19
+msgid "Twitter"
+msgstr ""
+
+#: ../framework/inc/share-icons.php:24
+msgid "Google+"
+msgstr ""
+
+#: ../framework/inc/share-icons.php:28 ../framework/inc/share-icons.php:29
+msgid "Delicious"
+msgstr ""
+
+#: ../framework/inc/share-icons.php:34
+msgid "StumbleUpon"
+msgstr ""
+
+#: ../framework/inc/share-icons.php:38 ../framework/inc/share-icons.php:39
+msgid "Digg"
+msgstr ""
+
+#: ../framework/inc/share-icons.php:43 ../framework/inc/share-icons.php:44
+msgid "Reddit"
+msgstr ""
+
+#: ../framework/inc/share-icons.php:48 ../framework/inc/share-icons.php:49
+msgid "E-Mail"
+msgstr ""
+
+#: ../framework/inc/sidebar-generator.php:60
+msgid "Custom sidebar."
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:161
+#: ../framework/inc/tgma/sd-tgma.php:56
+msgid "Install Required Plugins"
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:162
+#: ../framework/inc/tgma/sd-tgma.php:57
+msgid "Install Plugins"
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:163
+#: ../framework/inc/tgma/sd-tgma.php:58
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:164
+msgid "Something went wrong."
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:175
+#: ../framework/inc/tgma/sd-tgma.php:70
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:176
+msgid "Return to the dashboard"
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:177
+#: ../framework/inc/tgma/plugin-activation.php:1945
+#: ../framework/inc/tgma/sd-tgma.php:71
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:178
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:179
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:180
+msgid "Dismiss this notice"
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:534
+#: ../framework/inc/tgma/plugin-activation.php:2162
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:1169
+msgid "Private Repository"
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:1172
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:1177
+msgid "WordPress Repository"
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:1180
+msgid "Required"
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:1180
+msgid "Recommended"
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:1183
+msgid "Not Installed"
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:1185
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:1290
+#: ../framework/inc/tgma/plugin-activation.php:1398
+msgid "Install"
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:1312
+#: ../framework/inc/tgma/plugin-activation.php:1399
+msgid "Activate"
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:1361
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:1377
+msgid "Plugin"
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:1378
+msgid "Source"
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:1379
+msgid "Type"
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:1380
+msgid "Status"
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:1928
+msgid "Install package not available."
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:1929
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:1930
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:1931
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:1932
+msgid "Plugin install failed."
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:1933
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:1944
+msgid "Plugin activation failed."
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:2058
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:2059
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:2059
+#: ../framework/inc/tgma/plugin-activation.php:2068
+msgid "Show Details"
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:2059
+#: ../framework/inc/tgma/plugin-activation.php:2068
+msgid "Hide Details"
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:2060
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:2061
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:2065
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:2066
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:2067
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:2068
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:2069
+msgid "All installations have been completed."
+msgstr ""
+
+#: ../framework/inc/tgma/plugin-activation.php:2070
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../framework/inc/tgma/sd-tgma.php:59
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: ../framework/inc/tgma/sd-tgma.php:72
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: ../framework/inc/vc/sd-layout-templates.php:14
+msgid "Landing Page"
+msgstr ""
+
+#: ../framework/inc/vc/sd-layout-templates.php:33
+msgid "Call to Action Page"
+msgstr ""
+
+#: ../framework/inc/vc/sd-layout-templates.php:52
+msgid "Feature List Page"
+msgstr ""
+
+#: ../framework/inc/vc/sd-layout-templates.php:71
+msgid "Description Page"
+msgstr ""
+
+#: ../framework/inc/vc/sd-layout-templates.php:90
+msgid "Service List Page"
+msgstr ""
+
+#: ../framework/inc/vc/sd-layout-templates.php:109
+msgid "Product Page"
+msgstr ""
+
+#: ../framework/inc/vc/shortcodes/sd-events.php:62
+msgid "Learn More"
+msgstr ""
+
+#: ../framework/inc/vc/vc-templates/vc_button.php:14
+msgid "Text on the button"
+msgstr ""
+
+#: ../framework/inc/widgets/110x110-ads.php:17
+msgid "A widget that displays 8 110x110 ad blocks."
+msgstr ""
+
+#: ../framework/inc/widgets/110x110-ads.php:19
+msgid "110x110 Ad Blocks"
+msgstr ""
+
+#: ../framework/inc/widgets/110x110-ads.php:143
+#: ../framework/inc/widgets/amenities.php:75
+#: ../framework/inc/widgets/feedburner-subscribe.php:73
+#: ../framework/inc/widgets/flickr.php:72
+#: ../framework/inc/widgets/latest-tweets.php:159
+#: ../framework/inc/widgets/opening-hours.php:96
+#: ../framework/inc/widgets/popular-posts.php:90
+#: ../framework/inc/widgets/recent-comments.php:86
+#: ../framework/inc/widgets/recent-events.php:90
+#: ../framework/inc/widgets/recent-posts.php:90
+#: ../framework/inc/widgets/social-icons.php:109
+#: ../framework/inc/widgets/tabbed.php:171
+#: ../framework/inc/widgets/top-commentators.php:86
+#: ../framework/inc/widgets/trainers.php:98
+msgid "Title:"
+msgstr ""
+
+#: ../framework/inc/widgets/110x110-ads.php:149
+msgid "Ad 1 image url:"
+msgstr ""
+
+#: ../framework/inc/widgets/110x110-ads.php:155
+msgid "Ad 1 link url:"
+msgstr ""
+
+#: ../framework/inc/widgets/110x110-ads.php:161
+msgid "Ad 2 image url:"
+msgstr ""
+
+#: ../framework/inc/widgets/110x110-ads.php:167
+msgid "Ad 2 link url:"
+msgstr ""
+
+#: ../framework/inc/widgets/110x110-ads.php:173
+msgid "Ad 3 image url:"
+msgstr ""
+
+#: ../framework/inc/widgets/110x110-ads.php:179
+msgid "Ad 3 link url:"
+msgstr ""
+
+#: ../framework/inc/widgets/110x110-ads.php:185
+msgid "Ad 4 image url:"
+msgstr ""
+
+#: ../framework/inc/widgets/110x110-ads.php:191
+msgid "Ad 4 link url:"
+msgstr ""
+
+#: ../framework/inc/widgets/110x110-ads.php:197
+msgid "Ad 5 image url:"
+msgstr ""
+
+#: ../framework/inc/widgets/110x110-ads.php:203
+msgid "Ad 5 link url:"
+msgstr ""
+
+#: ../framework/inc/widgets/110x110-ads.php:209
+msgid "Ad 6 image url:"
+msgstr ""
+
+#: ../framework/inc/widgets/110x110-ads.php:215
+msgid "Ad 6 link url:"
+msgstr ""
+
+#: ../framework/inc/widgets/110x110-ads.php:221
+msgid "Ad 7 image url:"
+msgstr ""
+
+#: ../framework/inc/widgets/110x110-ads.php:227
+msgid "Ad 7 link url:"
+msgstr ""
+
+#: ../framework/inc/widgets/110x110-ads.php:233
+msgid "Ad 8 image url:"
+msgstr ""
+
+#: ../framework/inc/widgets/110x110-ads.php:239
+msgid "Ad 8 link url:"
+msgstr ""
+
+#: ../framework/inc/widgets/110x110-ads.php:245
+msgid "Randomize ads order?"
+msgstr ""
+
+#: ../framework/inc/widgets/amenities.php:17
+msgid "A widget that displays amenities of your gym."
+msgstr ""
+
+#: ../framework/inc/widgets/amenities.php:19
+msgid "Amenities"
+msgstr ""
+
+#: ../framework/inc/widgets/amenities.php:83
+msgid "Amenities:"
+msgstr ""
+
+#: ../framework/inc/widgets/amenities.php:87
+msgid "Insert your gym's amenities comma separated. eg(sauna, pool)"
+msgstr ""
+
+#: ../framework/inc/widgets/feedburner-subscribe.php:17
+msgid "A widget to display a Feedburner email subscribe form."
+msgstr ""
+
+#: ../framework/inc/widgets/feedburner-subscribe.php:19
+#: ../framework/inc/widgets/feedburner-subscribe.php:65
+msgid "Feedburner Subscribe"
+msgstr ""
+
+#: ../framework/inc/widgets/feedburner-subscribe.php:41
+msgid "your email address"
+msgstr ""
+
+#: ../framework/inc/widgets/feedburner-subscribe.php:42
+msgid "Join"
+msgstr ""
+
+#: ../framework/inc/widgets/feedburner-subscribe.php:79
+msgid "Feedburner ID"
+msgstr ""
+
+#: ../framework/inc/widgets/feedburner-subscribe.php:85
+msgid "Custom Text"
+msgstr ""
+
+#: ../framework/inc/widgets/flickr.php:17
+msgid "A widget that displays your flickr photos."
+msgstr ""
+
+#: ../framework/inc/widgets/flickr.php:19
+msgid "Flickr Photos"
+msgstr ""
+
+#: ../framework/inc/widgets/flickr.php:80
+msgid "Flickr ID:"
+msgstr ""
+
+#: ../framework/inc/widgets/flickr.php:88
+msgid "Type (user or group):"
+msgstr ""
+
+#: ../framework/inc/widgets/flickr.php:99
+msgid "Display (random or latest):"
+msgstr ""
+
+#: ../framework/inc/widgets/flickr.php:110
+msgid "Number of images to display:"
+msgstr ""
+
+#: ../framework/inc/widgets/latest-tweets.php:17
+msgid "A widget that displays your latest tweets."
+msgstr ""
+
+#: ../framework/inc/widgets/latest-tweets.php:19
+msgid "Latest Tweets"
+msgstr ""
+
+#: ../framework/inc/widgets/latest-tweets.php:165
+msgid "Twitter Username e.g. skatdesign"
+msgstr ""
+
+#: ../framework/inc/widgets/latest-tweets.php:195
+msgid "Number of tweets (max 20)"
+msgstr ""
+
+#: ../framework/inc/widgets/opening-hours.php:17
+msgid "A widget that displays your business's opening hours."
+msgstr ""
+
+#: ../framework/inc/widgets/opening-hours.php:19
+msgid "Opening Hours"
+msgstr ""
+
+#: ../framework/inc/widgets/opening-hours.php:37
+#: ../framework/inc/widgets/opening-hours.php:102
+msgid "Monday"
+msgstr ""
+
+#: ../framework/inc/widgets/opening-hours.php:40
+#: ../framework/inc/widgets/opening-hours.php:107
+msgid "Tuesday"
+msgstr ""
+
+#: ../framework/inc/widgets/opening-hours.php:43
+#: ../framework/inc/widgets/opening-hours.php:112
+msgid "Wednesday"
+msgstr ""
+
+#: ../framework/inc/widgets/opening-hours.php:46
+#: ../framework/inc/widgets/opening-hours.php:117
+msgid "Thursday"
+msgstr ""
+
+#: ../framework/inc/widgets/opening-hours.php:49
+#: ../framework/inc/widgets/opening-hours.php:122
+msgid "Friday"
+msgstr ""
+
+#: ../framework/inc/widgets/opening-hours.php:52
+#: ../framework/inc/widgets/opening-hours.php:127
+msgid "Saturday"
+msgstr ""
+
+#: ../framework/inc/widgets/opening-hours.php:55
+#: ../framework/inc/widgets/opening-hours.php:132
+msgid "Sunday"
+msgstr ""
+
+#: ../framework/inc/widgets/popular-posts.php:17
+msgid "A widget to display the popular posts."
+msgstr ""
+
+#: ../framework/inc/widgets/popular-posts.php:19
+msgid "Popular Posts"
+msgstr ""
+
+#: ../framework/inc/widgets/popular-posts.php:57
+#, php-format
+msgid "% comments"
+msgstr ""
+
+#: ../framework/inc/widgets/popular-posts.php:98
+#: ../framework/inc/widgets/recent-events.php:98
+#: ../framework/inc/widgets/recent-posts.php:98
+#: ../framework/inc/widgets/tabbed.php:179
+msgid "Post Count"
+msgstr ""
+
+#: ../framework/inc/widgets/recent-comments.php:17
+msgid "A widget that displays the recent comments."
+msgstr ""
+
+#: ../framework/inc/widgets/recent-comments.php:19
+msgid "Custom Recent Comments"
+msgstr ""
+
+#: ../framework/inc/widgets/recent-comments.php:79
+#: ../framework/inc/widgets/tabbed.php:42
+msgid "Recent Comments"
+msgstr ""
+
+#: ../framework/inc/widgets/recent-comments.php:92
+#: ../framework/inc/widgets/top-commentators.php:92
+msgid "Number of commentators"
+msgstr ""
+
+#: ../framework/inc/widgets/recent-events.php:17
+msgid "A widget to display the recent events."
+msgstr ""
+
+#: ../framework/inc/widgets/recent-events.php:19
+msgid "Recent Events"
+msgstr ""
+
+#: ../framework/inc/widgets/recent-posts.php:17
+msgid "A widget to display the recent posts."
+msgstr ""
+
+#: ../framework/inc/widgets/recent-posts.php:19
+msgid "Recent Posts"
+msgstr ""
+
+#: ../framework/inc/widgets/social-icons.php:17
+msgid "A widget that displays icons from your social profiles."
+msgstr ""
+
+#: ../framework/inc/widgets/social-icons.php:115
+msgid "Facebook Url:"
+msgstr ""
+
+#: ../framework/inc/widgets/social-icons.php:120
+msgid "Twitter Url:"
+msgstr ""
+
+#: ../framework/inc/widgets/social-icons.php:125
+msgid "LinkedIn Url:"
+msgstr ""
+
+#: ../framework/inc/widgets/social-icons.php:130
+msgid "Google Plus Url:"
+msgstr ""
+
+#: ../framework/inc/widgets/social-icons.php:135
+msgid "Youtube Url:"
+msgstr ""
+
+#: ../framework/inc/widgets/social-icons.php:140
+msgid "Vimeo Url:"
+msgstr ""
+
+#: ../framework/inc/widgets/social-icons.php:145
+msgid "Pinterest Url:"
+msgstr ""
+
+#: ../framework/inc/widgets/social-icons.php:150
+msgid "Instagram Url:"
+msgstr ""
+
+#: ../framework/inc/widgets/social-icons.php:155
+msgid "Flickr Url:"
+msgstr ""
+
+#: ../framework/inc/widgets/social-icons.php:160
+msgid "RSS Url:"
+msgstr ""
+
+#: ../framework/inc/widgets/tabbed.php:17
+msgid "A widget to display tabs with popular and recent posts."
+msgstr ""
+
+#: ../framework/inc/widgets/tabbed.php:19
+msgid "Tabbed Popular &amp; Recent Posts"
+msgstr ""
+
+#: ../framework/inc/widgets/tabbed.php:40
+msgid "Popular"
+msgstr ""
+
+#: ../framework/inc/widgets/tabbed.php:41
+msgid "Latest"
+msgstr ""
+
+#: ../framework/inc/widgets/tabbed.php:124
+msgid "on: "
+msgstr ""
+
+#: ../framework/inc/widgets/top-commentators.php:17
+msgid "A widget that displays your top commentators."
+msgstr ""
+
+#: ../framework/inc/widgets/top-commentators.php:19
+#: ../framework/inc/widgets/top-commentators.php:79
+msgid "Top Commentators"
+msgstr ""
+
+#: ../framework/inc/widgets/trainers.php:17
+msgid "A widget that displays your fitness trainers."
+msgstr ""
+
+#: ../framework/inc/widgets/trainers.php:19
+msgid "Trainers"
+msgstr ""
+
+#: ../framework/inc/widgets/trainers.php:106
+msgid "Show:"
+msgstr ""
+
+#: ../framework/inc/wp-advanced-search/sd-wp-advanced-search.php:75
+msgid "Search"
+msgstr ""
+
+#: ../header.php:37
+msgid "Items tagged: "
+msgstr ""
+
+#: ../header.php:117
+msgid "MENU"
+msgstr ""
+
+#: ../search-course-results.php:27
+msgid "Sorry, no results matched your criteria"
+msgstr ""
+
+#: ../taxonomy-portfolio_filter.php:28 ../three-columns-portfolio.php:77
+msgid "View Item"
+msgstr ""

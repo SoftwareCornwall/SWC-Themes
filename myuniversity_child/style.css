@@ -1,0 +1,44 @@
+/*
+Theme Name: My University Child
+Description: My University Child Theme
+Author: Your name here
+Template: myuniversity
+Version: 1.0
+*/
+
+@import url("../myuniversity/style.css");
+
+.job_listings {
+	margin-right: auto;
+    margin-left: auto;
+	margin-bottom: 35px;
+}
+
+@media (min-width: 768px){
+	.job_listings {
+  	  width: 750px;
+	  padding-left: 15px;
+      padding-right: 15px;
+	}
+	.job_listings ul.job_listings {
+ 	   width: 720px;
+	}
+}
+
+@media (min-width: 992px){
+	.job_listings {
+    	width: 970px;
+	}
+	.job_listings ul.job_listings {
+		width: 940px;
+	}
+}
+
+@media (min-width: 1200px){
+	.job_listings {
+   	 	width: 1170px;
+	}
+	.job_listings ul.job_listings {
+		width: 1140px;
+	}
+}
