@@ -7,7 +7,7 @@
 if ( !function_exists( 'sd_required_plugins' ) ) {
 	function sd_required_plugins() {
 			$plugins = array(
-			
+
 				array(
 					'name'     				=> 'Cf Post Formats',
 					'slug'     				=> 'cf-post-formats',
@@ -68,18 +68,18 @@ if ( !function_exists( 'sd_required_plugins' ) ) {
 					'force_deactivation' 	=> false,
 					'external_url' 			=> '',
 					),
-				array(
-					'name'      => 'Contact Form 7',
-					'slug'      => 'contact-form-7',
-					'required'  => false,
-				),
+				// array(
+				// 	'name'      => 'Contact Form 7',
+				// 	'slug'      => 'contact-form-7',
+				// 	'required'  => false,
+				// ),
 				array(
 					'name'      => 'Really Simple CAPTCHA',
 					'slug'      => 'really-simple-captcha',
 					'required'  => false,
 				)
 		);
-		
+
 			/**
 			 * Array of configuration settings. Amend each line as needed.
 			 * If you want the default strings to be available under your own theme domain,
