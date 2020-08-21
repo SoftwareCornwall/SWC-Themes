@@ -9,16 +9,6 @@ if ( !function_exists( 'sd_required_plugins' ) ) {
 			$plugins = array(
 
 				array(
-					'name'     				=> 'Cf Post Formats',
-					'slug'     				=> 'cf-post-formats',
-					'source'   				=> get_template_directory_uri() . '/framework/plugins/cf-post-formats.zip',
-					'required' 				=> true,
-					'version' 				=> '',
-					'force_activation' 		=> false,
-					'force_deactivation' 	=> false,
-					'external_url' 			=> '',
-				),
-				array(
 					'name'     				=> 'Revolution Slider',
 					'slug'     				=> 'revslider',
 					'source'   				=> get_template_directory_uri() . '/framework/plugins/revslider.zip',
@@ -67,17 +57,7 @@ if ( !function_exists( 'sd_required_plugins' ) ) {
 					'force_activation' 		=> false,
 					'force_deactivation' 	=> false,
 					'external_url' 			=> '',
-					),
-				// array(
-				// 	'name'      => 'Contact Form 7',
-				// 	'slug'      => 'contact-form-7',
-				// 	'required'  => false,
-				// ),
-				array(
-					'name'      => 'Really Simple CAPTCHA',
-					'slug'      => 'really-simple-captcha',
-					'required'  => false,
-				)
+					)
 		);
 
 			/**

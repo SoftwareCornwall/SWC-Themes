@@ -3,7 +3,6 @@
 /* ------------------------------------------------------------------------ */
 /* SD Theme Functions
 /* ------------------------------------------------------------------------ */
-
 // Theme Menus
 require_once( SD_FRAMEWORK_INC . 'sd-theme-functions/sd-theme-menus.php' );
 	
@@ -221,16 +220,16 @@ if ( !function_exists( 'sd_new_excerpt_more' ) ) {
 }
 // Exclude professors from tax archive
 
-add_action( 'pre_get_posts', 'sd_exclude_professors' );
+// add_action( 'pre_get_posts', 'sd_exclude_professors' );
 
-if ( !function_exists( 'sd_exclude_professors' ) ) {	
-	function sd_exclude_professors( $query ) {
-    	if ( $query->is_tax( 'course_discipline' ) ) {
-        	$query->set( 'post_type', array( 'courses' ) );
-	    }
-    return $query;
-	}
-}
+// if ( !function_exists( 'sd_exclude_professors' ) ) {	
+// 	function sd_exclude_professors( $query ) {
+//     	if ( $query->is_tax( 'course_discipline' ) ) {
+//         	$query->set( 'post_type', array( 'courses' ) );
+// 	    }
+//     return $query;
+// 	}
+// }
 
 // Custom styling of widget titles in widget panel
 if ( !function_exists( 'sd_custom_widgets_style' ) ) {
@@ -259,7 +258,7 @@ if ( !function_exists( 'sd_prettphoto' ) ) {
 if ( !function_exists( 'sd_author_bio' ) ) {
 	function sd_author_bio( $contactmethods ) {
 		// Add Google Plus
-		$contactmethods['googleplus'] = __( 'Google+ Url', 'sd-framework' );
+		// $contactmethods['googleplus'] = __( 'Google+ Url', 'sd-framework' );
 		$contactmethods['linkedin'] = __( 'Linked In', 'sd-framework' );
 		
 		return $contactmethods;
