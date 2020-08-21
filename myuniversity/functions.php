@@ -45,14 +45,6 @@ require_once( SD_FRAMEWORK_INC . 'sd-theme-functions/sd-functions.php' );
 // Include Widgets
 require_once( SD_FRAMEWORK_INC . 'widgets/widgets.php' );
 
-// Posts 2 Posts
-require_once( SD_FRAMEWORK_INC . 'connection-types.php' );
-
-// Visual Composer
-if ( class_exists( 'Vc_Manager' ) ) {
-require_once( SD_FRAMEWORK_INC . 'vc/sd-vc-functions.php' );
-}
-
 // Redux Theme Options
 if ( !class_exists( 'ReduxFramework' ) && file_exists( dirname( __FILE__ ) . '/admin/ReduxCore/framework.php' ) ) {
 require_once( dirname( __FILE__ ) . '/admin/ReduxCore/framework.php' );
@@ -73,12 +65,3 @@ include 'framework/inc/metabox/the-meta-boxes.php';
 }
 add_action('init', 'sd_load_meta_box_plugin');
 }
-
-/* TGMA Automatic Plugin Activation */
-require_once( SD_FRAMEWORK_INC . 'tgma/plugin-activation.php' );
-require_once( SD_FRAMEWORK_INC . 'tgma/sd-tgma.php' );
-
-// WP Advanced Search
-// http://wpadvancedsearch.com
-require_once( SD_FRAMEWORK_INC . 'wp-advanced-search/wpas.php' );
-require_once( SD_FRAMEWORK_INC . 'wp-advanced-search/sd-wp-advanced-search.php');	
