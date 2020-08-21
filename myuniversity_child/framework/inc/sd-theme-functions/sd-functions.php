@@ -31,9 +31,6 @@ if ( function_exists( 'add_theme_support' ) ) { // Added in 2.9
 	add_image_size( 'large-blog-thumbs', 1140, 680, true ); // large blog thumbs
 	add_image_size( 'recent-blog-widget', 100, 65, true ); // recent blog widget thumbs
 	add_image_size( 'latest-blog-sd', 370, 190, true ); // latest blog shortcode thumbs
-	add_image_size( 'sd-staff-photo', 183, 183, true ); // staff shortcode thumbs
-	add_image_size( 'sd-testimonial-photo', 82, 82, true ); // testimonial shortcode thumbs
-	add_image_size( 'sd-professors-page-thumb', 260, 260, true ); // professors shortcode thumbs
 }
 	
 // Add rel PrettyPhoto to images in post
@@ -219,17 +216,6 @@ if ( !function_exists( 'sd_new_excerpt_more' ) ) {
 	add_filter('excerpt_more', 'sd_new_excerpt_more');
 }
 // Exclude professors from tax archive
-
-// add_action( 'pre_get_posts', 'sd_exclude_professors' );
-
-// if ( !function_exists( 'sd_exclude_professors' ) ) {	
-// 	function sd_exclude_professors( $query ) {
-//     	if ( $query->is_tax( 'course_discipline' ) ) {
-//         	$query->set( 'post_type', array( 'courses' ) );
-// 	    }
-//     return $query;
-// 	}
-// }
 
 // Custom styling of widget titles in widget panel
 if ( !function_exists( 'sd_custom_widgets_style' ) ) {
