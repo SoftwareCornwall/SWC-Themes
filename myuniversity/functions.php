@@ -76,8 +76,6 @@ require_once( SD_FRAMEWORK_INC . 'sd-theme-functions/sd-theme-menus.php' );
 // Theme Sidebars
 require_once( SD_FRAMEWORK_INC . 'sd-theme-functions/sd-theme-sidebars.php' );
 	
-// Custom TinyMce Styles
-require_once( SD_FRAMEWORK_INC . 'sd-theme-functions/sd-custom-tinymce-styles.php' );
 	
 // Custom Pagination
 require_once( SD_FRAMEWORK_INC . 'sd-theme-functions/sd-custom-pagination.php' );
@@ -286,7 +284,7 @@ if ( !function_exists( 'sd_custom_widgets_style' ) ) {
 	function sd_custom_widgets_style() {
     	echo '
 			 <style type="text/css">
-			div.widget[id*=_tweets_widget-] .widget-top, div.widget[id*=_popular_posts_widget-] .widget-top, div.widget[id*=_feedburner_widget-] .widget-top, div.widget[id*=_ads_widget-] .widget-top, div.widget[id*=_recent_comments_widget-] .widget-top, div.widget[id*=_opening_hours_widget-] .widget-top, div.widget[id*=_social_icons_widget-] .widget-top, div.widget[id*=_recent_posts_widget-] .widget-top, div.widget[id*=_flickr_widget-] .widget-top, div.widget[id*=_sd_tabbed_widget-] .widget-top, div.widget[id*=_sd_recent_events_widget-] .widget-top, div.widget[id*=_sd_amenities_widget-] .widget-top, div.widget[id*=_sd_trainers_widget-] .widget-top, div.widget[id*=_wcs3_today_classes_widget-] .widget-top {
+			div.widget[id*=_tweets_widget-] .widget-top, div.widget[id*=_popular_posts_widget-] .widget-top, div.widget[id*=_feedburner_widget-] .widget-top, div.widget[id*=_ads_widget-] .widget-top, div.widget[id*=_recent_comments_widget-] .widget-top, div.widget[id*=_opening_hours_widget-] .widget-top, div.widget[id*=_social_icons_widget-] .widget-top, div.widget[id*=_recent_posts_widget-] .widget-top, div.widget[id*=_sd_tabbed_widget-] .widget-top, div.widget[id*=_sd_recent_events_widget-] .widget-top, div.widget[id*=_sd_amenities_widget-] .widget-top, div.widget[id*=_sd_trainers_widget-] .widget-top, div.widget[id*=_wcs3_today_classes_widget-] .widget-top {
 	color: #00adee;
 	}
 			</style>
