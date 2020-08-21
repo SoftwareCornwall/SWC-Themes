@@ -65,3 +65,5 @@ include 'framework/inc/metabox/the-meta-boxes.php';
 }
 add_action('init', 'sd_load_meta_box_plugin');
 }
+
+?>
