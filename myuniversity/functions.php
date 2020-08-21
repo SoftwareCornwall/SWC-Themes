@@ -1,17 +1,4 @@
 <?php
-/**
- * remove the register link from the wp-login.php script belinda oct17
- */
-add_filter('option_users_can_register', function($value) {
-    $script = basename(parse_url($_SERVER['SCRIPT_NAME'], PHP_URL_PATH));
-
-    if ($script == 'wp-login.php') {
-        $value = false;
-    }
-
-    return $value;
-});
-
 
 /*-----------------------------------------------------------------------------------*/
 /* Define Theme Constants
@@ -39,9 +26,6 @@ load_theme_textdomain('sd-framework', $lang);
 // Enqueue JavaScripts & CSS
 require_once( SD_FRAMEWORK_INC . 'enqueue.php');
 
-// Theme Functions
-require_once( SD_FRAMEWORK_INC . 'sd-theme-functions/sd-functions.php' );
-
 // Include Widgets
 require_once( SD_FRAMEWORK_INC . 'widgets/widgets.php' );
 
@@ -66,16 +50,11 @@ include 'framework/inc/metabox/the-meta-boxes.php';
 add_action('init', 'sd_load_meta_box_plugin');
 }
 
-
-/* ------------------------------------------------------------------------ */
-/* SD Theme Functions FROM CHILD THEME
-/* ------------------------------------------------------------------------ */
 // Theme Menus
 require_once( SD_FRAMEWORK_INC . 'sd-theme-functions/sd-theme-menus.php' );
 	
 // Theme Sidebars
 require_once( SD_FRAMEWORK_INC . 'sd-theme-functions/sd-theme-sidebars.php' );
-	
 	
 // Custom Pagination
 require_once( SD_FRAMEWORK_INC . 'sd-theme-functions/sd-custom-pagination.php' );
@@ -86,8 +65,6 @@ require_once( SD_FRAMEWORK_INC . 'sd-theme-functions/sd-comments.php' );
 // Font Awesome Fonts Array
 require_once( SD_FRAMEWORK_INC . 'sd-theme-functions/sd-font-awesome.php' );
 
-
-
 // Add support for WP 2.9+ post thumbnails
 if ( function_exists( 'add_theme_support' ) ) { // Added in 2.9
 	add_theme_support( 'post-thumbnails' );
@@ -97,6 +74,17 @@ if ( function_exists( 'add_theme_support' ) ) { // Added in 2.9
 	add_image_size( 'recent-blog-widget', 100, 65, true ); // recent blog widget thumbs
 	add_image_size( 'latest-blog-sd', 370, 190, true ); // latest blog shortcode thumbs
 }
+
+// remove the register link from the wp-login.php script - belinda oct17
+add_filter('option_users_can_register', function($value) {
+    $script = basename(parse_url($_SERVER['SCRIPT_NAME'], PHP_URL_PATH));
+
+    if ($script == 'wp-login.php') {
+        $value = false;
+    }
+
+    return $value;
+});
 	
 // Add rel PrettyPhoto to images in post
 if ( !function_exists( 'sd_rel_prettyphoto' ) ) {
@@ -206,8 +194,7 @@ if ( !function_exists( 'sd_custom_widget_title' ) ) {
 
 	}
 	add_filter( 'widget_title', 'sd_custom_widget_title', 10, 3 );
-}
-	
+}	
 
 // Filter tag clould output so that it can be styled by CSS
 if ( !function_exists( 'sd_style_tag_cloud' ) ) {	
@@ -222,7 +209,6 @@ if ( !function_exists( 'sd_style_tag_cloud' ) ) {
 	}
  	add_action( 'wp_tag_cloud', 'sd_style_tag_cloud' );
 }
- 
 	
 // Remove width and height from featured images
 if ( !function_exists( 'sd_remove_width_height' ) ) {
@@ -235,7 +221,6 @@ if ( !function_exists( 'sd_remove_width_height' ) ) {
 }
  
 // Excerpt limit
-
 if ( !function_exists( 'sd_excerpt_more' ) ) {	
 	function sd_excerpt_length( $length ) {
 		
@@ -249,7 +234,6 @@ if ( !function_exists( 'sd_excerpt_more' ) ) {
 	}
 	add_filter( 'excerpt_length', 'sd_excerpt_length', 999 );
 }
-
 
 // Excerpt more
 if ( !function_exists( 'sd_excerpt_more' ) ) {	
@@ -277,7 +261,6 @@ if ( !function_exists( 'sd_new_excerpt_more' ) ) {
 	}
 	add_filter('excerpt_more', 'sd_new_excerpt_more');
 }
-// Exclude professors from tax archive
 
 // Custom styling of widget titles in widget panel
 if ( !function_exists( 'sd_custom_widgets_style' ) ) {
@@ -355,6 +338,5 @@ if ( !function_exists( 'sd_custom_css' ) ) {
 	}
 		add_action('wp_head', 'sd_custom_css');
 }
-
 
 ?>
