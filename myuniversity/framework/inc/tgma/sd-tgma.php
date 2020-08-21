@@ -47,16 +47,6 @@ if ( !function_exists( 'sd_required_plugins' ) ) {
 					'force_activation' 		=> false,
 					'force_deactivation' 	=> false,
 					'external_url' 			=> '',
-					),
-				array(
-					'name'     				=> 'Sidebar Generator',
-					'slug'     				=> 'smk-sidebar-generator',
-					'source'   				=> get_template_directory_uri() . '/framework/plugins/smk-sidebar-generator.zip',
-					'required' 				=> true,
-					'version' 				=> '',
-					'force_activation' 		=> false,
-					'force_deactivation' 	=> false,
-					'external_url' 			=> '',
 					)
 		);
 
