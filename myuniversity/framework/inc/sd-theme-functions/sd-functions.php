@@ -53,9 +53,6 @@ if ( !function_exists( 'sd_rel_prettyphoto' ) ) {
 
 	// Add feed links to header
 	add_theme_support( 'automatic-feed-links' );
-	
-	// Add post formats WP 3.1+
-	add_theme_support( 'post-formats', array( 'video', 'audio', 'gallery') );
 
 	// Run shortcodes in widgets
 	add_filter( 'widget_text', 'do_shortcode' );
