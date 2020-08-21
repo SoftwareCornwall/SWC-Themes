@@ -29,6 +29,21 @@ require_once( SD_FRAMEWORK_INC . 'enqueue.php');
 // Include Widgets
 require_once( SD_FRAMEWORK_INC . 'widgets/widgets.php' );
 
+// Theme Menus
+require_once( SD_FRAMEWORK_INC . 'sd-theme-functions/sd-theme-menus.php' );
+	
+// Theme Sidebars
+require_once( SD_FRAMEWORK_INC . 'sd-theme-functions/sd-theme-sidebars.php' );
+	
+// Custom Pagination
+require_once( SD_FRAMEWORK_INC . 'sd-theme-functions/sd-custom-pagination.php' );
+	
+// Custom Comments Callback
+require_once( SD_FRAMEWORK_INC . 'sd-theme-functions/sd-comments.php' );
+
+// Font Awesome Fonts Array
+require_once( SD_FRAMEWORK_INC . 'sd-theme-functions/sd-font-awesome.php' );
+
 // Redux Theme Options
 if ( !class_exists( 'ReduxFramework' ) && file_exists( dirname( __FILE__ ) . '/admin/ReduxCore/framework.php' ) ) {
 require_once( dirname( __FILE__ ) . '/admin/ReduxCore/framework.php' );
@@ -49,21 +64,6 @@ include 'framework/inc/metabox/the-meta-boxes.php';
 }
 add_action('init', 'sd_load_meta_box_plugin');
 }
-
-// Theme Menus
-require_once( SD_FRAMEWORK_INC . 'sd-theme-functions/sd-theme-menus.php' );
-	
-// Theme Sidebars
-require_once( SD_FRAMEWORK_INC . 'sd-theme-functions/sd-theme-sidebars.php' );
-	
-// Custom Pagination
-require_once( SD_FRAMEWORK_INC . 'sd-theme-functions/sd-custom-pagination.php' );
-	
-// Custom Comments Callback
-require_once( SD_FRAMEWORK_INC . 'sd-theme-functions/sd-comments.php' );
-
-// Font Awesome Fonts Array
-require_once( SD_FRAMEWORK_INC . 'sd-theme-functions/sd-font-awesome.php' );
 
 // Add support for WP 2.9+ post thumbnails
 if ( function_exists( 'add_theme_support' ) ) { // Added in 2.9
