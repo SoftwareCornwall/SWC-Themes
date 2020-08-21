@@ -1,8 +1,6 @@
 # Software Cornwall Wordpress Themes
 
-The WordPress theme for the Software Cornwall website. Inclded in this repository is the parent theme and the child. 
-
-Wherever possible, edits should be made to the child theme, which is the active theme on the website.
+The WordPress theme for the Software Cornwall website, with updates to remove plugin dependencies and unused theme features.
 
 ## Using this code
 
