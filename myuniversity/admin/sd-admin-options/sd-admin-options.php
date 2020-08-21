@@ -298,25 +298,6 @@ if (!class_exists('SD_Redux_Framework_config')) {
 					,
 				)
 			);
-            
-			$this->sections[] = array(
-                'title'     => __('Homepage', 'sd-framework'),
-                'desc'      => '',
-                'icon'      => 'el-icon-home',
-                'fields'    => array(
-				
-					array(
-                        'id'        => 'sd_home_slider',
-                        'type'      => 'switch',
-                        'title'     => __('Homepage Slider', 'sd-framework'),
-                        'subtitle'  => __('Enable or disable the homepage slider.', 'sd-framework'),
-						'desc'  => __('Make sure that the slider\'s alias is "homeslider".', 'sd-framework'),
-                        'default'   => false,
-						'on'        => __('Enabled', 'sd-framework'),
-                        'off'       => __('Disabled', 'sd-framework')
-                    ),
-				)
-			);
            
 			$this->sections[] = array(
                 'title'     => __('Header', 'sd-framework'),
