@@ -10,7 +10,6 @@ if ( !function_exists( 'sd_jquery_scripts' ) ) {
 		/* ------------------------------------------------------------------------ */
 		wp_register_script( 'sd-pretty-photo', SD_FRAMEWORK_JS . 'prettyphoto.js', false, '', true );
 		wp_register_script( 'flexslider', SD_FRAMEWORK_JS . 'flexslider.js', false, '', true );
-		wp_register_script( 'sd-isotope', SD_FRAMEWORK_JS . 'isotope.js', false, '', true );
 		wp_register_script( 'sd-custom', SD_FRAMEWORK_JS . 'custom.js', false, '', true );
 		wp_register_script( 'sd-tabs', SD_FRAMEWORK_JS . 'sd-tabs.js', false, '', true );
 		wp_register_script( 'sd-gmap', '//maps.google.com/maps/api/js?sensor=false', false, '', false );
@@ -23,9 +22,6 @@ if ( !function_exists( 'sd_jquery_scripts' ) ) {
 		wp_enqueue_script( 'flexslider' );
 		wp_enqueue_script( 'sd-gmap' );
 		wp_enqueue_script( 'sd-custom' );
-		if ( is_page_template( 'professors.php' ) ) {
-			wp_enqueue_script( 'sd-isotope' );
-		}
 		wp_localize_script( 'sd-custom', 'sd_advanced_search_var', array(
 				'attr' => __( 'Keywords', 'sd-framework' )
 			)
