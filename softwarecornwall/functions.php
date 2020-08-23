@@ -223,14 +223,7 @@ if ( !function_exists( 'sd_remove_width_height' ) ) {
 // Excerpt limit
 if ( !function_exists( 'sd_excerpt_more' ) ) {	
 	function sd_excerpt_length( $length ) {
-		
-		global $post;
-	
-		if ( get_post_type( $post ) == 'professors' ) {
-		    return 13;
-		} else {
-			return 50;
-		}
+		return 50;
 	}
 	add_filter( 'excerpt_length', 'sd_excerpt_length', 999 );
 }
@@ -238,18 +231,7 @@ if ( !function_exists( 'sd_excerpt_more' ) ) {
 // Excerpt more
 if ( !function_exists( 'sd_excerpt_more' ) ) {	
 	function sd_excerpt_more($output) {
-		
-		global $post;
-		
-		if ( get_post_type( $post ) == 'professors' ) {
-		    return $output . '<p><a class="more-link" href="'. get_permalink( get_the_ID() ) . '#more-' . get_the_ID() . '">' . __('View Member', 'sd-framework') . '</a></p>';
-		} elseif ( get_post_type( $post ) == 'events' ) {
-			return $output . '<p><a class="more-link" href="'. get_permalink( get_the_ID() ) . '#more-' . get_the_ID() . '">' . __('View Event', 'sd-framework') . '</a></p>';
-		} elseif ( get_post_type( $post ) == 'courses' ) {
-			return $output . '<p><a class="more-link" href="'. get_permalink( get_the_ID() ) . '#more-' . get_the_ID() . '">' . __('View Course', 'sd-framework') . '</a></p>';
-		} else {
-			return $output . '<p><a class="more-link" href="'. get_permalink( get_the_ID() ) . '#more-' . get_the_ID() . '">' . __('Read More', 'sd-framework') . '</a></p>';
-		}
+		return $output . '<p><a class="more-link" href="'. get_permalink( get_the_ID() ) . '#more-' . get_the_ID() . '">' . __('Read More', 'sd-framework') . '</a></p>';
 	}
 	add_filter('get_the_excerpt', 'sd_excerpt_more');
 }

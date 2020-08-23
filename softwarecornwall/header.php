@@ -127,10 +127,3 @@ global $sd_data;
 
 <?php get_template_part( 'framework/inc/page-top' ); ?>
 
-<?php 
-if ( $sd_data['sd_search_courses'] == '1' ) {
-	if ( !is_page_template( 'blog.php' ) && !is_singular( 'post ') && is_singular( 'professors ' && is_singular( 'page' ) ) ) {
-		get_template_part( 'framework/inc/search-courses' );
-	}
-}
-?>

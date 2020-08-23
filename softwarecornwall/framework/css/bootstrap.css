@@ -1323,9 +1323,7 @@ pre code {
   .sd-icon-tabs .sd-tab-titles a {
 	  padding: 0 30px 20px !important;
   }
-  .sd-professor-item {
-		height: 560px !important;  
-  }
+
   .sd-header-social li a {
 		width: 34px !important;
   }
@@ -1463,42 +1461,12 @@ pre code {
 		border: 1px solid #dcdcdc !important;	
 		padding: 10px;
 	}
-	.sd-staff-short h3,
-	.sd-staff-short span {
-		text-align: center;
-		width: 100%;	
-	}
-	.sd-staff-short span {
-		display: block;
-		margin-bottom: 20px;
-	}
-	.sd-staff-short img {
-		margin-bottom: 20px;	
-	}
-	.sd-staff-short .col-sm-4 {
-		text-align: center;	
-	}
-	.sd-staff-short ul {
-		text-align: center;
-		width: 100%;
-	}
 	.sd-pagination  {
 		margin-bottom: 30px;	
 	}
 	.sd-prev-post a,
 	.sd-next-post a {
 		padding: 15px !important;	
-	}
-	.sd-professor-item {
-		height: auto !important;
-	}
-	.sd-professor-item figure img {
-		height: auto;
-		width: 100%;
-	}
-	.sd-professors-filters ul {
-		padding: 0;
-		text-align: center !important;
 	}
 	.sd-twitter-feed {
 		padding: 10px 0 !important;	
