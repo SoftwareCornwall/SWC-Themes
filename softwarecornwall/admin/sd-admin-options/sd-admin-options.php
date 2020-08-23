@@ -990,13 +990,7 @@ if (!class_exists('SD_Redux_Framework_config')) {
 						'desc'					=> __( 'Default is #0191c6', 'sd-framework' ),
 						'transparent'			=> false,
 						'compiler' 				=> array( 'background-color' => '.sf-menu li li a:hover, .sf-menu li li.sfHover > a, .sf-menu li li.sfHover li a:hover, #sd-main-menu .sd-megamenu .sfHover a:hover')
-					),
-					array(
-                            'id'   => 'sd_search_box_styling_info',
-                            'type' => 'info',
-                            'desc' => __( 'Courses Search Box Styling', 'sd-framework' )
-                     ),
-					 
+					), 
 					array(
                             'id'   => 'sd_newsletter_styling_info',
                             'type' => 'info',
