@@ -11,17 +11,20 @@ global $sd_data;
 	<div class="container">
 
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-10 col-md-offset-1">
 				<h2 style="text-align: center; color: #2c448c;"><strong>Welcome to Cornwall's Tech Community</strong></h2>
 				<p>Software Cornwall represents one of the <strong><a href="https://www.softwarecornwall.org/reports/">fastest growing tech clusters in the UK</a></strong>.  Software Cornwall connects, promotes, represents and supports Cornwall's digital tech community.  We aim to be the best way for you to plug in to our fast-growing community.</p>
 				<p><a href="https://www.softwarecornwall.org/register/">Run a tech business in Cornwall? - Join our tech community</a>, promote your business, <a href="https://www.softwarecornwall.org/jobs-2/">recruit</a> and support tech education in Cornwall.  <a href="https://www.softwarecornwall.org/student-membership/">Student membership</a> is free, we are always pleased to welcome volunteers, and discuss opportunities for collaboration.  Software Cornwall is a Not for Profit funded by membership.  Explore Career Pathways into tech careers here in Cornwall - Find out more about<a href="https://www.softwarecornwall.org/learn-to-code-2/"> career pathways and our education support programmes</a> , visit our <a href="https://www.softwarecornwall.org/jobs-2/">jobs board</a> for the latest opportunities to join our tech community, submit your CV to our members via our <a href="https://www.softwarecornwall.org/submit-resume/">CV Bank</a></p>
 			</div>
-			<div class="col-md-12">
+		</div>
+	</div>
+	<div style="background-color: #fff;">
+		<div class="container">
+			<div class="row">
+			<div class="col-md-12" style="padding: 6rem 0;">
 				<h2 style="text-align: center;"><strong>Latest </strong><span class="sd-light">News</span></h2>
 				<h3 style="text-align: center;"><strong><span class="sd-colored sd-light"><a href="https://www.softwarecornwall.org/news/">find out more about our community</a><br /></span></strong></h3>					
 			</div>
-
-
 			<?php 
 			// Get the Six latests posts and loop
 			$the_query = new WP_Query( 'posts_per_page=6' ); 
@@ -52,7 +55,11 @@ global $sd_data;
 			endwhile;
 			wp_reset_postdata();
 			?>
-
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
 			<div class="col-md-12">
 				<h2 style="text-align: center;"><strong>Latest </strong><span class="sd-light">Jobs</span></h2>
 				<h3 style="text-align: center;"><a href="https://www.softwarecornwall.org/jobs-2/"><strong><span class="sd-colored sd-light">Join teams in our community</span></strong></a></h3>
