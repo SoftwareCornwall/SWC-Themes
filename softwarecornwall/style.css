@@ -326,7 +326,7 @@ ol li ol li {
 
 #sd-header {
 	background-color: #fff;
-	height: 135px;
+	min-height: 135px;
 	width: 100%;
 }
 /* header top */
