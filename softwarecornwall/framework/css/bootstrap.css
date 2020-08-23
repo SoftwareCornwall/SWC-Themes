@@ -1288,12 +1288,6 @@ pre code {
    .wp-advanced-search {
 	  overflow: visible !important;
    }
-
-  .sd-search-courses h2 {
-	  margin-bottom: 20px !important;
-	  text-align: center;
-	  width: 100%;
-  }
   .wpas-field {
 	  margin-bottom: 10px;
   }
@@ -1309,11 +1303,6 @@ pre code {
 }
 /* tablet landscape */
 @media (min-width: 992px) and (max-width: 1199px) {
-  .sd-search-courses h2 {
-	  margin-bottom: 20px !important;
-	  text-align: center;
-	  width: 100%;
-  }
   .wp-advanced-search {
 	  overflow: visible !important;
    }
@@ -1384,11 +1373,6 @@ pre code {
 	}
 	.wp-advanced-search {
 		overflow: visible !important;	
-	}
-	.sd-search-courses h2 {
-		margin-bottom: 20px !important;
-		text-align: center;
-		width: 100%;
 	}
 	.wpas-field {
 		margin: 0 0 10px !important;

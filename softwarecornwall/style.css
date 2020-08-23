@@ -880,83 +880,6 @@ ol li ol li {
 	padding-bottom: 0;
 }
 /* ------------------------------------------------------------------------ */
-/* 06. Search Course
-/* ------------------------------------------------------------------------ */
-
-.sd-search-courses {
-	background-color: #0191c6;
-	padding: 25px 0 20px;
-}
-.sd-search-courses h2 {
-	color: #fff;
-	float: left;
-	font-size: 27px;
-	font-weight: 400;
-	margin: 0;
-	padding: 0;
-}
-.wp-advanced-search {
-	overflow: hidden;
-}
-.wpas-field {
-	float: left;
-	margin: 0 0 5px 10px;
-	position: relative;
-}
-.wpas-select option {
-	margin: 0 -5px;
-	padding: 5px 10px;
-	-moz-box-sizing: border-box;
-		 box-sizing: border-box;
-}
-.customSelect,
-.wpas-text {
-	background-color: #fff;
-	border: none;
-	border-radius: 0;
-	color: #7e7e7f;
-	font-size: 14px;
-	height: 38px;
-	line-height: 38px;
-	padding: 0 10px;
-	-moz-box-sizing: border-box;
-		 box-sizing: border-box;
-}
-.wpas-text {
-	line-height: normal;	
-}
-.customSelect:after {
-	content: '';
-	position: absolute;
-	border-style: solid;
-	border-width: 5px 5px 0 5px;
-	border-color: #797979 transparent transparent;
-	height: 0px;
-	margin-top: -2.5px;
-	right: 10px;
-	top: 50%;
-	width: 0px;
-}
-.wpas-submit input {
-	background-color: #2a2e30;
-	border: none;
-	border-radius: 0;
-	color: #fff;
-	font-size: 14px;
-	font-weight: 700;
-	height: 38px;
-	line-height: 19px;
-	margin-left: 0;
-	padding: 10px 20px;
-}
-.wpas-select {
-	cursor: pointer;
-	overflow: hidden;
-}
-.page-template-courses-php .vc_row-fluid {
-	display: none;
-}
-/* ------------------------------------------------------------------------ */
 /* 07. Content
 /* ------------------------------------------------------------------------ */
 
@@ -1101,37 +1024,6 @@ ol li ol li {
 }
 .sd-entry-gallery .flex-direction-nav a {
 	text-align: center;	
-}
-/* course meta */
-
-.sd-course-meta i {
-	color: #bfbfbf;
-}
-.sd-course-meta {
-	border: none;
-	font-size: 14px;
-	font-weight: bold;
-	margin-top: 30px;
-}
-.sd-professors-icon {
-	margin-right: 3px !important;	
-}
-.sd-professor-name {
-	margin-right: 3px !important;	
-}
-.sd-professor-name:after {
-	content: ', ';
-}
-.sd-entry-meta ul .sd-professor-name:last-child:after {
-	display: none;	
-}
-/* course entry */
-
-.sd-course-entry .sd-entry-title {
-	border-bottom: 1px solid #dcdcdc;
-	font-size: 24px;
-	margin-bottom: 30px;
-	padding-bottom: 20px;
 }
 
 /* ------------------------------------------------------------------------ */
