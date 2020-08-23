@@ -1,6 +1,6 @@
-# Software Cornwall Wordpress Themes
+# Software Cornwall Wordpress Theme
 
-The WordPress theme for the Software Cornwall website, with updates to remove plugin dependencies and unused theme features.
+The WordPress theme for the Software Cornwall website, with 2020 updates to remove plugin dependencies and unused theme features.
 
 ## Using this code
 
