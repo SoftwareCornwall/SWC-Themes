@@ -321,4 +321,10 @@ function software_cornwall_admin_bar_render() {
 }
 add_action( 'wp_before_admin_bar_render', 'software_cornwall_admin_bar_render' );
 
+// Remove WordPress Emoji from the markup. No comments, no emoji needed
+remove_action('wp_head', 'print_emoji_detection_script', 7);
+remove_action('wp_print_styles', 'print_emoji_styles');
+remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+remove_action( 'admin_print_styles', 'print_emoji_styles' );
+
 ?>
