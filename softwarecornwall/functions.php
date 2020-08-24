@@ -301,7 +301,7 @@ if ( !function_exists( 'sd_custom_css' ) ) {
 function modify_footer_admin () {
 	echo 'Created by <a href="https://tonyedwardspz.co.uk">Tony Edwards</a> | ';
 	echo 'For <a href="https://softwarecornwall.org">Software Cornwall</a> | ';
-	echo 'Powered by<a href="http://WordPress.org">WordPress</a>';
+	echo 'Powered by <a href="http://WordPress.org">WordPress</a>';
 }
 add_filter('admin_footer_text', 'modify_footer_admin');
 

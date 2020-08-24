@@ -41,8 +41,6 @@ global $sd_data;
 							}
 ?>
 </title>
-<link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 <!-- Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. -->
 <!--[if lt IE 9]>
