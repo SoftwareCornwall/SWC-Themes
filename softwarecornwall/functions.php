@@ -86,19 +86,6 @@ add_filter('option_users_can_register', function($value) {
     return $value;
 });
 	
-// Add rel PrettyPhoto to images in post
-if ( !function_exists( 'sd_rel_prettyphoto' ) ) {
-	function sd_rel_prettyphoto( $content ) {
-		global $post;
-	
-		$pattern ="/<a(.*?)href=('|\")(.*?).(bmp|gif|jpeg|jpg|png)('|\")(.*?)>/i";
-		$replacement = '<a$1href=$2$3.$4$5 rel="PrettyPhoto[' . $post->ID . ']"$6>';
-		$content = preg_replace( $pattern, $replacement, $content );
-
-		return $content;
-	}
-	add_filter( 'the_content', 'sd_rel_prettyphoto' );
-}
 
 	// Add feed links to header
 	add_theme_support( 'automatic-feed-links' );
@@ -256,15 +243,6 @@ if ( !function_exists( 'sd_custom_widgets_style' ) ) {
 ';
 	}
 	add_action('admin_print_styles-widgets.php', 'sd_custom_widgets_style');
-}
-	
-// Add PrettyPhoto rel to flexslider
-if ( !function_exists( 'sd_prettphoto' ) ) {
-	function sd_prettphoto ( $content ) {
-		$content = preg_replace( "/<a/","<a rel=\"prettyPhoto[flexslider]\"", $content, 1 );
-		return $content;
-	}
-	add_filter( 'wp_get_attachment_link', 'sd_prettphoto' );
 }
 	
 // Alter Author Contact Fields
