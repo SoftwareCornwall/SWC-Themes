@@ -14,7 +14,6 @@ if (!class_exists('SD_Redux_Framework_config')) {
         public $ReduxFramework;
 
         public function __construct() {
-
             if (!class_exists('ReduxFramework')) {
                 return;
             }
@@ -115,26 +114,20 @@ if (!class_exists('SD_Redux_Framework_config')) {
             return $sections;
         }
 
-        /**
-          Filter hook for filtering the args. Good for child themes to override or add to the args array. Can also be used in other functions.
-         * */
+        //  Filter hook for filtering the args. Good for child themes to override or add to the args array. Can also be used in other functions.
         function change_arguments($args) {
             //$args['dev_mode'] = true;
             return $args;
         }
 
-        /**
-          Filter hook for filtering the default value of any given field. Very useful in development mode.
-         * */
+        //Filter hook for filtering the default value of any given field. Very useful in development mode.
         function change_defaults($defaults) {
             $defaults['str_replace'] = 'Testing filter hook!';
-
             return $defaults;
         }
 
         // Remove the demo link and the notice of integrated demo from the redux-framework plugin
         function remove_demo() {
-
             // Used to hide the demo mode link from the plugin page. Only used when Redux is a plugin.
             if (class_exists('ReduxFrameworkPlugin')) {
                 remove_filter('plugin_row_meta', array(ReduxFrameworkPlugin::instance(), 'plugin_metalinks'), null, 2);
@@ -145,9 +138,7 @@ if (!class_exists('SD_Redux_Framework_config')) {
         }
 
         public function setSections() {
-            /**
-              Used within different fields. Simply examples. Search for ACTUAL DECLARATION for field examples
-             * */
+            /** Used within different fields. Simply examples. Search for ACTUAL DECLARATION for field examples **/
             // SD assets location
 			$sd_assets_url  = ReduxFramework::$_url . '../sd-assets/';
 
@@ -278,8 +269,7 @@ if (!class_exists('SD_Redux_Framework_config')) {
                             'subtitle' => __( 'Previous posts button text.', 'sd-framework' ),
                             'default'  => 'Previous Posts',
 							'required'  => array('sd_pagination_type', "=", 1)
-                        )
-					,
+                        ),
 				)
 			);
            
@@ -287,8 +277,7 @@ if (!class_exists('SD_Redux_Framework_config')) {
                 'title'     => __('Header', 'sd-framework'),
                 'desc'      => '',
                 'icon'      => 'el-icon-minus',
-                'fields'    => array(
-				
+                'fields'    => array(		
 					array(
                         'id'            => 'sd_header_height',
                         'type'          => 'dimensions',
@@ -473,7 +462,6 @@ if (!class_exists('SD_Redux_Framework_config')) {
                     ),
 				)
 			);
-			
 			
 			$this->sections[] = array(
                 'title'     => __('Blog', 'sd-framework'),
@@ -809,7 +797,6 @@ if (!class_exists('SD_Redux_Framework_config')) {
                 'desc'      => '',
                 'icon'      => 'el-icon-brush',
                 'fields'    => array(
-				
 					array(
 						'id'					=> 'sd_theme_overall',
 						'type'					=> 'color',
@@ -1244,7 +1231,6 @@ if (!class_exists('SD_Redux_Framework_config')) {
                         ),	
 				)
 			);
-            
 
             $this->sections[] = array(
                 'title'     => __('404 Page', 'sd-framework'),
@@ -1313,36 +1299,29 @@ if (!class_exists('SD_Redux_Framework_config')) {
                     ),	
 				),
             );
-     
         }
 
         public function setHelpTabs() {
-
             // Custom page help tabs, displayed using the help API. Tabs are shown in order of definition.
             $this->args['help_tabs'][] = array(
                 'id'        => 'redux-help-tab-1',
                 'title'     => __('Theme Information 1', 'sd-framework'),
                 'content'   => __('<p>This is the tab content, HTML is allowed.</p>', 'sd-framework')
             );
-
             $this->args['help_tabs'][] = array(
                 'id'        => 'redux-help-tab-2',
                 'title'     => __('Theme Information 2', 'sd-framework'),
                 'content'   => __('<p>This is the tab content, HTML is allowed.</p>', 'sd-framework')
             );
-
             // Set the help sidebar
             $this->args['help_sidebar'] = __('<p>This is the sidebar content, HTML is allowed.</p>', 'sd-framework');
         }
 
         /**
-
           All the possible arguments for Redux.
           For full documentation on arguments, please refer to: https://github.com/ReduxFramework/ReduxFramework/wiki/Arguments
-
          * */
         public function setArguments() {
-
             $theme = wp_get_theme(); // For use with some settings. Not necessary.
 
             $this->args = array(
@@ -1420,7 +1399,6 @@ if (!class_exists('SD_Redux_Framework_config')) {
                 )
             );
 
-
             // SOCIAL ICONS -> Setup custom links in the footer for quick links in your panel footer icons.
             $this->args['share_icons'][] = array(
                 'url'   => 'https://www.facebook.com/skatdesign',
@@ -1431,18 +1409,14 @@ if (!class_exists('SD_Redux_Framework_config')) {
                 'url'   => 'http://twitter.com/skatdesign',
                 'title' => 'Follow us on Twitter',
                 'icon'  => 'el-icon-twitter'
-            );
-			
+            );	
 			$this->args['share_icons'][] = array(
                 'url'   => 'http://youtube.com/zabestof',
                 'title' => 'Subscribe on Youtube',
                 'icon'  => 'el-icon-youtube'
             );
-
         }
-
     }
-    
     global $reduxConfig;
     $reduxConfig = new SD_Redux_Framework_config();
 }
@@ -1461,22 +1435,17 @@ endif;
 // add font awesome to redux
 if (!function_exists('sd_redux_font_awesome')) {
 	function sd_redux_font_awesome() {
-    		// Uncomment this to remove elusive icon from the panel completely
-		    //wp_deregister_style( 'redux-elusive-icon' );
-		    //wp_deregister_style( 'redux-elusive-icon-ie7' );
- 
-    		wp_register_style(
-	        	'sd-redux-font-awesome',
-		        get_template_directory_uri() . '/framework/css/font-awesome.css',
-        		array(),
-			    time(),
-        		'all'
-		    ); 
-		    wp_enqueue_style( 'sd-redux-font-awesome' );
-		}
+		wp_register_style(
+			'sd-redux-font-awesome',
+			get_template_directory_uri() . '/framework/css/font-awesome.css',
+			array(),
+			time(),
+			'all'
+		); 
+		wp_enqueue_style( 'sd-redux-font-awesome' );
+	}
 }
-		
-		add_action( 'redux/page/sd_data/enqueue', 'sd_redux_font_awesome' );
+add_action( 'redux/page/sd_data/enqueue', 'sd_redux_font_awesome' );
 
 /**
   Custom function for the callback validation referenced above
@@ -1485,18 +1454,6 @@ if (!function_exists('redux_validate_callback_function')):
     function redux_validate_callback_function($field, $value, $existing_value) {
         $error = false;
         $value = 'just testing';
-
-        /*
-          do your validation
-
-          if(something) {
-            $value = $value;
-          } elseif(something else) {
-            $error = true;
-            $value = $existing_value;
-            $field['msg'] = 'your custom error message';
-          }
-         */
 
         $return['value'] = $value;
         if ($error == true) {

@@ -65,15 +65,13 @@ if ( !function_exists( 'sd_load_meta_box_plugin' ) ) {
 	add_action('init', 'sd_load_meta_box_plugin');
 }
 
-// Add support for WP 2.9+ post thumbnails
-if ( function_exists( 'add_theme_support' ) ) { // Added in 2.9
-	add_theme_support( 'post-thumbnails' );
-	set_post_thumbnail_size( 189, 189, true ); // default Post Thumbnail dimensions
-	add_image_size( 'blog-thumbs', 770, 400, true ); // blog thumbs
-	add_image_size( 'recent-blog-widget', 100, 65, true ); // recent blog widget thumbs
-}
+// Sets up theme default image sizes, and removes a couple for luck
+add_theme_support( 'post-thumbnails' );
+add_image_size( 'blog-thumbs', 770, 400, true ); // blog thumbs
+remove_image_size( '1536x1536' );
+remove_image_size( '2048x2048' );
 
-// remove the register link from the wp-login.php script - belinda oct17
+// Removes the register link from the login page
 add_filter('option_users_can_register', function($value) {
     $script = basename(parse_url($_SERVER['SCRIPT_NAME'], PHP_URL_PATH));
     if ($script == 'wp-login.php') {
@@ -109,7 +107,7 @@ if ( !function_exists( 'sd_custom_login_logo' ) ) {
 		<?php 
 		}
 	}
-add_action( 'login_enqueue_scripts', 'sd_custom_login_logo' );
+	add_action( 'login_enqueue_scripts', 'sd_custom_login_logo' );
 }
 
 // Custom admin logo url
@@ -159,7 +157,7 @@ if ( !function_exists( 'sd_half_title' ) ) {
 	}
 }
 	
-// Chamge Widget Title
+// Change Widget Title
 if ( !function_exists( 'sd_custom_widget_title' ) ) {	
 	function sd_custom_widget_title( $title ){
 		return sd_half_title( $title );
@@ -167,7 +165,7 @@ if ( !function_exists( 'sd_custom_widget_title' ) ) {
 	add_filter( 'widget_title', 'sd_custom_widget_title', 10, 3 );
 }	
 
-// Filter tag clould output so that it can be styled by CSS
+// Filter tag cloud output so that it can be styled by CSS
 if ( !function_exists( 'sd_style_tag_cloud' ) ) {	
 	function sd_style_tag_cloud( $tags ) {
 	    $tags = preg_replace_callback( "|(class='tag-link-[0-9]+)('.*?)(style='font-size: )([0-9]+)(pt;')|",
@@ -279,7 +277,7 @@ if ( !function_exists( 'sd_custom_css' ) ) {
 
 // Add custom footer to the admin area
 function modify_footer_admin () {
-	echo 'Created by <a href="https://tonyedwardspz.co.uk">Tony Edwards</a> | ';
+	echo 'Developed by <a href="https://tonyedwardspz.co.uk">Tony Edwards</a> | ';
 	echo 'For <a href="https://softwarecornwall.org">Software Cornwall</a> | ';
 	echo 'Based on a theme by <a href="http://www.skat.tf/redirect/?theme=myuniversity">SKAT Design</a> | ';
 	echo 'Powered by <a href="http://WordPress.org">WordPress</a>';
@@ -334,4 +332,10 @@ remove_action( 'wp_head', 'wp_shortlink_wp_head');
 remove_action('wp_head', 'rest_output_link_wp_head', 10);
 remove_action('wp_head', 'wp_oembed_add_discovery_links', 10);
 remove_action('template_redirect', 'rest_output_link_header', 11, 0);
+
+// disable srcset on frontend
+function disable_wp_responsive_images() {
+	return 1;
+}
+add_filter('max_srcset_image_width', 'disable_wp_responsive_images');
 ?>
