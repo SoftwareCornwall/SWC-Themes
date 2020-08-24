@@ -25,7 +25,6 @@ if (!class_exists('SD_Redux_Framework_config')) {
             } else {
                 add_action('plugins_loaded', array($this, 'initSettings'), 10);
             }
-
         }
 
         public function initSettings() {
@@ -67,16 +66,13 @@ if (!class_exists('SD_Redux_Framework_config')) {
             $this->ReduxFramework = new ReduxFramework($this->sections, $this->args);
         }
         /**
-
           This is a test function that will let you see when the compiler hook occurs.
           It only runs if a field	set with compiler=>true is changed.
-
          * */
         function compiler_action($options, $css) {
             //echo '<h1>The compiler hook has run!';
             //print_r($options); //Option values
             //print_r($css); // Compiler selector CSS values  compiler => array( CSS SELECTORS )
-
             
               // Demo of how to use the dynamic CSS and write your own static CSS file
               $filename = dirname(__FILE__) . '/custom-styles' . '.css';
@@ -92,8 +88,7 @@ if (!class_exists('SD_Redux_Framework_config')) {
                     $css,
                     FS_CHMOD_FILE // predefined mode settings for WP files
                 );
-              }
-            
+              }    
         }
 		
 		public function sd_redux_styles() {
@@ -102,13 +97,11 @@ if (!class_exists('SD_Redux_Framework_config')) {
 		}
 		
         /**
-
           Custom function for filtering the sections array. Good for child themes to override or add to the sections.
           Simply include this function in the child themes functions.php file.
 
           NOTE: the defined constants for URLs, and directories will NOT be available at this point in a child theme,
           so you must use get_template_directory_uri() if you want to use any of the built in icons
-
          * */
         function dynamic_section($sections) {
             //$sections = array();
@@ -119,25 +112,19 @@ if (!class_exists('SD_Redux_Framework_config')) {
                 // Leave this as a blank section, no options just some intro text set above.
                 'fields' => array()
             );
-
             return $sections;
         }
 
         /**
-
           Filter hook for filtering the args. Good for child themes to override or add to the args array. Can also be used in other functions.
-
          * */
         function change_arguments($args) {
             //$args['dev_mode'] = true;
-
             return $args;
         }
 
         /**
-
           Filter hook for filtering the default value of any given field. Very useful in development mode.
-
          * */
         function change_defaults($defaults) {
             $defaults['str_replace'] = 'Testing filter hook!';
@@ -219,17 +206,14 @@ if (!class_exists('SD_Redux_Framework_config')) {
                 }
                 $sampleHTML = $wp_filesystem->get_contents(dirname(__FILE__) . '/info-html.html');
             }
-			
-			
-			
+
 			//Default RSS URL
 			$sd_default_feed = get_bloginfo('rss2_url');
 			
 			//Customize course fields names
 			$sd_all_data = get_option('sd_data');
 
-            // ACTUAL DECLARATION OF SECTIONS
-			
+            // ACTUAL DECLARATION OF SECTIONS	
 			$this->sections[] = array(
                 'icon'      => 'el-icon-cogs',
                 'title'     => __('General', 'sd-framework'),
@@ -487,7 +471,6 @@ if (!class_exists('SD_Redux_Framework_config')) {
 						'mode'			=> 'margin',
 						'units'    		=> array('px')
                     ),
-				
 				)
 			);
 			
@@ -1258,8 +1241,7 @@ if (!class_exists('SD_Redux_Framework_config')) {
                             'mode'     => 'css',
                             'theme'    => 'chrome',
 							'options'  => array( 'minLines'=> 50 ),
-                        ),
-				
+                        ),	
 				)
 			);
             
@@ -1331,12 +1313,7 @@ if (!class_exists('SD_Redux_Framework_config')) {
                     ),	
 				),
             );
-            
-            
-
-                            
-                    
-            
+     
         }
 
         public function setHelpTabs() {
