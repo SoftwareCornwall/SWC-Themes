@@ -302,7 +302,6 @@ if ( !function_exists( 'sd_custom_css' ) ) {
 		global $sd_data;
 		
 		$output = '';
-		
 		$custom_css = ( !empty($sd_data['sd_custom_css']) ? $sd_data['sd_custom_css'] : '');
 		
 		if ($custom_css <> '') {
@@ -310,15 +309,19 @@ if ( !function_exists( 'sd_custom_css' ) ) {
 		}
 		
 		// Output styles
-		
 		if ($output <> '') {
-
-			$output = "\n<!-- Custom Styling -->\n<style type=\"text/css\">\n" . $output . "</style>\n";
-
-			echo $output;
+			echo "\n<!-- Custom Styling -->\n<style type=\"text/css\">\n" . $output . "</style>\n";
 		}
 	}
 		add_action('wp_head', 'sd_custom_css');
 }
+
+// Add custom footer to the admin area
+function modify_footer_admin () {
+	echo 'Created by <a href="https://tonyedwardspz.co.uk">Tony Edwards</a> | ';
+	echo 'For <a href="https://softwarecornwall.org">Software Cornwall</a> | ';
+	echo 'Powered by<a href="http://WordPress.org">WordPress</a>';
+}
+add_filter('admin_footer_text', 'modify_footer_admin');
 
 ?>
