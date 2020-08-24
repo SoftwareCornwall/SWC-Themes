@@ -12,7 +12,7 @@ global $sd_data;
 		<div class="sd-entry-gallery">
 			<div class="flexslider">
 				<ul class="slides">
-					<?php $sd_layout = $sd_data['sd_events_layout'];  $feat_img_size = ( ( $sd_layout == '2' ) ? 'large-blog-thumbs' : 'blog-thumbs' ); ?>
+					<?php $sd_layout = $sd_data['sd_events_layout'];  $feat_img_size = ( ( $sd_layout == '2' ) ? 'large-post-image' : 'post-image' ); ?>
 					<?php if ($images = get_children( array( 'post_parent' => get_the_ID(), 'post_type' => 'attachment', 'post_mime_type' => 'image' ) ) ) : ?>
 					<?php foreach( $images as $image ) :  ?>
 					<li>

@@ -45,7 +45,7 @@ class sd_popular_posts_widget extends WP_Widget {
 			<?php if (  ( function_exists( 'has_post_thumbnail' ) ) && ( has_post_thumbnail() )  ) : ?>
 			<div class="sd-recent-widget-thumb">
 				<figure>
-					<?php the_post_thumbnail( 'thumb' ); ?>
+					<?php the_post_thumbnail( 'thumbnail' ); ?>
 				</figure>
 			</div>
 			<?php endif; ?>

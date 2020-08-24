@@ -18,7 +18,7 @@ global $sd_data;
 		<?php if ( ( function_exists( 'has_post_thumbnail' ) ) && ( has_post_thumbnail() ) ) : ?>
 		<div class="sd-entry-thumb">
 			<figure>
-				<?php $sd_layout = $sd_data['sd_blog_layout'];  $feat_img_size = ( ( $sd_layout == '2' ) ? 'large-blog-thumbs' : 'blog-thumbs' ); ?>
+				<?php $sd_layout = $sd_data['sd_blog_layout'];  $feat_img_size = ( ( $sd_layout == '2' ) ? 'large-post-image' : 'post-image' ); ?>
 				<?php the_post_thumbnail( $feat_img_size ); ?>
 			</figure>
 		</div>

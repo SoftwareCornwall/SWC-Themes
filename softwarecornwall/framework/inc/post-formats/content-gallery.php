@@ -23,7 +23,7 @@ global $sd_data;
 					<?php if ( $images = get_children( array( 'post_parent' => get_the_ID(), 'post_type' => 'attachment', 'post_mime_type' => 'image' ) ) ) : ?>
 					<?php foreach( $images as $image ) :  ?>
 					<li><a href="<?php the_permalink(); ?>" title="<?php printf( __( 'Permalink to %s', 'sd-framework' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
-						<figure><?php echo wp_get_attachment_image( $image->ID, 'blog-thumbs' ); ?></figure>
+						<figure><?php echo wp_get_attachment_image( $image->ID, 'post-image' ); ?></figure>
 						</a></li>
 					<?php endforeach; ?>
 					<?php endif; ?>

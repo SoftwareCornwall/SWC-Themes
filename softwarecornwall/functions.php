@@ -67,7 +67,8 @@ if ( !function_exists( 'sd_load_meta_box_plugin' ) ) {
 
 // Sets up theme default image sizes, and removes a couple for luck
 add_theme_support( 'post-thumbnails' );
-add_image_size( 'blog-thumbs', 770, 400, true ); // blog thumbs
+add_image_size( 'blog-grid-thumb', 370, 190, true ); // latest blog thumbs, used in grids
+add_image_size( 'post-image', 770, 400, true ); // blog thumbs used on individual page
 remove_image_size( '1536x1536' );
 remove_image_size( '2048x2048' );
 

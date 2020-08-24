@@ -36,7 +36,7 @@ global $sd_data;
 					<?php if ( ( function_exists( 'has_post_thumbnail') ) && ( has_post_thumbnail() ) ) : ?>
 					<div class="sd-entry-thumb">
 						<figure>
-							<?php the_post_thumbnail( 'latest-blog-sd' ); ?>
+							<?php the_post_thumbnail( 'blog-grid-thumb' ); ?>
 						</figure>
 					</div>
 					<?php endif; ?>
