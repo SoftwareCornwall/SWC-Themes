@@ -331,5 +331,8 @@ remove_action( 'admin_print_styles', 'print_emoji_styles' );
 remove_action( 'wp_head', 'rest_output_link_wp_head', 10);
 remove_action( 'template_redirect', 'rest_output_link_header', 11);
 
+// Remove RSD link, used by 3rd party tools (V. SMALL chance of conflict with JetPack)
+remove_action ('wp_head', 'rsd_link');
+
 
 ?>
