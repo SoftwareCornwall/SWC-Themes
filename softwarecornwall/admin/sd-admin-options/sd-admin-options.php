@@ -1350,7 +1350,7 @@ if (!class_exists('SD_Redux_Framework_config')) {
                 'opt_name'          => 'sd_data',            // This is where your data is stored in the database and also becomes your global variable name.
                 'display_name'      => '<span class="dashicons dashicons-admin-generic" style="color: #fff; font-size: 21px; line-height: 30px; margin-right: 10px;"></span>' . __('Theme Options', 'sd-framework'),     // Name that appears at the top of your panel
                 'display_version'   => '',  // Version that appears at the top of your panel
-                'menu_type'         => 'menu',                  //Specify if the admin menu should appear or not. Options: menu or submenu (Under appearance only)
+                'menu_type'         => 'submenu',                  //Specify if the admin menu should appear or not. Options: menu or submenu (Under appearance only)
                 'allow_sub_menu'    => true,                    // Show the sections below the admin menu item or not
                 'menu_title'        => __('Theme Options', 'sd-framework'),
                 'page_title'        => __('Theme Options', 'sd-framework'),
@@ -1360,7 +1360,7 @@ if (!class_exists('SD_Redux_Framework_config')) {
                 'google_api_key' => 'AIzaSyDcvn0X3xtwZHuohdAJs0pOCno6PUMl6B0', // Must be defined to add google fonts to the typography module
                 
                 'async_typography'  => false,                    // Use a asynchronous font on the front end or font string
-                'admin_bar'         => true,                    // Show the panel pages on the admin bar
+                'admin_bar'         => false,                    // Show the panel pages on the admin bar
                 'global_variable'   => '',                      // Set a different name for your global variable other than the opt_name
                 'dev_mode'          => false,                    // Show the time the page took to load, etc
                 'customizer'        => false,                    // Enable basic customizer support
