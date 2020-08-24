@@ -238,7 +238,7 @@
                 )
             );
 
-            //remove_submenu_page( 'tools.php', 'redux-about' );
+            remove_submenu_page( 'tools.php', 'redux-about' );
             remove_submenu_page( 'tools.php', 'redux-status' );
             remove_submenu_page( 'tools.php', 'redux-changelog' );
             remove_submenu_page( 'tools.php', 'redux-getting-started' );
