@@ -337,5 +337,10 @@ remove_action( 'template_redirect', 'rest_output_link_header', 11);
 // Remove RSD link, used by 3rd party tools (V. SMALL chance of conflict with JetPack)
 remove_action ('wp_head', 'rsd_link');
 
+// Remove version number from markup
+function remove_version() {
+	return '';
+}
+add_filter('the_generator', 'remove_version');
 
 ?>
