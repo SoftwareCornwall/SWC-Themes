@@ -44,6 +44,9 @@ require_once( SD_FRAMEWORK_INC . 'sd-theme-functions/sd-comments.php' );
 // Font Awesome Fonts Array
 require_once( SD_FRAMEWORK_INC . 'sd-theme-functions/sd-font-awesome.php' );
 
+// Remove Pingbacks completely to potential exploit avenues
+require_once( SD_FRAMEWORK_INC . 'pingbacks.php');
+
 // Redux Theme Options
 if ( !class_exists( 'ReduxFramework' ) && file_exists( dirname( __FILE__ ) . '/admin/ReduxCore/framework.php' ) ) {
 require_once( dirname( __FILE__ ) . '/admin/ReduxCore/framework.php' );
