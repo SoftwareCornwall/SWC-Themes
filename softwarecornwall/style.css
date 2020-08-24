@@ -1027,69 +1027,6 @@ ol li ol li {
 }
 
 /* ------------------------------------------------------------------------ */
-/* 09. Comments
-/* ------------------------------------------------------------------------ */
-
-.sd-comments ul,
-.sd-comments ol {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-.sd-comments-title {
-	border-bottom: 1px solid #dcdcdc;
-	font-weight: 900;
-	margin-bottom: 30px;
-}
-.sd-author-avatar {
-	float: left;
-	height: 70px;
-	margin-right: 20px;
-	width: 70px;	
-}
-.sd-comment-text {
-	overflow: hidden;
-	position: relative;	
-}
-.sd-comment-author {
-	font-size: 14px;
-}
-.sd-comment-author cite {
-	color: #2f3c40;
-	font-style: normal;
-	font-weight: 700;
-}
-.sd-comment-body {
-	margin-bottom: 30px;
-}
-.sd-comments .children {
-	margin-left: 70px;
-}
-.sd-respond-inputs input{
-	border: 1px solid #d2d2d2;
-	border-radius: 2px;
-	height: 40px;
-	padding: 0 10px;
-}
-.sd-respond-textarea textarea {
-	border: 1px solid #d2d2d2;
-	border-radius: 2px;
-	max-width: 100%;
-	padding: 10px;
-}
-.form-allowed-tags {
-	display: none;	
-}
-#sd-submit-comments {
-	background: none;
-	border: 1px solid #0191c6;
-	border-radius: 3px;
-	padding: 15px 25px;
-}
-#sd-submit-comments:hover {
-	color: #0191c6;
-}
-/* ------------------------------------------------------------------------ */
 /* 10. Sidebar
 /* ------------------------------------------------------------------------ */
 

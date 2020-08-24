@@ -37,35 +37,32 @@ require_once( SD_FRAMEWORK_INC . 'sd-theme-functions/sd-theme-sidebars.php' );
 	
 // Custom Pagination
 require_once( SD_FRAMEWORK_INC . 'sd-theme-functions/sd-custom-pagination.php' );
-	
-// Custom Comments Callback
-require_once( SD_FRAMEWORK_INC . 'sd-theme-functions/sd-comments.php' );
 
 // Font Awesome Fonts Array
 require_once( SD_FRAMEWORK_INC . 'sd-theme-functions/sd-font-awesome.php' );
 
-// Remove Pingbacks completely to potential exploit avenues
+// Remove Pingbacks completely to reduce potential exploit avenues
 require_once( SD_FRAMEWORK_INC . 'pingbacks.php');
 
 // Redux Theme Options
 if ( !class_exists( 'ReduxFramework' ) && file_exists( dirname( __FILE__ ) . '/admin/ReduxCore/framework.php' ) ) {
-require_once( dirname( __FILE__ ) . '/admin/ReduxCore/framework.php' );
+	require_once( dirname( __FILE__ ) . '/admin/ReduxCore/framework.php' );
 }
 
 if ( !isset( $redux_demo ) && file_exists( dirname( __FILE__ ) . '/admin/sd-admin-options/sd-admin-options.php' ) ) {
-require_once( dirname( __FILE__ ) . '/admin/sd-admin-options/sd-admin-options.php' );
+	require_once( dirname( __FILE__ ) . '/admin/sd-admin-options/sd-admin-options.php' );
 }
 
 /* Include Meta Box Script */
 if ( !function_exists( 'sd_load_meta_box_plugin' ) ) {
-function sd_load_meta_box_plugin() {
-// Re-define meta box path and URL
-define( 'RWMB_URL', trailingslashit( get_template_directory_uri() . '/framework/inc/metabox' ) );
-define( 'RWMB_DIR', trailingslashit( get_template_directory() . '/framework/inc/metabox' ) );
-require_once RWMB_DIR . 'meta-box.php';
-include 'framework/inc/metabox/the-meta-boxes.php';
-}
-add_action('init', 'sd_load_meta_box_plugin');
+	function sd_load_meta_box_plugin() {
+		// Re-define meta box path and URL
+		define( 'RWMB_URL', trailingslashit( get_template_directory_uri() . '/framework/inc/metabox' ) );
+		define( 'RWMB_DIR', trailingslashit( get_template_directory() . '/framework/inc/metabox' ) );
+		require_once RWMB_DIR . 'meta-box.php';
+		include 'framework/inc/metabox/the-meta-boxes.php';
+	}
+	add_action('init', 'sd_load_meta_box_plugin');
 }
 
 // Add support for WP 2.9+ post thumbnails
@@ -73,34 +70,28 @@ if ( function_exists( 'add_theme_support' ) ) { // Added in 2.9
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( 189, 189, true ); // default Post Thumbnail dimensions
 	add_image_size( 'blog-thumbs', 770, 400, true ); // blog thumbs
-	add_image_size( 'large-blog-thumbs', 1140, 680, true ); // large blog thumbs
 	add_image_size( 'recent-blog-widget', 100, 65, true ); // recent blog widget thumbs
-	add_image_size( 'latest-blog-sd', 370, 190, true ); // latest blog shortcode thumbs
 }
 
 // remove the register link from the wp-login.php script - belinda oct17
 add_filter('option_users_can_register', function($value) {
     $script = basename(parse_url($_SERVER['SCRIPT_NAME'], PHP_URL_PATH));
-
     if ($script == 'wp-login.php') {
         $value = false;
     }
-
     return $value;
 });
-	
 
-	// Add feed links to header
-	add_theme_support( 'automatic-feed-links' );
+// Add feed links to header
+add_theme_support( 'automatic-feed-links' );
 
-	// Run shortcodes in widgets
-	add_filter( 'widget_text', 'do_shortcode' );
+// Run shortcodes in widgets
+add_filter( 'widget_text', 'do_shortcode' );
  
 	// Change WP admin logo
 if ( !function_exists( 'sd_custom_login_logo' ) ) {
 	function sd_custom_login_logo() { 
 		global $sd_data;
-	
 		if ( !empty( $sd_data['sd_admin_logo_upload'] ) ) {
 ?>
 		
@@ -125,14 +116,11 @@ add_action( 'login_enqueue_scripts', 'sd_custom_login_logo' );
 if ( !function_exists( 'sd_custom_login_logo_url' ) ) {
 	function sd_custom_login_logo_url() {
 		global $sd_data;
-		
 		if ( !empty( $sd_data['sd_admin_url'] ) ) {
 	    	return esc_url( $sd_data['sd_admin_url'] );
-		
 		} else {
 			return esc_url( home_url() );	
-		}
-			
+		}	
 	}
 	add_filter( 'login_headerurl', 'sd_custom_login_logo_url' );
 }
@@ -142,46 +130,39 @@ if ( !function_exists( 'sd_add_editor_styles' ) ) {
 	function sd_add_editor_styles() {
     	add_editor_style( 'editor-styles.css' );
 	}
-	
 	add_action( 'init', 'sd_add_editor_styles' );
 }
 
 // Custom Youtube Embed
 if ( !function_exists( 'sd_customize_youtube' ) ) {
 	function sd_customize_youtube( $html, $url, $args ) {
- 
 	/* Modify video parameters. */
 		if ( strstr( $html,'youtube.com/embed/' ) ) {
 			$html = str_replace( '?feature=oembed', '?feature=oembed&amp;hd=1;rel=0;showinfo=0&amp;controls=2&amp;theme=light&amp;modestbranding=1', $html );
 		}
-	
     	return $html;
 	}
-	
 	add_filter( 'oembed_result', 'sd_customize_youtube', 10, 3 );
 }
 	
 // Half title
 if ( !function_exists( 'sd_half_title' ) ) {	
 	function sd_half_title( $title ){
-   
-	// Break the sentence into its component words:
-	$words = explode( ' ', $title );
-	// Get the last word and trim any punctuation:
-	$last_word = '<span class="sd-light"> '.$words[count( $words ) - 1].'</span>';
+		// Break the sentence into its component words:
+		$words = explode( ' ', $title );
+		// Get the last word and trim any punctuation:
+		$last_word = '<span class="sd-light"> '.$words[count( $words ) - 1].'</span>';
 
-	$remaining_words = substr( $title, 0, strrpos( $title, " " ) );
-	
-	return $remaining_words . $last_word;
+		$remaining_words = substr( $title, 0, strrpos( $title, " " ) );
+		
+		return $remaining_words . $last_word;
 	}
 }
 	
 // Chamge Widget Title
 if ( !function_exists( 'sd_custom_widget_title' ) ) {	
 	function sd_custom_widget_title( $title ){
-
 		return sd_half_title( $title );
-
 	}
 	add_filter( 'widget_title', 'sd_custom_widget_title', 10, 3 );
 }	
@@ -278,8 +259,7 @@ if ( !function_exists( 'sd_custom_favicon' ) ) {
 
 // Custom CSS
 if ( !function_exists( 'sd_custom_css' ) ) {
-	function sd_custom_css() {
-		
+	function sd_custom_css() {		
 		global $sd_data;
 		
 		$output = '';
@@ -347,12 +327,11 @@ add_filter('the_generator', 'remove_version');
 // Remove WordPress manifest file from markup
 remove_action( 'wp_head', 'wlwmanifest_link');
 
-// Remove Shortlink from the Markup
+// Remove Short link from the Markup
 remove_action( 'wp_head', 'wp_shortlink_wp_head');
 
 // Removes  some oembed stuff included by default
 remove_action('wp_head', 'rest_output_link_wp_head', 10);
 remove_action('wp_head', 'wp_oembed_add_discovery_links', 10);
 remove_action('template_redirect', 'rest_output_link_header', 11, 0);
-
 ?>
