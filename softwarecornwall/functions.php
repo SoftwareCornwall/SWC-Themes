@@ -343,4 +343,6 @@ function remove_version() {
 }
 add_filter('the_generator', 'remove_version');
 
+// Remove WordPress manifest file from markup
+remove_action( 'wp_head', 'wlwmanifest_link');
 ?>
