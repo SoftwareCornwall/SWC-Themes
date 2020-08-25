@@ -301,6 +301,7 @@ function my_remove_admin_menus() {
 function software_cornwall_admin_bar_render() {
   global $wp_admin_bar;
   $wp_admin_bar->remove_menu('comments');
+//   $wp_admin_bar->remove_menu('notes');
 }
 add_action( 'wp_before_admin_bar_render', 'software_cornwall_admin_bar_render' );
 
