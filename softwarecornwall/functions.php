@@ -20,7 +20,7 @@ $lang = SD_FRAMEWORK . '/lang';
 load_theme_textdomain('sd-framework', $lang);
 
 /* ------------------------------------------------------------------------ */
-/* Inlcudes
+/* Includes
 /* ------------------------------------------------------------------------ */
 
 // Enqueue JavaScripts & CSS
@@ -231,8 +231,6 @@ if ( !function_exists( 'sd_custom_widgets_style' ) ) {
 // Alter Author Contact Fields
 if ( !function_exists( 'sd_author_bio' ) ) {
 	function sd_author_bio( $contactmethods ) {
-		// Add Google Plus
-		// $contactmethods['googleplus'] = __( 'Google+ Url', 'sd-framework' );
 		$contactmethods['linkedin'] = __( 'Linked In', 'sd-framework' );
 		
 		return $contactmethods;
@@ -285,12 +283,15 @@ function modify_footer_admin () {
 }
 add_filter('admin_footer_text', 'modify_footer_admin');
 
-// Removes from post and pages
+// Removes comments from post and pages
 add_action('init', 'remove_comment_support', 100);
 function remove_comment_support() {
     remove_post_type_support( 'post', 'comments' );
     remove_post_type_support( 'page', 'comments' );
 }
+
+// Remove comments feed link from markup
+add_filter( 'feed_links_show_comments_feed', '__return_false' );
 
 // Remove comments from the admin area
 add_action( 'admin_menu', 'my_remove_admin_menus' );
@@ -301,7 +302,7 @@ function my_remove_admin_menus() {
 function software_cornwall_admin_bar_render() {
   global $wp_admin_bar;
   $wp_admin_bar->remove_menu('comments');
-//   $wp_admin_bar->remove_menu('notes');
+  $wp_admin_bar->remove_menu('notes');
 }
 add_action( 'wp_before_admin_bar_render', 'software_cornwall_admin_bar_render' );
 
@@ -330,7 +331,7 @@ remove_action( 'wp_head', 'wlwmanifest_link');
 // Remove Short link from the Markup
 remove_action( 'wp_head', 'wp_shortlink_wp_head');
 
-// Removes  some oembed stuff included by default
+// Removes some oembed stuff included by default
 remove_action('wp_head', 'rest_output_link_wp_head', 10);
 remove_action('wp_head', 'wp_oembed_add_discovery_links', 10);
 remove_action('template_redirect', 'rest_output_link_header', 11, 0);
