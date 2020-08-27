@@ -293,6 +293,12 @@ function remove_comment_support() {
 // Remove comments feed link from markup
 add_filter( 'feed_links_show_comments_feed', '__return_false' );
 
+// Remove the JS file for nested comments
+function clean_header(){ 
+	wp_deregister_script( 'comment-reply' ); 
+} 
+add_action('init','clean_header');
+
 // Remove comments from the admin area
 add_action( 'admin_menu', 'my_remove_admin_menus' );
 function my_remove_admin_menus() {
@@ -311,6 +317,7 @@ remove_action('wp_head', 'print_emoji_detection_script', 7);
 remove_action('wp_print_styles', 'print_emoji_styles');
 remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
 remove_action( 'admin_print_styles', 'print_emoji_styles' );
+add_filter( 'emoji_svg_url', '__return_false' );
 
 // Hide WP REST API links in page headers
 remove_action( 'wp_head', 'rest_output_link_wp_head', 10);
