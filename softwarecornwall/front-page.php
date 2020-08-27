@@ -2,14 +2,31 @@
 /* ------------------------------------------------------------------------ */
 /* Template Name: Page: Full Width
 /* ------------------------------------------------------------------------ */
-// Template Name: Page: Full Width
 get_header();
 global $sd_data;
 ?>
 
+<!-- Template Name: Page: Front Page -->
 <div class="sd-blog-page">
-	<div class="container">
 
+	<div class="splash">
+		<div class="cover-text-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-6 cover-content">
+						<h1 class="cover-text">Software Cornwall</h1>
+						<h2 class="cover-text">The Hub of Cornwall's Growing Tech Community</h2>
+						<p class="cover-text">
+							<a class="more-link" href="https://www.softwarecornwall.org/register">Become a member</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cover-image"></div>
+	</div>
+	
+	<div class="container">
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
 				<h2 style="text-align: center; color: #2c448c;"><strong>Welcome to Cornwall's Tech Community</strong></h2>
@@ -26,9 +43,9 @@ global $sd_data;
 				<h3 style="text-align: center;"><strong><span class="sd-colored sd-light"><a href="https://www.softwarecornwall.org/news/">find out more about our community</a><br /></span></strong></h3>					
 			</div>
 			<?php 
-			// Get the Six latests posts and loop
-			$the_query = new WP_Query( 'posts_per_page=6' ); 
-			while ($the_query -> have_posts()) : $the_query -> the_post(); 
+				// Get the Six latests posts and loop
+				$the_query = new WP_Query( 'posts_per_page=6' ); 
+				while ($the_query -> have_posts()) : $the_query -> the_post(); 
 			?>
 			
 			<article id="post-<?php the_ID(); ?>" <?php post_class( 'sd-blog-entry sd-standard-entry clearfix col-sm-6 col-md-4' ); ?>> 

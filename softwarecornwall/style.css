@@ -2186,6 +2186,90 @@ body .wpb_content_element .wpb_accordion_wrapper .wpb_accordion_content {
 	height: 100%;
 }
 
+/* ------------------------------------------------------------------------ */
+/* Front page header
+/* ------------------------------------------------------------------------ */
+
+.splash {
+	/* display: flex; */
+	position: relative;
+	height: 400px;
+	height: 50vh;
+	margin-bottom: 6rem;
+}
+
+.cover-text-wrapper {
+	padding: 0;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 2;
+	margin-top: 5vh;
+}
+
+.cover-text {
+	text-align: center;
+}
+
+.cover-text .more-link {
+	font-size: 20px;
+}
+
+.cover-content {
+	padding-right: 15px;
+}
+
+.cover-content h1 {
+	margin-bottom: 1em;
+	font-weight: 600;
+	font-size: 32px;
+}
+
+.cover-content h2 {
+	line-height: 1em;
+	font-size: 26px;
+}
+@media (min-width: 300px){
+	.cover-text-wrapper {
+		margin-top: 10vh;
+	}
+}
+
+@media (min-width: 400px){
+	.cover-content h1 {
+		font-size: 45px;
+	}
+	.cover-content h2 {
+		font-size: 32px;
+	}
+	.cover-text {
+		text-align: right;
+	}
+}
+
+.cover-content .more-link:hover {
+	background-color: #2c448c;
+	color: #fff;
+}
+  
+.cover-image {
+	background-image: url("https://www.softwarecornwall.org/wp-content/uploads/2020/08/porthcurno_beach.jpg");
+	padding: 2rem 0;
+	width: 100vw;
+	height: 50vh;
+	position: absolute;
+	opacity: 0.7;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	background-size: cover;
+	background-position: center;
+}
 
 /* ------------------------------------------------------------------------ */
 /* EOF
