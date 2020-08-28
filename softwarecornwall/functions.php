@@ -180,7 +180,11 @@ add_filter( 'excerpt_length', 'sd_excerpt_length', 999 );
 
 // Excerpt more
 function sd_excerpt_more($output) {
-	return $output . '<p><a class="more-link" href="'. get_permalink( get_the_ID() ) . '#more-' . get_the_ID() . '">' . __('Read More', 'sd-framework') . '</a></p>';
+	if ( is_category( 'meet-the-team' ) ) { // "Meet First name" button for Team Member profiles
+		return $output . '<p><a class="more-link" href="'. get_permalink( get_the_ID() ) . '#more-' . get_the_ID() . '">' . 'Meet ' . explode(' ', get_the_title())[0] . '</a></p>';
+	} else {
+		return $output . '<p><a class="more-link" href="'. get_permalink( get_the_ID() ) . '#more-' . get_the_ID() . '">' . __('Read More', 'sd-framework') . '</a></p>';
+	}
 }
 add_filter('get_the_excerpt', 'sd_excerpt_more');
 	
