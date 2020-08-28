@@ -3,7 +3,6 @@
 /* Template Name: Category: Meet the team
 /* ------------------------------------------------------------------------ */
 get_header();
-
 ?>
 
 <!-- Template Name: Category: Meet the team -->
@@ -16,21 +15,15 @@ get_header();
 			</div>			
 
 			<?php global $wp_query;
-					global $more;
-					$more = 0;
-			?>
-			<?php if ( have_posts() ) : ?>
-				<?php while ( have_posts() ) : the_post(); 
-					$title = get_the_title();
-					$title_array = explode(' ', $title);
-					$first_name = $title_array[0];
-				?>
+			global $more;
+			$more = 0;
 				
-				<div class="col-sm-4">
+			if ( have_posts() ) :  while ( have_posts() ) : the_post();?>
+			<article class="col-xs-6 col-sm-4">
+				<header>
 					<a href="<?php the_permalink(); ?>" title="<?php get_the_title();?> Team Member Page." rel="bookmark">
 						<h3><?php the_title(); ?></h3>
 					</a>
-
 					<!-- post thumbnail -->
 					<?php if ( ( function_exists( 'has_post_thumbnail') ) && ( has_post_thumbnail() ) ) : ?>
 					<div class="sd-entry-thumb">
@@ -40,21 +33,16 @@ get_header();
 					</div>
 					<?php endif; ?>
 					<!-- post thumbnail end-->
+				</header>
 
-					<div class="sd-entry-content">
-						<header>
-							
-						</header>
-						<p><?php the_excerpt(); ?></p>
-					</div>
+				<div class="sd-entry-content">
+					<p><?php the_excerpt(); ?></p>
 				</div>
+			</article>
 
-				<?php endwhile; else: ?>
-					<p><?php _e( 'Sorry, no posts matched your criteria', 'sd-framework' ) ?>.</p>
-				<?php endif; ?>
-
-					
-
+			<?php endwhile; else: ?>
+				<p><?php _e( 'Sorry, no posts matched your criteria', 'sd-framework' ) ?>.</p>
+			<?php endif; wp_reset_postdata();?>
 		</div>
 	</div>
 </div>
