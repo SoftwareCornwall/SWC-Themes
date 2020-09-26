@@ -7,7 +7,7 @@ global $sd_data;
 ?>
 
 <!-- Template Name: Page: Front Page -->
-<div class="sd-blog-page">
+<div class="">
 
 	<div class="splash">
 		<div class="cover-text-wrapper">
@@ -80,7 +80,8 @@ global $sd_data;
 			<div class="col-md-12">
 				<h2 style="text-align: center;"><strong>Latest </strong><span class="sd-light">Jobs</span></h2>
 				<h3 style="text-align: center;"><a href="https://www.softwarecornwall.org/jobs-2/"><strong><span class="sd-colored sd-light">Join teams in our community</span></strong></a></h3>
-				<p>[jobs]</p>
+				<link rel='stylesheet' id='wp-job-manager-frontend-css'  href='https://www.softwarecornwall.org/wp-content/plugins/wp-job-manager/assets/css/frontend.css?ver=1.34.3' type='text/css' media='all' />
+				<p><?php echo do_shortcode("[jobs]"); ?></p>
 				<p style="text-align: center;">If you are looking for a job in Cornwall's tech community please <a href="https://www.softwarecornwall.org/submit-resume/">submit your CV</a> to our CV Bank so our members can find you</p>
 			</div>
 
