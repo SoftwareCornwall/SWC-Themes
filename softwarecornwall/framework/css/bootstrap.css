@@ -1397,32 +1397,7 @@ pre code {
 	.wpb_row .wpb_column {
 		margin-bottom: 30px !important;	
 	}
-	.sd-newsletter-wrapper input[type="email"] {
-		width: 70% !important;	
-	}
-	.sd-newsletter {
-		background: none !important;	
-		padding: 10px 0 40px !important;
-	}
-	.sd-subscribe-text,
-	.sd-newsletter-text {
-		float: none !important;
-	}
-	.sd-newsletter-text {
-		margin-botton: 20px !important;	
-	}
-	.sd-newsletter-wrapper input[type="email"] {
-		box-shadow: none !important;
-		-webkit-appearance:none;
-	}
-	.sd-subscribe-text {
-		display: none;	
-	}
-	.sd-newsletter-wrapper input[type="submit"] {
-		border-top-left-radius: 0 !important;
-		border-bottom-left-radius: 0 !important;
-		width: 30% !important;	
-	}
+
 	.sd-tab-titles li {
 		width: 100%;
 		margin-left: 0 !important;

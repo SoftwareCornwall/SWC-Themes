@@ -104,5 +104,9 @@ global $sd_data;
 			</div>
 		</div>
 	</div>
+
+	<?php get_template_part( 'framework/inc/newsletter' ); ?>
+
 </div>
+
 <?php get_footer(); ?>

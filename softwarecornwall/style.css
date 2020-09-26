@@ -1404,11 +1404,29 @@ ol li ol li {
 	background: url(framework/images/news-bg.png) no-repeat top right;
 	padding: 60px 0;
 }
+
+/* .sd-newsletter .row-1 {
+	margin-top: 1em;
+} */
+
+.newsletter-input {
+	margin-top: 1em;
+}
+
+/* @media only screen and (min-width: 960px) {
+	.sd-newsletter .row-2 {
+		margin-top: 1em;
+	}
+	.newsletter-input {
+		margin-top: 0;
+	}
+} */
+
 .sd-subscribe-text,
 .sd-newsletter-text {
 	color: #0191c6;
-	float: right;
-	font-size: 14px;
+	font-size: 18px;
+	font-weight: 500;
 	margin-top: -5px;
 }
 .sd-newsletter-text {
@@ -1419,12 +1437,13 @@ ol li ol li {
 #mc_embed_signup label {
 	display: none;	
 }
-.sd-newsletter-wrapper input[type=email] {
+.sd-newsletter-wrapper input[type=email],
+.sd-newsletter-wrapper input[type=text]{
 	border-radius: 0;
 	border: 1px solid #dae2e2;
 	float: left;
 	padding: 10px;
-	width: 80%;
+	width: 100%;
 	-moz-box-sizing: border-box;
 		 box-sizing: border-box;
 }
@@ -1437,7 +1456,6 @@ ol li ol li {
 	font-size: 14px;
 	font-weight: bold;
 	padding: 10px;
-	width: 20%;
 	-moz-box-sizing: border-box;
 		 box-sizing: border-box;
  	-webkit-transition: opacity .3s ease-in-out;
@@ -1445,7 +1463,6 @@ ol li ol li {
 		-ms-transition: opacity .3s ease-in-out;
 		 -o-transition: opacity .3s ease-in-out;
 			transition: opacity .3s ease-in-out;
-
 }
 .sd-newsletter-wrapper input[type=submit]:hover {
 	opacity: .8;	
@@ -2278,6 +2295,17 @@ body .wpb_content_element .wpb_accordion_wrapper .wpb_accordion_content {
 .category-description-wrapper {
 	padding-bottom: 5em;
 }
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+  }
 
 
 /* ------------------------------------------------------------------------ */
