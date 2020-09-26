@@ -14,11 +14,18 @@ get_header();
 				<?php the_archive_description();?>
 			</div>			
 
-			<?php global $wp_query;
+			<?php 
+			$args = array(
+				'numberposts' => -1,
+				'orderby' => 'post_date',
+				'order' => 'DESC',
+				'cat' => $current_category->cat_ID // current category ID
+			);
+			$the_query = new WP_Query( $args );
 			global $more;
 			$more = 0;
 				
-			if ( have_posts() ) :  while ( have_posts() ) : the_post();?>
+			if ( $wp_query->have_posts() ) :  while ( have_posts() ) : the_post();?>
 			<article class="col-xs-6 col-sm-4">
 				<header>
 					<a href="<?php the_permalink(); ?>" title="<?php get_the_title();?> Team Member Page." rel="bookmark">
