@@ -48,7 +48,7 @@ global $sd_data;
 				while ($the_query -> have_posts()) : $the_query -> the_post(); 
 			?>
 			
-			<article id="post-<?php the_ID(); ?>" <?php post_class( 'sd-blog-entry sd-standard-entry clearfix col-sm-6 col-md-4' ); ?>> 
+			<article id="post-<?php the_ID(); ?>" <?php post_class( 'sd-blog-entry sd-standard-entry clearfix col-sm-6 col-md-4 grid-item' ); ?>> 
 				<div class="sd-entry-wrapper clearfix"> 
 					<?php if ( ( function_exists( 'has_post_thumbnail') ) && ( has_post_thumbnail() ) ) : ?>
 					<div class="sd-entry-thumb">

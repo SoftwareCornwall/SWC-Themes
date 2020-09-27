@@ -24,7 +24,7 @@ get_header();
 							
 						if ( have_posts() ) :  while ( have_posts() ) : the_post();?>
 
-						<article id="post-<?php ; ?>" <?php post_class( 'sd-blog-entry sd-standard-entry clearfix col-sm-6 col-md-4' ); ?>> 
+						<article id="post-<?php ; ?>" <?php post_class( 'sd-blog-entry sd-standard-entry clearfix col-sm-6 col-md-4 grid-item-large' ); ?>> 
 							<div class="sd-entry-wrapper clearfix"> 
 								<?php if ( ( function_exists( 'has_post_thumbnail') ) && ( has_post_thumbnail() ) ) : ?>
 								<div class="sd-entry-thumb">
