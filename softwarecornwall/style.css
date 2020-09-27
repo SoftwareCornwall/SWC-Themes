@@ -1675,6 +1675,18 @@ ol li ol li {
 	padding: 8px 12px;
 }
 
+.dark-button {
+	background-color: #2c448c;
+	color: #fff;
+	border-color: #fff;
+}
+
+.dark-button:hover {
+	background-color: #2c448c;
+	color: #fff;
+	border-color: #fff;
+}
+
 /* staff */
 
 .sd-staff-short {
@@ -2304,6 +2316,18 @@ body .wpb_content_element .wpb_accordion_wrapper .wpb_accordion_content {
 	-moz-border-radius: 0 !important;
    -webkit-border-radius: 0 !important;
   border-radius: 0 !important;
+}
+
+/* ------------------------------------------------------------------------ */
+/* random "fixes"
+/* ------------------------------------------------------------------------ */
+
+.grid-item{
+	min-height: 560px;
+}
+
+.grid-item-large {
+	min-height: 660px;
 }
 
 /* ------------------------------------------------------------------------ */
