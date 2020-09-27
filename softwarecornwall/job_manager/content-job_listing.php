@@ -20,7 +20,7 @@ global $post;
 ?>
 <li <?php job_listing_class(); ?> data-longitude="<?php echo esc_attr( $post->geolocation_long ); ?>" data-latitude="<?php echo esc_attr( $post->geolocation_lat ); ?>">
 	<a href="<?php the_job_permalink(); ?>">
-		<?php the_company_logo(); ?>
+		<?php the_company_logo('job-thumb'); ?>
 		<div class="position">
 			<h3><?php wpjm_the_job_title(); ?></h3>
 			<div class="company">
