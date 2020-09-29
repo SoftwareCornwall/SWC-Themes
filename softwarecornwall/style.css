@@ -739,7 +739,7 @@ ol li ol li {
 	position: absolute;
 	display: none;
 	top: 100%;
-	left: 0;
+	right: 0;
 	z-index: 99;
 }
 .sf-menu > li {
@@ -848,7 +848,6 @@ ol li ol li {
 
 .sf-menu li li ul {
 	background-color: #2a2e30;
-	margin-left: 10px;
 	padding-top: 0;
 }
 .sf-menu li:hover,
