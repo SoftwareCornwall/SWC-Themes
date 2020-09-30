@@ -55,5 +55,7 @@ if ( $sd_newsletter !== '1' ) {
 
 <?php wp_footer(); ?>
 
+<?php get_template_part( '/partial/analytics' ); ?>
+
 </body>
 </html>
