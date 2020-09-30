@@ -2490,9 +2490,15 @@ body .wpb_content_element .wpb_accordion_wrapper .wpb_accordion_content {
 	/* display: flex; */
 	position: relative;
 	height: 400px;
-	height: 50vh;
+	height: 60vh;
 	margin-bottom: 6rem;
 }
+
+/* @media (max-height: 600px) {
+	.splash {
+	  height: 80vh;
+	}
+  } */
 
 .cover-text-wrapper {
 	padding: 0;
@@ -2555,7 +2561,7 @@ body .wpb_content_element .wpb_accordion_wrapper .wpb_accordion_content {
 	background-image: url("https://www.softwarecornwall.org/wp-content/uploads/2020/08/porthcurno_beach.jpg");
 	padding: 2rem 0;
 	width: 100vw;
-	height: 50vh;
+	height: 60vh;
 	position: absolute;
 	opacity: 0.7;
 	top: 0;
