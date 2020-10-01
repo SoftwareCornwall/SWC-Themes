@@ -2611,11 +2611,11 @@ body .wpb_content_element .wpb_accordion_wrapper .wpb_accordion_content {
 /* ------------------------------------------------------------------------ */
 
 .grid-item{
-	min-height: 560px;
+	min-height: 600px;
 }
 
 .grid-item-large {
-	min-height: 660px;
+	min-height: 700px;
 }
 
 /* ------------------------------------------------------------------------ */
