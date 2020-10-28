@@ -20,7 +20,6 @@ get_header();
 							<?php the_content(); ?>
 							
 							<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-							<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
 							<script>
 							hbspt.forms.create({
 								portalId: "5662851",
