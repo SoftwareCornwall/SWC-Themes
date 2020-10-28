@@ -2596,21 +2596,14 @@ body .wpb_content_element .wpb_accordion_wrapper .wpb_accordion_content {
 /* Ultimate Member Style Overrides
 /* ------------------------------------------------------------------------ */
 
-.um-profile-photo a.um-profile-photo-img,
-.um .um-profile-photo a.um-profile-photo-img,
-.um .um-profile-photo img,
-.um .um-profile-photo span.um-profile-photo-overlay,
-.um-directory .um-members-wrapper .um-members .um-member .um-member-photo.radius-1 a img{
-	-moz-border-radius: 0 !important;
-   -webkit-border-radius: 0 !important;
+.um .um-header .um-profile-photo a.um-profile-photo-img, 
+.um .um-header .um-profile-photo img, 
+.um .um-header .um-profile-photo span.um-profile-photo-overlay,
+.entry-content .um-directory .um-members-wrapper .um-members .um-member .um-member-photo.radius-1 a img {
+  -moz-border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
   border-radius: 0 !important;
 }
-
-/* ------------------------------------------------------------------------ */
-/* random "fixes"
-/* ------------------------------------------------------------------------ */
-
-
 
 /* ------------------------------------------------------------------------ */
 /* EOF
