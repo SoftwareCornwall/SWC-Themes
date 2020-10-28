@@ -139,7 +139,6 @@ jQuery(document).ready(function(){
 
         // Cache the highest
         var highestBox = 0;
-        console.log(highestBox);
         
         // Select and loop the elements you want to equalise
         jQuery('.sd-blog-entry', this).each(function(){
@@ -149,9 +148,7 @@ jQuery(document).ready(function(){
                 highestBox = jQuery(this).height(); 
             }
         
-        });  
-
-        console.log(highestBox);
+        });
             
         // Set the height of all those children to whichever was highest 
         jQuery('.sd-blog-entry',this).height(highestBox);
