@@ -11,7 +11,7 @@ get_header();
 		<div class="row"> 
 			<!--left col-->
 			<div class="col-md-<?php if ( $sd_data['sd_blog_layout'] == '2' ) echo '12'; else echo '8'; ?> <?php if ( $sd_data['sd_sidebar_location'] == '2' ) echo 'pull-right'; ?>">
-				<div class="sd-left-col">
+				<div id="post-wrapper" class="sd-left-col">
 				<?php global $wp_query;
 			   	      global $more;
 			   	 	  $more = 0;

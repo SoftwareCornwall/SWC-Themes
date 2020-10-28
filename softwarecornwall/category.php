@@ -17,14 +17,14 @@ get_header();
 			
 			<div class="col-xs-12">
 				<div class="row"> 
-					<div class="col-md-8">
+					<div id="post-wrapper" class="col-md-8">
 						<?php global $wp_query;
 						global $more;
 						$more = 0;
 							
 						if ( have_posts() ) :  while ( have_posts() ) : the_post();?>
 
-						<article id="post-<?php ; ?>" <?php post_class( 'sd-blog-entry sd-standard-entry clearfix col-sm-6 col-md-4 grid-item-large' ); ?>> 
+						<article <?php post_class( 'sd-blog-entry sd-standard-entry clearfix col-sm-6 col-md-4 grid-item-large' ); ?>> 
 							<div class="sd-entry-wrapper clearfix"> 
 								<?php if ( ( function_exists( 'has_post_thumbnail') ) && ( has_post_thumbnail() ) ) : ?>
 								<div class="sd-entry-thumb">

@@ -8,7 +8,7 @@ get_header();
 <!-- Template Name: Category: Meet the team -->
 <div class="sd-blog-page">
 	<div class="container">
-		<div class="row"> 
+		<div id="post-wrapper" class="row"> 
 
 			<div class="col-sm-10 col-sm-offset-1 category-description-wrapper" style="text-align: center;">
 				<?php the_archive_description();?>
@@ -24,7 +24,7 @@ get_header();
 			$query = new WP_Query( $args );
 				
 			if ( $query->have_posts() ) :  while ( $query->have_posts() ) : $query->the_post();?>
-			<article class="col-xs-6 col-sm-4">
+			<article class="col-xs-6 col-sm-4 sd-blog-entry">
 				<header>
 					<a href="<?php the_permalink(); ?>" title="<?php get_the_title();?> Team Member Page." rel="bookmark">
 						<h3><?php the_title(); ?></h3>

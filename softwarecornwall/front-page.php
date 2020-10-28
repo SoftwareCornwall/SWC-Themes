@@ -38,7 +38,7 @@ global $sd_data;
 	</div>
 	<div style="background-color: #fff;">
 		<div class="container">
-			<div class="row">
+			<div id="post-wrapper" class="row">
 			<div class="col-md-12" style="padding: 6rem 0;">
 				<h2 style="text-align: center;"><strong>Latest </strong><span class="sd-light">News</span></h2>
 				<h3 style="text-align: center;"><strong><span class="sd-colored sd-light"><a href="https://www.softwarecornwall.org/news/">find out more about our community</a><br /></span></strong></h3>					

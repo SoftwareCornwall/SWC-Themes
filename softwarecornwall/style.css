@@ -2610,13 +2610,7 @@ body .wpb_content_element .wpb_accordion_wrapper .wpb_accordion_content {
 /* random "fixes"
 /* ------------------------------------------------------------------------ */
 
-.grid-item{
-	min-height: 600px;
-}
 
-.grid-item-large {
-	min-height: 700px;
-}
 
 /* ------------------------------------------------------------------------ */
 /* EOF
