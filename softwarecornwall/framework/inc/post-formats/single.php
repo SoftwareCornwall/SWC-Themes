@@ -5,6 +5,7 @@
 global $sd_data;
 ?>
 
+<!-- Partial: single.php -->
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'sd-blog-entry sd-single-blog-entry clearfix' ); ?>> 
 	<!-- entry wrapper -->
 	<div class="sd-entry-wrapper">

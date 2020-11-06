@@ -4,7 +4,7 @@
 /* ------------------------------------------------------------------------ */
 global $sd_data;
 ?>
-
+<!-- Partial: content.php -->
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'sd-blog-entry sd-standard-entry clearfix' ); ?>> 
 
 	<!-- entry wrapper -->
