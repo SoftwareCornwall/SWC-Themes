@@ -317,4 +317,23 @@ function disable_wp_responsive_images() {
 	return 1;
 }
 add_filter('max_srcset_image_width', 'disable_wp_responsive_images');
+
+// Select template file for FAQ & meet the team
+add_filter( 'single_template', function ( $single_template ) {
+
+    $faq_parent     = '354'; //FAQ Category ID
+	$faq_categories = get_categories( 'child_of=' . $parent );
+	// TODO: returns empty array. Probably because there are no sub categories atm, but this means every post uses the theme file.
+	//$faq_cat_names  = wp_list_pluck( $categories, 'name' ); -> 
+	// || has_category( $faq_cat_names ) 
+
+    if ( has_category( 'frequently-asked-questions' )  ) {
+        $single_template = dirname( __FILE__ ) . '/single-frequently-asked-questions.php';
+	} elseif( has_category( 'meet-the-team' ) ) {
+		$single_template = dirname( __FILE__ ) . '/single-meet-the-team.php';
+	}
+    return $single_template;
+     
+}, PHP_INT_MAX, 2 );
+
 ?>
