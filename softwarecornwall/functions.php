@@ -321,9 +321,9 @@ add_filter('max_srcset_image_width', 'disable_wp_responsive_images');
 // Select template file for FAQ & meet the team
 add_filter( 'single_template', function ( $single_template ) {
 
-    $faq_parent     = '354'; //FAQ Category ID
-	$faq_categories = get_categories( 'child_of=' . $parent );
-	// TODO: returns empty array. Probably because there are no sub categories atm, but this means every post uses the theme file.
+    $faq_parent = '354'; //FAQ Category ID
+	// $faq_categories = get_categories( 'child_of=' . $parent );
+	// TODO: below returns empty array. Probably because there are no sub categories atm, but this means every post uses the theme file.
 	//$faq_cat_names  = wp_list_pluck( $categories, 'name' ); -> 
 	// || has_category( $faq_cat_names ) 
 

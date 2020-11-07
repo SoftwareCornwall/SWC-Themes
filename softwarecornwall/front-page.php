@@ -45,7 +45,10 @@ global $sd_data;
 			</div>
 			<?php 
 				// Get the Six latests posts and loop
-				$the_query = new WP_Query( 'posts_per_page=6' ); 
+				$the_query = new WP_Query( array(
+					'posts_per_page' => 6, 
+					'cat' => '-350,-354' 
+				)); 
 				while ($the_query -> have_posts()) : $the_query -> the_post(); 
 			?>
 			
