@@ -22,7 +22,7 @@ get_header();
 
 					<?php 
 					$all_categories = get_categories( array(
-						'parent' => '354'
+						'parent' => '286'
 					));
 
 					foreach( $all_categories as $single_category ){

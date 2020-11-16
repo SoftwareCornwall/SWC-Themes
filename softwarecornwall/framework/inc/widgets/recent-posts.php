@@ -40,7 +40,7 @@ class sd_recent_posts_widget extends WP_Widget {
 			$sd_recent_posts = new WP_Query();
 			$sd_recent_posts->query( array(
 				'showposts' => $instance['postcount'],
-				'cat' => '-350,-354,-355,-356' 
+				'cat' => '-202,-268,-269,-270,-271'
 				) 
 			);
 			while ( $sd_recent_posts->have_posts() ) : $sd_recent_posts->the_post(); ?>
