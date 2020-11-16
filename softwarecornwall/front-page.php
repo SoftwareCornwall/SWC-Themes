@@ -44,10 +44,10 @@ global $sd_data;
 				<h3 style="text-align: center;"><strong><span class="sd-colored sd-light"><a href="https://www.softwarecornwall.org/news/">find out more about our community</a><br /></span></strong></h3>					
 			</div>
 			<?php 
-				// Get the Six latests posts and loop
+				// Get the Six latests posts, omitting team and FAQ posts and loop
 				$the_query = new WP_Query( array(
 					'posts_per_page' => 6, 
-					'cat' => '-350,-354' 
+					'cat' => '-350,-354,-355,-356' 
 				)); 
 				while ($the_query -> have_posts()) : $the_query -> the_post(); 
 			?>

@@ -18,21 +18,26 @@ get_header();
 			<div class="col-xs-12">
 				<div class="row"> 
 					<div id="post-wrapper" class="col-md-8">
-						<?php global $wp_query;
-						global $more;
-						$more = 0;
-							
-						if ( have_posts() ) :  while ( have_posts() ) : the_post();?>
+						
 
-							<h3 class="sd-entry-title">
-								<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink la %s', 'twentytwelve' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark">
-									<?php the_title(); ?>
-								</a>
-							</h3>
+					<?php 
+					$all_categories = get_categories( array(
+						'parent' => '354'
+					));
 
-						<?php endwhile; else: ?>
-							<p><?php _e( 'Sorry, no posts matched your criteria', 'sd-framework' ) ?>.</p>
-						<?php endif; wp_reset_postdata();?>
+					foreach( $all_categories as $single_category ){
+						//for each category, get the ID
+						$catID = $single_category->cat_ID;
+						echo '<h2>' . $single_category->name . '</h2>';
+				
+						$query = new WP_Query( array( 'cat'=> $catID, 'posts_per_page'=>10 ) );
+						while( $query->have_posts() ):$query->the_post();
+						echo '<a href="'.get_the_permalink().'"><h3>'.get_the_title().'</h3></a>';
+						endwhile; 
+						echo '</br>';
+						wp_reset_postdata();
+					}?>
+
 						<br /><br />
 					</div>
 					<div class="col-md-4">
