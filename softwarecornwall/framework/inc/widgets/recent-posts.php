@@ -38,7 +38,11 @@ class sd_recent_posts_widget extends WP_Widget {
 	<ul>
 		<?php 
 			$sd_recent_posts = new WP_Query();
-			$sd_recent_posts->query( 'showposts='.$instance['postcount'].'' );
+			$sd_recent_posts->query( array(
+				'showposts' => $instance['postcount'],
+				'cat' => '-350,-354,-355,-356' 
+				) 
+			);
 			while ( $sd_recent_posts->have_posts() ) : $sd_recent_posts->the_post(); ?>
 		<li class="clearfix"> 
 			<!-- post thumbnail --> 
