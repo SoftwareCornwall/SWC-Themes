@@ -38,7 +38,6 @@ get_header();
 						<?php endif; ?>
 					<?php else : sd_custom_pagination(); endif; ?>
 					<!--pagination end--> 
-					<!--pagination end--> 
 				</div>
 			</div>
 			<!--left col end--> 

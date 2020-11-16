@@ -47,7 +47,7 @@ global $sd_data;
 				// Get the Six latests posts, omitting team and FAQ posts and loop
 				$the_query = new WP_Query( array(
 					'posts_per_page' => 6, 
-					'cat' => '-202,-268,-269,-270,-271' 
+					'cat' => '-202,-268,-269,-270,-271' // OMIT CATEGORIES FROM QUERY
 				)); 
 				while ($the_query -> have_posts()) : $the_query -> the_post(); 
 			?>

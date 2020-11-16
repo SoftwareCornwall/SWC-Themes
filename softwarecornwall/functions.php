@@ -321,13 +321,8 @@ add_filter('max_srcset_image_width', 'disable_wp_responsive_images');
 // Select template file for FAQ & meet the team
 add_filter( 'single_template', function ( $single_template ) {
 
-    $faq_parent = '354'; //FAQ Category ID
-	// $faq_categories = get_categories( 'child_of=' . $parent );
-	// TODO: below returns empty array. Probably because there are no sub categories atm, but this means every post uses the theme file.
-	//$faq_cat_names  = wp_list_pluck( $categories, 'name' ); -> 
-	// || has_category( $faq_cat_names ) 
-
-    if ( has_category( 'frequently-asked-questions' )  ) {
+	if ( has_category( 'frequently-asked-questions') || has_category( 'about-software-cornwall' ) ||
+		 has_category( 'eu-programmes' ) || has_category( 'how-to' ) ) {
         $single_template = dirname( __FILE__ ) . '/single-frequently-asked-questions.php';
 	} elseif( has_category( 'meet-the-team' ) ) {
 		$single_template = dirname( __FILE__ ) . '/single-meet-the-team.php';

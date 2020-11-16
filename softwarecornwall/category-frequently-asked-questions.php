@@ -19,10 +19,9 @@ get_header();
 				<div class="row"> 
 					<div id="post-wrapper" class="col-md-8">
 						
-
 					<?php 
 					$all_categories = get_categories( array(
-						'parent' => '286'
+						'parent' => '268'
 					));
 
 					foreach( $all_categories as $single_category ){
