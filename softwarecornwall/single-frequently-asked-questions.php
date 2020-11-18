@@ -32,11 +32,6 @@ get_header(); ?>
 						<?php _e( 'Sorry, no posts matched your criteria', 'sd-framework' ) ?>
 						.</p>
 					<?php endif; ?>
-					<?php if ( $sd_data['sd_blog_comments'] == '1' ) : ?>
-					<!--comments-->
-					<?php comments_template( '', true ); ?>
-					<!--comments end--> 
-					<?php endif; ?>
 				</div>
 			</div>
 			<!--left col end--> 
