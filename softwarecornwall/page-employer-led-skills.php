@@ -56,9 +56,9 @@ get_header();
 						 <tr> 
 							 <td><a href="<?php the_permalink(); ?>" title="<?php get_the_title();?>" rel="bookmark"><?php the_title(); ?></a></td>
 							 <td><?php $location = get_post_meta($post->ID, 'training_venue', true); if ($location) {  echo $location; }?></td>
-							 <td><?php $date = get_post_meta($post->ID, 'training_date', true); if ($date) {  echo $date; }?></td>
+							 <td><?php $date = get_post_meta($post->ID, 'training_start_date', true); if ($date) {  echo $date; }?></td>
 							 <td><?php $full_price = get_post_meta($post->ID, 'training_full_price', true); if ($full_price) {  echo $full_price; }?></td>
-							 <td><?php $member_price = get_post_meta($post->ID, 'training_member_price', true); if ($member_price) {  echo $member_price; }?></td>
+							 <td><?php $member_price = get_post_meta($post->ID, 'training_funded_price', true); if ($member_price) {  echo $member_price; }?></td>
 						</tr> 
 						<?php endwhile; ?>
 						</tbody>
