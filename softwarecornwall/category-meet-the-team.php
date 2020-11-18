@@ -42,6 +42,7 @@ get_header();
 
 				<div class="sd-entry-content">
 					<p><?php the_excerpt(); ?></p>
+					<p><a class="more-link" href="<?php the_permalink(); ?>">Meet <?php echo explode(' ', get_the_title())[0]; ?></a></p>
 				</div>
 			</article>
 
