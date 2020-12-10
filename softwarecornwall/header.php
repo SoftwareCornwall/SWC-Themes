@@ -47,8 +47,6 @@ global $sd_data;
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 <?php wp_head(); ?>
-<meta name="google-site-verification" content="QtMFJSyGc0UZN0WKYBgMmeXVMYlBGJZOYohqQLxi32M" />
-<meta name="msvalidate.01" content="8957716371BB285A2445EAFE5013939C" />
 </head>
 <body <?php body_class( '' ); ?>>
 <header id="sd-header" class="clearfix">
