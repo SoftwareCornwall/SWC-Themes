@@ -133,25 +133,27 @@ jQuery(".sd-responsive-menu-toggle a").sidr({name:"sidr-main",source:".sd-menu-w
 
 // Resize news article container divs to the largest one on archive / category pages
 
+
 jQuery(document).ready(function(){
 
     jQuery('#post-wrapper').each(function(){
 
-        // Cache the highest
+        // Cache the highest value
         var highestBox = 0;
         
         // Select and loop the elements you want to equalise
         jQuery('.sd-blog-entry', this).each(function(){
         
             // If this box is higher than the cached highest then store it
-            if(jQuery(this).height() > highestBox) {
-                highestBox = jQuery(this).height(); 
+            if(jQuery(this).outerHeight() > highestBox) {
+                highestBox = Math.floor(jQuery(this).outerHeight());
             }
-        
         });
+        
+        highestBox += 40; // Account for sticky posts
             
         // Set the height of all those children to whichever was highest 
-        jQuery('.sd-blog-entry',this).height(highestBox);
+        jQuery('.sd-blog-entry',this).outerHeight(highestBox, true);
     });
 });
 

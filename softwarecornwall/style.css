@@ -1511,7 +1511,7 @@ ol li ol li {
 
 .sticky {
 	border: 1px solid #0191c6;
-	padding: 20px;
+	padding: 20px 20px 0 20px;
 	box-sizing: border-box;	
 }
 .bypostauthor {}
