@@ -317,7 +317,7 @@ function training_meta_box_html( $post ) { ?>
 	<p>Complete this section if this is a post for a training course run by Software Cornwall.</p>
 	<label for="training_start_date" style="min-width:200px; display: inline-block;">Start Date</label>
 	<input type="text" id="training_start_date" name="training_start_date" placeholder="e.g 17/03/2021"
-		   value="<?php echo get_post_meta($post -> ID, training_start_date, true);?>"><br />
+		   value="<?php echo get_post_meta($post -> ID, "training_start_date", true);?>"><br />
 	<label for="training_end_date" style="min-width:200px; display: inline-block;">End Date</label>
 	<input type="text" id="training_end_date" name="training_end_date" placeholder="e.g 18/03/2021"
 		   value="<?php echo get_post_meta($post -> ID, "training_end_date", true);?>"><br />
