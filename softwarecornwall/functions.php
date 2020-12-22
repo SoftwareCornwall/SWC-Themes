@@ -266,9 +266,6 @@ function remove_comment_support() {
 }
 add_action('init', 'remove_comment_support', 100);
 
-// Remove comments feed link from markup
-add_filter( 'feed_links_show_comments_feed', '__return_false' );
-
 // Remove comments from the admin area
 function my_remove_admin_menus() {
     remove_menu_page( 'edit-comments.php' );
@@ -281,37 +278,6 @@ function software_cornwall_admin_bar_render() {
   $wp_admin_bar->remove_menu('notes');
 }
 add_action( 'wp_before_admin_bar_render', 'software_cornwall_admin_bar_render' );
-
-// Remove WordPress Emoji from the markup. No comments, no emoji needed
-remove_action('wp_head', 'print_emoji_detection_script', 7);
-remove_action('wp_print_styles', 'print_emoji_styles');
-remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
-remove_action( 'admin_print_styles', 'print_emoji_styles' );
-add_filter( 'emoji_svg_url', '__return_false' );
-
-// Hide WP REST API links in page headers
-remove_action( 'wp_head', 'rest_output_link_wp_head', 10);
-remove_action( 'template_redirect', 'rest_output_link_header', 11);
-
-// Remove RSD link, used by 3rd party tools (V. SMALL chance of conflict with JetPack)
-remove_action ('wp_head', 'rsd_link');
-
-// Remove version number from markup
-function remove_version() {
-	return '';
-}
-add_filter('the_generator', 'remove_version');
-
-// Remove WordPress manifest file from markup
-remove_action( 'wp_head', 'wlwmanifest_link');
-
-// Remove Short link from the Markup
-remove_action( 'wp_head', 'wp_shortlink_wp_head');
-
-// Removes some oembed stuff included by default
-remove_action('wp_head', 'rest_output_link_wp_head', 10);
-remove_action('wp_head', 'wp_oembed_add_discovery_links', 10);
-remove_action('template_redirect', 'rest_output_link_header', 11, 0);
 
 // disable srcset on frontend
 function disable_wp_responsive_images() {
