@@ -6,6 +6,7 @@ get_header();
 
 ?>
 
+<!-- Template Name: Archive -->
 <div class="sd-blog-page">
 	<div class="container">
 		<div class="row"> 

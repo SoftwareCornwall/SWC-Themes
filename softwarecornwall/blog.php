@@ -7,6 +7,7 @@ get_header();
 global $sd_data;
 ?>
 
+<!-- Template Name: Blog -->
 <div class="sd-blog-page">
 	<div class="container">
 		<div class="row"> 

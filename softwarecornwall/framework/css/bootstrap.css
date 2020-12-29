@@ -1420,9 +1420,6 @@ pre code {
 		border: 1px solid #dcdcdc !important;	
 		padding: 10px;
 	}
-	.sd-pagination  {
-		margin-bottom: 30px;	
-	}
 	.sd-prev-post a,
 	.sd-next-post a {
 		padding: 15px !important;	
@@ -1449,4 +1446,3 @@ pre code {
 		overflow: visible !important;	
 	}
 }
-

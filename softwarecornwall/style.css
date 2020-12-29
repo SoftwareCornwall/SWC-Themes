@@ -1409,7 +1409,10 @@ ol li ol li {
 .sd-pagination  {
 	width: 100%;
 	text-align: center;
+	margin-bottom: 2em;
+    margin-top: 2em;
 }
+
 .sd-current-page,
 .sd-inactive,
 .sd-next-page,
