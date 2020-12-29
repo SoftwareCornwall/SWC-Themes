@@ -1635,17 +1635,6 @@ ol li ol li {
 .sd-footer-widgets .sd-social-icons-widget i {
 	font-size: 20px;	
 }
-
-/* flickr widgets */
-
-.sd-flickr {
-	margin-top: -10px;
-	position: relative;
-}
-.sd-flickr a {
-	float: left;
-	margin: 10px 10px 0 0;	
-}
 /* ------------------------------------------------------------------------ */
 /* 14. Footer
 /* ------------------------------------------------------------------------ */
