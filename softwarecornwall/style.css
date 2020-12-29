@@ -1668,13 +1668,15 @@ ol li ol li {
 	margin: 0;
 	padding: 0;	
 }
-.sd-footer-title {
+.sd-footer-title,
+.tribe-common h4.sd-footer-title {
 	color: #dcdcdc;
 	font-size: 24px;
 	font-weight: 900;
 	padding-bottom: 30px;
 }	
-.sd-footer-title span {
+.sd-footer-title span,
+.tribe-common h4.sd-footer-title  span{
 	font-weight: 400;	
 }
 #sd-footer .current-menu-item a {

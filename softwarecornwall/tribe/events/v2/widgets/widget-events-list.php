@@ -49,11 +49,7 @@ if ( empty( $events ) && $hide_if_no_upcoming_events ) {
 
 		<?php $this->template( 'components/data' ); ?>
 
-		<header class="tribe-events-widget-events-list__header">
-			<h3 class="tribe-events-widget-events-list__header-title tribe-common-h6 tribe-common-h--alt">
-				<?php echo esc_html( $widget_title ); ?>
-			</h3>
-		</header>
+		<h4 class="sd-footer-title">Upcoming <span class="sd-light">Events</span></h4>
 
 		<?php if ( ! empty( $events ) ) : ?>
 
