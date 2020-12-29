@@ -29,10 +29,6 @@ if ( $event->multiday ) {
 	$event_date = $event->short_schedule_details->value();
 }
 ?>
-<div class="tribe-events-widget-events-list__event-datetime-wrapper tribe-common-b2 tribe-common-b3--min-medium">
-	<?php $this->template( 'widgets/widget-events-list/event/date/featured', [ 'event' => $event ] ); ?>
-	<time class="tribe-events-widget-events-list__event-datetime" datetime="<?php echo esc_attr( $event_date_attr ); ?>">
-		<?php echo $event_date; // phpcs:ignore. ?>
-	</time>
+	<span class="sd-recent-date"><?php echo $event_date; ?></span>
 	<?php $this->do_entry_point( 'after_event_datetime' ); ?>
-</div>
+

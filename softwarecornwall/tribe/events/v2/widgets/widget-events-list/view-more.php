@@ -23,8 +23,8 @@ if ( empty( $view_more_link ) ) {
 <div class="tribe-events-widget-events-list__view-more tribe-common-b1 tribe-common-b2--min-medium">
 	<a
 		href="<?php echo esc_url( $view_more_link ); ?>"
-		class="tribe-events-widget-events-list__view-more-link tribe-common-anchor-thin"
+		title="Software Cornwall tech events calendar"
 	>
-		<?php esc_html_e( 'View more', 'the-events-calendar' ); ?>
+		<?php esc_html_e( 'View full calendar', 'the-events-calendar' ); ?>
 	</a>
 </div>

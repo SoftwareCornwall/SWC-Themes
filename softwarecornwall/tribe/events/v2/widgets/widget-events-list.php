@@ -31,19 +31,8 @@ if ( empty( $events ) && $hide_if_no_upcoming_events ) {
 }
 ?>
 <div
-	<?php tribe_classes( $container_classes ); ?>
-	data-js="tribe-events-view"
-	data-view-rest-nonce="<?php echo esc_attr( $rest_nonce ); ?>"
-	data-view-rest-url="<?php echo esc_url( $rest_url ); ?>"
-	data-view-manage-url="<?php echo esc_attr( $should_manage_url ); ?>"
-	<?php foreach ( $container_data as $key => $value ) : ?>
-		data-view-<?php echo esc_attr( $key ); ?>="<?php echo esc_attr( $value ); ?>"
-	<?php endforeach; ?>
-	<?php if ( ! empty( $breakpoint_pointer ) ) : ?>
-		data-view-breakpoint-pointer="<?php echo esc_attr( $breakpoint_pointer ); ?>"
-	<?php endif; ?>
 >
-	<div class="tribe-events-widget-events-list">
+	<div>
 
 		<?php $this->template( 'components/json-ld-data' ); ?>
 
@@ -53,10 +42,12 @@ if ( empty( $events ) && $hide_if_no_upcoming_events ) {
 
 		<?php if ( ! empty( $events ) ) : ?>
 
-			<div class="tribe-events-widget-events-list__events">
+			<div class="sd-recent-posts-widget">
+				<ul>
 				<?php foreach ( $events as $event ) : ?>
 					<?php $this->template( 'widgets/widget-events-list/event', [ 'event' => $event ] ); ?>
 				<?php endforeach; ?>
+				</ul>
 			</div>
 
 			<?php $this->template( 'widgets/widget-events-list/view-more', [ 'view_more_link' => $view_more_link ] ); ?>
