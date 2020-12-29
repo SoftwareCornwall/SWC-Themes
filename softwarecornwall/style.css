@@ -1657,6 +1657,11 @@ ol li ol li {
 	color: #3b5868;
 	padding: 50px 0;	
 }
+
+.sd-footer-widgets .sd-recent-date{
+	color: #82828a;	
+}
+
 .sd-footer-widgets a {
 	/* color: #3b5868;	 */
 	color: #b8b8b8;
