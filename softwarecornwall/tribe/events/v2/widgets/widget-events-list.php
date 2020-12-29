@@ -30,14 +30,8 @@ if ( empty( $events ) && $hide_if_no_upcoming_events ) {
 	return;
 }
 ?>
-<div
->
+<div>
 	<div>
-
-		<?php $this->template( 'components/json-ld-data' ); ?>
-
-		<?php $this->template( 'components/data' ); ?>
-
 		<h4 class="sd-footer-title">Upcoming <span class="sd-light">Events</span></h4>
 
 		<?php if ( ! empty( $events ) ) : ?>
@@ -59,5 +53,3 @@ if ( empty( $events ) && $hide_if_no_upcoming_events ) {
 		<?php endif; ?>
 	</div>
 </div>
-
-<?php $this->template( 'components/breakpoints' ); ?>

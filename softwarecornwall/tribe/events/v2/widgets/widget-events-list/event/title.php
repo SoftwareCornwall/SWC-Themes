@@ -17,14 +17,9 @@
  */
 ?>
 <h4>
-	<a
-		href="<?php echo esc_url( $event->permalink ); ?>"
-		title="<?php echo esc_attr( $event->title ); ?>"
-		rel="bookmark"
-	>
-		<?php
-		// phpcs:ignore
-		echo $event->title;
-		?>
+	<a href="<?php echo esc_url( $event->permalink ); ?>"
+	   title="<?php echo esc_attr( $event->title ); ?>"
+	   rel="bookmark">
+		<?php echo $event->title;?>
 	</a>
 </h4>
