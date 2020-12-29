@@ -1602,6 +1602,11 @@ ol li ol li {
 	margin-right: 20px;
 	width: 100px;
 }
+.upcoming-events-widget-thumb{
+	width: auto;
+	height: auto;
+	text-align: center;
+}
 .sd-recent-posts-content {
 	overflow: hidden;	
 }
@@ -1652,8 +1657,14 @@ ol li ol li {
 	color: #3b5868;
 	padding: 50px 0;	
 }
+
+.sd-footer-widgets .sd-recent-date{
+	color: #82828a;	
+}
+
 .sd-footer-widgets a {
-	color: #3b5868;	
+	/* color: #3b5868;	 */
+	color: #b8b8b8;
 }
 .sd-footer-widgets a:hover {
 	color: #fff;	
@@ -1668,13 +1679,15 @@ ol li ol li {
 	margin: 0;
 	padding: 0;	
 }
-.sd-footer-title {
+.sd-footer-title,
+.tribe-common h4.sd-footer-title {
 	color: #dcdcdc;
 	font-size: 24px;
 	font-weight: 900;
 	padding-bottom: 30px;
 }	
-.sd-footer-title span {
+.sd-footer-title span,
+.tribe-common h4.sd-footer-title  span{
 	font-weight: 400;	
 }
 #sd-footer .current-menu-item a {
