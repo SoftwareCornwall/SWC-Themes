@@ -25,6 +25,10 @@ Theme Started as: My University by Skat http://skat.tf/
 /* 00. Missing Bootstrap stuff
 /* ------------------------------------------------------------------------ */
 
+img {
+	height: auto;
+}
+
 table {
 	background-color: transparent;
   }

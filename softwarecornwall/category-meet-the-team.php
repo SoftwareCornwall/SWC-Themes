@@ -34,7 +34,7 @@ get_header();
 						<!-- post thumbnail -->
 						<?php if ( ( function_exists( 'has_post_thumbnail') ) && ( has_post_thumbnail() ) ) : ?>
 							<div class="sd-entry-thumb">
-								<figure><?php the_post_thumbnail( 'blog-grid-thumb' ); ?></figure>
+								<figure><?php the_post_thumbnail( 'blog-grid-thumb', ['height' => '185px', 'width' => '360px'] ); ?></figure>
 							</div>
 						<?php endif; ?>
 						<!-- post thumbnail end-->
