@@ -4,7 +4,7 @@
 /* ------------------------------------------------------------------------ */
 get_header(); ?>
 
-<!--Template: Single-->
+<!--Template: Single - Training Course-->
 <div class="sd-blog-page">
 	<div class="container">
 		<div class="row"> 
@@ -13,7 +13,7 @@ get_header(); ?>
 				<div class="sd-left-col">
 					<?php if (have_posts()) : while (have_posts()) : the_post();?>
 
-					<?php get_template_part( 'framework/inc/post-formats/single', get_post_format() ); ?>
+					<?php get_template_part( 'framework/inc/post-formats/single-training', get_post_format() ); ?>
 
 					<?php endwhile; else: ?>
 					<p>
