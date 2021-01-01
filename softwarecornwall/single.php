@@ -3,8 +3,8 @@
 /* Theme Single Post
 /* ------------------------------------------------------------------------ */
 get_header(); ?>
-<!--left col-->
 
+<!--Template: Single-->
 <div class="sd-blog-page">
 	<div class="container">
 		<div class="row"> 
