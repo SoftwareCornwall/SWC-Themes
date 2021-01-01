@@ -14,7 +14,8 @@ global $sd_data;
            <?php $endDate = get_post_meta($post->ID, 'training_end_date', true); if ($endDate) {  echo ' - ' . $endDate; }?> /
            <?php $time = get_post_meta($post->ID, 'training_start_time', true); if ($time) {  echo $time; }?> to
            <?php $endTime = get_post_meta($post->ID, 'training_end_time', true); if ($endTime) {  echo $endTime; }?></br>
-        <?php $location = get_post_meta($post->ID, 'training_venue', true); if ($location) {  echo 'Location: ' . $location; }?></p>
+           <?php $location = get_post_meta($post->ID, 'training_venue', true); if ($location) {  echo 'Location: ' . $location; }?>
+        </p>
         
         <?php the_excerpt(); ?>
 

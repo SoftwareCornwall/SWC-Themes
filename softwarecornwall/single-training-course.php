@@ -8,7 +8,6 @@ get_header(); ?>
 <div class="sd-blog-page">
 	<div class="container">
 		<div class="row"> 
-			<!--left col-->
 			<div class="col-md-<?php if ( $sd_data['sd_blog_layout'] == '2' ) echo '12'; else echo '8'; ?> <?php if ( $sd_data['sd_sidebar_location'] == '2' ) echo 'pull-right'; ?>">
 				<div class="sd-left-col">
 					<?php if (have_posts()) : while (have_posts()) : the_post();?>
@@ -17,7 +16,9 @@ get_header(); ?>
 							<div class="sd-entry-wrapper single-training-wrapper">
 								
 								<div class="sd-entry-content">
-								<div class="sd-title-wrapper"><h3 class="sd-styled-title">Course<span class="sd-light"> Content</span></h3></div>
+									<div class="sd-title-wrapper">
+										<h3 class="sd-styled-title">Course <span class="sd-light">Content</span></h3>
+									</div>
 									<?php the_content(); ?>
 								</div>
 
@@ -40,12 +41,12 @@ get_header(); ?>
 					<?php endif; ?>
 				</div>
 			</div>
-			<!--left col end--> 
-			<?php if ( $sd_data['sd_blog_layout'] !== '2' ) : ?>
-			<!--sidebar-->
+
 			<div class="col-md-4">				
 				<aside id="recent-posts-2" class="sd-sidebar-widget clearfix widget_recent_entries">
-				<div class="sd-title-wrapper"><h3 class="sd-styled-title">Course<span class="sd-light"> Details</span></h3></div>
+					<div class="sd-title-wrapper">
+						<h3 class="sd-styled-title">Course <span class="sd-light">Details</span></h3>
+					</div>
 
 					<?php if ( $sd_data['sd_blog_featured_img'] == '1' ) : ?>
 						<?php if ( ( function_exists( 'has_post_thumbnail' ) ) && ( has_post_thumbnail() ) ) : ?>
@@ -72,16 +73,16 @@ get_header(); ?>
 						Funded Price (see description): <?php $training_funded_price = get_post_meta($post->ID, 'training_funded_price', true); if ($training_funded_price) {  echo $training_funded_price; }?>
 					</p>
 					<p>
-						<?php $bookLink = get_post_meta($post->ID, 'training_ticket_link', true); if ($bookLink) { ?>
+						<?php 
+						$bookLink = get_post_meta($post->ID, 'training_ticket_link', true); 
+						if ($bookLink) { ?>
 							<a href="<?php echo $bookLink; ?>" title="Book <?php get_the_title();?> now" class="more-link">Book Now</a></span>
 						<?php }?>
 					</p>
-						</br>
+					</br>
 					<?php get_sidebar(); ?>
 				</aside>
 			</div>
-			<!--sidebar end--> 
-			<?php endif; ?>
 		</div>
 	</div>
 </div>
