@@ -624,6 +624,13 @@ ol li ol li {
 	line-height: 45px;
 	width: 100%;	
 }
+
+@media screen and (max-width: 767px) {
+	.sd-header-top {
+		display: none;
+	}
+}
+
 /* header top left options */
 .sd-header-left-options {
 	float: left;
@@ -2502,12 +2509,6 @@ body .wpb_content_element .wpb_accordion_wrapper .wpb_accordion_content {
 	margin-bottom: 6rem;
 }
 
-/* @media (max-height: 600px) {
-	.splash {
-	  height: 80vh;
-	}
-  } */
-
 .cover-text-wrapper {
 	padding: 0;
 	color: #fff;
@@ -2579,6 +2580,17 @@ body .wpb_content_element .wpb_accordion_wrapper .wpb_accordion_content {
 	z-index: 1;
 	background-size: cover;
 	background-position: center;
+}
+
+@media (max-height: 600px) {
+	.cover-image,
+	.splash {
+	  height: 400px;
+	}
+
+	.cover-text-wrapper {
+		margin-top: 60px;
+	}
 }
 
 /* ------------------------------------------------------------------------ */

@@ -21,8 +21,9 @@ global $sd_data;
             Full Price: <?php $training_full_price = get_post_meta($post->ID, 'training_full_price', true); if ($training_full_price) {  echo $training_full_price; }?> // 
             Funded Price: <?php $training_funded_price = get_post_meta($post->ID, 'training_funded_price', true); if ($training_funded_price) {  echo $training_funded_price; }?>
         </p>
-<p>
-        <a href="<?php the_permalink(); ?>" title="<?php get_the_title();?>" rel="bookmark" class="more-link dark-button">Find out more</a></br></br></p>
+        <p>
+            <a href="<?php the_permalink(); ?>" title="<?php get_the_title();?>" rel="bookmark" class="more-link dark-button">Find out more</a></br></br>
+        </p>
     </div>
 
     <!-- Image -->
