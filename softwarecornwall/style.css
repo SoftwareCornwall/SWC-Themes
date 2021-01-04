@@ -1940,7 +1940,8 @@ ol li ol li {
 }
 /* buttons */
 
-.sd-button {
+.sd-button,
+.um-directory .um-member-directory-header .um-member-directory-header-row .um-member-directory-search-line .um-do-search  {
 	border-radius: 3px;
 	cursor: pointer;
 	display: inline-block;
@@ -1961,11 +1962,16 @@ ol li ol li {
 	     -o-transition: opacity .3s ease-in-out;
 		 	transition: opacity .3s ease-in-out;
 }
-.sd-button:hover {
+.um-directory .um-member-directory-header .um-member-directory-header-row .um-member-directory-search-line .um-do-search {
+	margin: 0;
+}
+.sd-button:hover,
+.um-directory .um-member-directory-header .um-member-directory-header-row .um-member-directory-search-line .um-do-search:hover  {
 	opacity: .8;
 	text-decoration: none;
 }
-.sd-button:active {
+.sd-button:active,
+.um-directory .um-member-directory-header .um-member-directory-header-row .um-member-directory-search-line .um-do-search:active {
 	box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2) inset;
 	position: relative;
 	outline: none;
@@ -1981,7 +1987,7 @@ ol li ol li {
 }
 
 .dark-button,
-.um-do-search .um-button {
+.um-directory .um-member-directory-header .um-member-directory-header-row .um-member-directory-search-line .um-do-search {
 	background-color: #2c448c;
 	color: #fff;
 	border-color: #fff;
