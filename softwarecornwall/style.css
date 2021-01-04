@@ -1955,7 +1955,7 @@ ol li ol li {
 	text-align: center;
 	text-decoration: none;
 	vertical-align: baseline;
-	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+	zoom: 1;
 	-webkit-transition: opacity .3s ease-in-out;
 	   -moz-transition: opacity .3s ease-in-out;
 	    -ms-transition: opacity .3s ease-in-out;
