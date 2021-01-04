@@ -92,8 +92,8 @@ get_header();
 								<span class="sd-recent-date"> <?php echo get_the_date( get_option( 'date_format' ) ); ?> </span></br></p>
 							</div>
 							<div class="sd-entry-content clearfix">
-								<p><?php echo wp_trim_words( get_the_content(), 25, '...' ); ?>
-								<a class="more-link" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Read More</a></p>
+								<p><?php echo wp_trim_words( get_the_content(), 25, ' ...' ); ?>
+								<a class="sidebar-inline-more-link" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Read More</a></p>
 							</div>
 							</br>
 						</div>
