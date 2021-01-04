@@ -290,9 +290,11 @@ add_filter( 'single_template', function ( $single_template ) {
 
 	if ( has_category( 'frequently-asked-questions') || has_category( 'about-software-cornwall' ) ||
 		 has_category( 'eu-programmes' ) || has_category( 'how-to' ) ) {
-        $single_template = dirname( __FILE__ ) . '/single-frequently-asked-questions.php';
+        $single_template = dirname( __FILE__ ) . '/single-frequently-asked-question.php';
 	} elseif( has_category( 'meet-the-team' ) ) {
 		$single_template = dirname( __FILE__ ) . '/single-meet-the-team.php';
+	} elseif( has_category( 'training-courses' ) || has_category('employer-led-skills-training-courses')) {
+		$single_template = dirname( __FILE__ ) . '/single-training-course.php';
 	}
     return $single_template;
      
