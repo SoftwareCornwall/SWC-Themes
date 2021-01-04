@@ -384,4 +384,26 @@ function swc_save_training_meta($post_id) {
 }
 add_action('save_post', 'swc_save_training_meta'); 
 
+// Exclude certain categories from displaying the related posts widget after the content
+function jetpackme_filter_exclude_category( $filters ) {
+    $filters[] = array(
+        'not' => array(
+            'term' => array(
+                'category.slug' => array(
+					'frequently-asked-questions', 
+					'about-software-cornwall', 
+					'eu-programmes', 
+					'how-to',
+					'employer-led-skills-training-courses',
+					'training-courses'
+				),
+            ),
+        ),
+    );
+ 
+    return $filters;
+}
+add_filter( 'jetpack_relatedposts_filter_filters', 'jetpackme_filter_exclude_category' );
+
+
 ?>
