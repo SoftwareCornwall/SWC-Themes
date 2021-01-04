@@ -6,7 +6,7 @@ get_header();
 
 ?>
 
-<!-- Template Name: Archive -->
+<!-- Theme File: Archive -->
 <div class="sd-blog-page">
 	<div class="container">
 		<div class="row"> 

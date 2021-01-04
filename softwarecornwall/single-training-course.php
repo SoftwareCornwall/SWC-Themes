@@ -1,10 +1,11 @@
 <?php
-/* ------------------------------------------------------------------------ */
-/* Theme Single Post
+/* ------------------------------------------------------------------------ //
+ * Template Name: Single - Training Course
+ * Template Post Type: post
 /* ------------------------------------------------------------------------ */
 get_header(); ?>
 
-<!--Template: Single - Training Course-->
+<!--Theme File: Single - Training Course-->
 <div class="sd-blog-page">
 	<div class="container">
 		<div class="row"> 

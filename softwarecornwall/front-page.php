@@ -1,12 +1,13 @@
 <?php
-/* ------------------------------------------------------------------------ */
-/* Template Name: Page: Full Width
+/* ------------------------------------------------------------------------ //
+ * Theme File: Page: Full Width
+ * Template Post Type: page
 /* ------------------------------------------------------------------------ */
 get_header();
 global $sd_data;
 ?>
 
-<!-- Template Name: Page: Front Page -->
+<!-- Theme File: Page: Front Page -->
 <div class="">
 
 	<div class="splash">
