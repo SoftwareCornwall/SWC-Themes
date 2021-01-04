@@ -1,6 +1,6 @@
 <?php 
 /* ------------------------------------------------------------------------ */
-/* Theme Mission to Mars Page
+/* Theme Employer Led skills page
 /* ------------------------------------------------------------------------ */
 get_header(); 
 ?>
@@ -14,7 +14,7 @@ get_header();
 				<?php if (have_posts()) : while (have_posts()) : the_post();?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class( 'blog-entry page-entry clearfix' ); ?>> 
 						<!-- entry content -->
-						<div class="entry-content">
+						<div class="entry-content els-page-entry-content">
 							<?php the_content(); ?>
 						</div>
 						<!-- entry content end--> 
@@ -93,11 +93,7 @@ get_header();
 								<span class="sd-recent-date"> <?php echo get_the_date( get_option( 'date_format' ) ); ?> </span></br></p>
 							</div>
 							<div class="sd-entry-content clearfix">
-<<<<<<< HEAD
-								<p><?php echo wp_trim_words( get_the_content(), 25, ' ...' ); ?>
-=======
 								<p><?php echo wp_trim_words( get_the_content(), 34, ' ...' ); ?>
->>>>>>> master
 								<a class="sidebar-inline-more-link" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Read More</a></p>
 							</div>
 							</br>

@@ -2614,7 +2614,11 @@ body .wpb_content_element .wpb_accordion_wrapper .wpb_accordion_content {
 	padding: 0;
 	position: absolute;
 	width: 1px;
-  }
+}
+
+.els-page-entry-content p:first-of-type {
+	margin-top: 0;;
+}
 
 /* ------------------------------------------------------------------------ */
 /* Ultimate Member Style Overrides
