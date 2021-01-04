@@ -1,7 +1,6 @@
 <?php
-/* ------------------------------------------------------------------------ */
-/* Theme Single Frequently Asked Questions Post
- * Template Name: Frequently Asked Questions
+/* ------------------------------------------------------------------------ //
+ * Template Name: Single - Frequently Asked Questions
  * Template Post Type: post
 /* ------------------------------------------------------------------------ */
 global $sd_data;

@@ -1,13 +1,13 @@
 <?php 
 /* ------------------------------------------------------------------------ */
-/* Template name: Page: Blog
+/* Template name: Page
 /* ------------------------------------------------------------------------ */
 get_header();
 
 global $sd_data;
 ?>
 
-<!-- Template Name: Blog -->
+<!-- Theme file: Blog -->
 <div class="sd-blog-page">
 	<div class="container">
 		<div class="row"> 

@@ -1,12 +1,13 @@
 
 <?php
-/* ------------------------------------------------------------------------ */
-/* Template Name: Category
+/* ------------------------------------------------------------------------ //
+ * Theme File: Category - Training
+ * Template Post Type: category
 /* ------------------------------------------------------------------------ */
 get_header();
 ?>
 
-<!-- Template Name: Category - Training -->
+<!-- Theme File: Category - Training -->
 <div class="sd-blog-page">
 	<div class="container">
 		<div class="row"> 

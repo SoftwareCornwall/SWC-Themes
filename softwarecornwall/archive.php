@@ -6,7 +6,7 @@ get_header();
 
 ?>
 
-<!-- Template Name: Archive -->
+<!-- Theme File: Archive -->
 <div class="sd-blog-page">
 	<div class="container">
 		<div class="row"> 
@@ -17,8 +17,7 @@ get_header();
 			   	      global $more;
 			   	 	  $more = 0;
 				?>
-					<?php if ( have_posts() ) : ?>
-					<?php while ( have_posts() ) : the_post(); ?>
+					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 					<?php get_template_part( 'framework/inc/post-formats/content', get_post_format() ); ?>
 					<?php endwhile; else: ?>
 					<p>
