@@ -1409,7 +1409,11 @@ ol li ol li {
 	padding-right: 10px;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale
-}	
+}
+
+.sidebar-inline-more-link {
+	font-weight: 600;
+}
 
 
 
