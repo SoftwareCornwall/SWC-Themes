@@ -13,34 +13,29 @@ get_header();
 				<article class="sd-left-col">
 					<div class="entry-content user-dashboard">
 						<?php 
-							$username = um_user('user_login');
-							$business_name = um_user('business_name');
-						?>
+						$username = um_user('user_login');
+						echo do_shortcode( '[um_show_content roles="um_member,administrator"]'.
+						
+							'<h3>Promote your business</h3>
+							<p>Your profile is the window into your business on the Software Cornwall Website. Complete as much as you can, keep it up to date with fresh information and make your company stand out.</p>
+							<p>Add your latest news, press releases and event details to the website to promote your business.</br>
+								<a class="more-link" href="https://www.softwarecornwall.org/member/' . $username . '/?um_action=edit" title="Edit your profile">Update Your Business Profile</a> <a class="more-link" href="https://softwarecornwall.org/wp-admin/post-new.php" title="Add an news post">Add a News Item</a> <a class="more-link" href="https://softwarecornwall.org/wp-admin/post-new.php?post_type=tribe_events" title="Add an event">Add an Event</a>
+							</p>
+								
+							<h3>Grow your team</h3>
+							<p>Add your job to the jobs board to put the role in front of the right people to help grow your team.</br>
+								<a class="more-link" href="https://softwarecornwall.org/post-a-job/" title="Post a job">Add a new Job</a> <a class="more-link" href="https://softwarecornwall.org/job-dashboard/" title="Jobs Dashboard">View Your Active Jobs</a> <a class="more-link" href="https://softwarecornwall.org/resumes/" title="View CV Bank">View CV Bank</a>
+							</p>
 
-						<h3>Promote your business</h3>
-						<p>Your profile is the window into your business on the Software Cornwall Website. Complete as much as you can, keep it up to date with fresh information and make your company stand out.</p>
-						<p>Add your latest news, press releases and event details to the website to promote your business.</br>
-							<a class="more-link" href="<?php echo 'https://www.softwarecornwall.org/member/' . $username . '/?um_action=edit' ;?>" title="Edit your profile">Update Your Business Profile</a>
-							<a class="more-link" href="https://softwarecornwall.org/wp-admin/post-new.php" title="Add an new post">Add a News Item</a>
-							<a class="more-link" href="https://softwarecornwall.org/wp-admin/post-new.php?post_type=tribe_events" title="Add an event">Add an Event</a>
-						</p>
-							
-						<h3>Grow your team</h3>
-						<p>Add your job to the jobs board to put the role in front of the right people to help grow your team.</br>
-							<a class="more-link" href="https://softwarecornwall.org/post-a-job/" title="Post a job">Add a new Job</a>
-							<a class="more-link" href="https://softwarecornwall.org/job-dashboard/" title="Jobs Dashboard">View Your Active Jobs</a>
-							<a class="more-link" href="https://softwarecornwall.org/resumes/" title="View CV Bank">View CV Bank</a>
-						</p>
+							<h3>Your Account</h3>
+							<p>Update your personal information, reset your password and manage your data.</br>
+								<a class="more-link" href="https://softwarecornwall.org/account/" title="Update Account">Update account details</a>
+							</p>
 
-						<h3>Your Account</h3>
-						<p>Update your personal information, reset your password and manage your data.</br>
-							<a class="more-link" href="https://softwarecornwall.org/account/" title="Update Account">Update account details</a>
-						</p>
-
-						<h3>Help</h3>
-						<p>Having problems using your member benefits? Get in touch. We're happy to help.</br>
-							<a class="more-link" href="https://softwarecornwall.org/contact/" title="Contact Software Cornwall">Contact Us</a>
-						</p>
+							<h3>Help</h3>
+							<p>Need a hand getting the most from your member benefits? Get in touch.</br>
+								<a class="more-link" href="https://softwarecornwall.org/contact/" title="Contact Software Cornwall">Contact Us</a>
+							</p>'.'[/um_show_content]' ); ?>
 					</div>
 				</article>
 			</div>
