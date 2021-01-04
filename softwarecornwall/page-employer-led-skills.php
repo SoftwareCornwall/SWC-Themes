@@ -62,7 +62,7 @@ get_header();
 						src="https://softwarecornwall.org/wp-content/uploads/2020/10/ESF_logo.png" 
 						alt="European Social Fund Logo" 
 						loading="lazy" 
-						height="74px" width="360px"/>
+						height="74px" width="360px"
 						style="width: 100%;"/>
 					</br></br>
 					<div class="sd-title-wrapper">

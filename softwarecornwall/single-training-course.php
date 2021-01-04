@@ -44,7 +44,18 @@ get_header(); ?>
 
 			<div class="col-md-4">				
 				<aside id="recent-posts-2" class="sd-sidebar-widget clearfix widget_recent_entries">
-					<div class="sd-title-wrapper">
+				<div class="sd-title-wrapper">
+						<h3 class="sd-styled-title">Part <span class="sd-light">Financed By:</span></h3>
+					</div>
+					<img 
+						src="https://softwarecornwall.org/wp-content/uploads/2020/10/ESF_logo.png" 
+						alt="European Social Fund Logo" 
+						loading="lazy" 
+						height="74px" width="360px"
+						style="width: 100%;"/>
+					</br></br>	
+				
+				<div class="sd-title-wrapper">
 						<h3 class="sd-styled-title">Course <span class="sd-light">Details</span></h3>
 					</div>
 
@@ -53,7 +64,7 @@ get_header(); ?>
 						<div class="sd-entry-thumb">
 							<figure>
 								<?php $sd_layout = $sd_data['sd_blog_layout'];  $feat_img_size = ( ( $sd_layout == '2' ) ? 'large-post-image' : 'post-image' ); ?>
-								<?php the_post_thumbnail( $feat_img_size ); ?>
+								<?php the_post_thumbnail( $feat_img_size, ['height' => '374px', 'width' => '720px']); ?>
 							</figure>
 						</div>
 						<?php endif; ?>
