@@ -62,7 +62,8 @@ get_header();
 						src="https://softwarecornwall.org/wp-content/uploads/2020/10/ESF_logo.png" 
 						alt="European Social Fund Logo" 
 						loading="lazy" 
-						height="74px" width="360px"/>
+						height="74px" width="360px"
+						style="width: 100%;"/>
 					</br></br>
 					<div class="sd-title-wrapper">
 						<h3 class="sd-styled-title">Latest <span class="sd-light">ELS News</span></h3>
@@ -92,7 +93,11 @@ get_header();
 								<span class="sd-recent-date"> <?php echo get_the_date( get_option( 'date_format' ) ); ?> </span></br></p>
 							</div>
 							<div class="sd-entry-content clearfix">
+<<<<<<< HEAD
 								<p><?php echo wp_trim_words( get_the_content(), 25, ' ...' ); ?>
+=======
+								<p><?php echo wp_trim_words( get_the_content(), 34, ' ...' ); ?>
+>>>>>>> master
 								<a class="sidebar-inline-more-link" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Read More</a></p>
 							</div>
 							</br>
