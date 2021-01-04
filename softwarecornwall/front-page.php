@@ -85,7 +85,7 @@ global $sd_data;
 			
 			<div class="col-md-12 homepage-jobs-wrapper">
 				<h2 style="text-align: center;"><strong>Latest </strong><span class="sd-light">Jobs</span></h2>
-				<h3 style="text-align: center;"><a href="https://www.softwarecornwall.org/jobs-board/"><strong><span class="sd-colored sd-light">find your perfect job</span></strong></a></h3>
+				<h3 style="text-align: center;"><a href="https://www.softwarecornwall.org/jobs-board/" title="Software Industry Jobs in the South West"><strong><span class="sd-colored sd-light">find your perfect job</span></strong></a></h3>
 				<link rel='stylesheet' id='wp-job-manager-frontend-css'  href='https://www.softwarecornwall.org/wp-content/plugins/wp-job-manager/assets/css/frontend.css?ver=1.34.3' type='text/css' media='all' />
 				<p><?php echo do_shortcode("[jobs]"); ?></p>
 				<p style="text-align: center;">If you are looking for a job in Cornwall's tech community please <strong><a href="https://www.softwarecornwall.org/submit-resume/">submit your CV</a></strong> to our CV Bank so our members can find you</p>
@@ -94,17 +94,17 @@ global $sd_data;
 			<div class="col-md-4">
 				<h3>Join <strong><span style="color: #2c448c;">Software Cornwall</span></strong></h3>
 				<p>Software Cornwall represents and supports its <strong><a href="https://softwarecornwall.org/members/" title="Software Cornwall Membership Directory">member organisations</a></strong>, as well as student, mentors and volunteers. We welcome new members. We aim to deliver <strong><a href="https://softwarecornwall.org/membership-benefits/" title="Benefits of becoming a Software Cornwall member">direct benefits</a></strong> to your business and support the growing tech community in Cornwall.</p>
-				<p><a class="more-link" href="https://www.softwarecornwall.org/register">Become a member</a></p>
+				<p><a class="more-link" href="https://www.softwarecornwall.org/register" title="Become a part of Cornwall's software community">Become a member</a></p>
 			</div>
 			<div class="col-md-4">
 				<h3>Get <strong><span style="color: #2c448c;">Trained</span></strong></h3>
 				<p>Taking direction from Cornwall's tech community, our technical software and professional training courses offers a great way to upskill both you and your team. Can't find the right course? <strong><a href="https://softwarecornwall.org/contact" title="Contact Software Cornwall">Get in touch</a></strong> to suggest a future course.</p>
-				<p><a class="more-link" href="https://softwarecornwall.org/category/skills-and-training/training-courses/">View training courses</a></p>
+				<p><a class="more-link" href="https://softwarecornwall.org/category/skills-and-training/training-courses/" title="software training courses">View training courses</a></p>
 			</div>
 			<div class="col-md-4">
 				<h3>Find Your<strong><span style="color: #2c448c;"> Perfect Job</span></strong></h3>
 				<p>Whether you are just starting out, or an experienced pro, if you are looking for employment add your details to our <strong><a href="https://softwarecornwall.org/submit-resume/" title="Software Cornwall CV Submission">CV bank</a></strong> so members can find you easily.  Our Jobs Board has many opportunities to work in Cornwall's Tech sector.</p>
-				<p><a class="more-link" href="https://www.softwarecornwall.org/jobs-board">View jobs board</a></p>
+				<p><a class="more-link" href="https://www.softwarecornwall.org/jobs-board" title="Job Vacancies for Software Developers in Cornwall">View jobs board</a></p>
 			</div>
 		</div>
 	</div>
