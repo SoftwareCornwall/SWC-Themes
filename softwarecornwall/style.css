@@ -1743,7 +1743,9 @@ ol li ol li {
 	float: left;
 	font-size: 14px;
 	font-weight: bold;
-	padding: 10px;
+	margin-top: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	-moz-box-sizing: border-box;
 		 box-sizing: border-box;
  	-webkit-transition: opacity .3s ease-in-out;
@@ -1978,7 +1980,8 @@ ol li ol li {
 	padding: 8px 12px;
 }
 
-.dark-button {
+.dark-button,
+.um-do-search .um-button {
 	background-color: #2c448c;
 	color: #fff;
 	border-color: #fff;
