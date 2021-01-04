@@ -1,11 +1,12 @@
 <?php
+/* ------------------------------------------------------------------------  //
+/* Template Name: Page - Full Width
+ * Template Post Type: page
 /* ------------------------------------------------------------------------ */
-/* Template Name: Page: Full Width
-/* ------------------------------------------------------------------------ */
-// Template Name: Page: Full Width
 get_header();
 ?>
 
+<!-- Theme File: Page: Full Width -->
 <div class="sd-blog-page">
 	<div class="container">
 		<div class="row">

@@ -1,9 +1,7 @@
 <?php
-/* ------------------------------------------------------------------------ */
-/* Theme Single Meet the Team Post
- * Template Name: Meet the Team
+/* ------------------------------------------------------------------------
+ * Template Name: Single - Meet the Team
  * Template Post Type: post
- *
 /* ------------------------------------------------------------------------ */
 get_header(); 
 global $sd_data;
