@@ -1980,7 +1980,8 @@ ol li ol li {
 	padding: 8px 12px;
 }
 
-.dark-button {
+.dark-button,
+.um-do-search .um-button {
 	background-color: #2c448c;
 	color: #fff;
 	border-color: #fff;
