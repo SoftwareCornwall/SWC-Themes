@@ -13,6 +13,11 @@ get_header();
 				<article class="sd-left-col">
 					<div class="entry-content user-dashboard">
 						<?php 
+						// Logged out user content
+						echo do_shortcode('[um_loggedout]'.'<h3>Log in to view your dashboard</h3>'.'[/um_loggedout]');
+
+
+						// Logged in member content
 						$username = um_user('user_login');
 						echo do_shortcode( '[um_show_content roles="um_member,administrator"]'.
 						
@@ -24,18 +29,25 @@ get_header();
 								
 							<h3>Grow your team</h3>
 							<p>Add your job to the jobs board to put the role in front of the right people to help grow your team.</br>
-								<a class="more-link" href="https://softwarecornwall.org/post-a-job/" title="Post a job">Add a new Job</a> <a class="more-link" href="https://softwarecornwall.org/job-dashboard/" title="Jobs Dashboard">View Your Active Jobs</a> <a class="more-link" href="https://softwarecornwall.org/resumes/" title="View CV Bank">View CV Bank</a>
+								<a class="more-link" href="https://softwarecornwall.org/post-a-job/" title="Post a Job">Add a New Job</a> <a class="more-link" href="https://softwarecornwall.org/job-dashboard/" title="Jobs Dashboard">View Your Active Jobs</a> <a class="more-link" href="https://softwarecornwall.org/resumes/" title="View CV Bank">View CV Bank</a>
 							</p>
 
 							<h3>Your Account</h3>
 							<p>Update your personal information, reset your password and manage your data.</br>
-								<a class="more-link" href="https://softwarecornwall.org/account/" title="Update Account">Update account details</a>
+								<a class="more-link" href="https://softwarecornwall.org/account/" title="Update Account">Update Account Details</a>
 							</p>
 
 							<h3>Help</h3>
 							<p>Need a hand getting the most from your member benefits? Get in touch.</br>
 								<a class="more-link" href="https://softwarecornwall.org/contact/" title="Contact Software Cornwall">Contact Us</a>
-							</p>'.'[/um_show_content]' ); ?>
+							</p>'.'[/um_show_content]' ); 
+							
+							// Logged in candidate content
+
+
+							// Logged in admin/editor content
+							
+							?>
 					</div>
 				</article>
 			</div>
