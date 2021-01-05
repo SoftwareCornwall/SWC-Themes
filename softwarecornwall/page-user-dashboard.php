@@ -36,8 +36,8 @@ get_header();
 						
 							'<h3>Your CV</h3>
 							<p>Adding your CV to out CV bank is a brilliant way to put yourself in front of businesses from Cornwall&amp;s tech industry who are hiring right now.</br>
-								<a class="more-link" href="https://www.softwarecornwall.org/member//?um_action=edit" title="Edit your profile">View Your CV</a> 
-								<a class="more-link" href="https://softwarecornwall.org/wp-admin/post-new.php" title="Add an news post">Edit Your CV</a> 
+								<a class="more-link" href="https://softwarecornwall.org/candidate-dashboard" title="View all CVs">View Your CVs</a> 
+								<a class="more-link" href="https://softwarecornwall.org/submit-resume/" title="Add a new CV">Add a New CV</a>
 							</p>
 								
 							<h3>Our Jobs Board</h3>
