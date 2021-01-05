@@ -91,8 +91,6 @@ get_header(); ?>
 							<a href="<?php echo $bookLink; ?>" title="Book <?php get_the_title();?> now" class="more-link">Book Now</a></span>
 						<?php }?>
 					</p>
-					</br>
-					<?php get_sidebar(); ?>
 				</aside>
 			</div>
 		</div>
