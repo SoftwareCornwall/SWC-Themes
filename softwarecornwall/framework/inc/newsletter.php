@@ -11,7 +11,7 @@ global $sd_data;
 			<div class="sd-newsletter clearfix">
 				<div class="col-sm-8 col-xs-12 col-sm-offset-2"> 
 					<h2>Stay <strong><span style="color: #2c448c;">In Touch</span></strong></h2>
-					<p><span class="sd-subscribe-text">Get connected to the counties software industry by becoming a <strong>free</strong> in touch member.</span> You’ll be kept up to date on the latest member and industry news, get invites to our regular events, find out about our sector specific training courses.</p>
+					<p><span class="sd-subscribe-text">Get connected to the counties software industry by becoming a <strong>free</strong> in touch member.</span> You’ll be kept up to date on the latest member and industry news, get invites to our regular events, and find out about our sector specific training courses.</p>
 
 					<div id="sd-newsletter_signup">
 						<form action="https://share.hsforms.com/1OaUNOGHVRzuUpubCGTwTmg3ddhf" method="get" id="embedded-subscribe-form" name="embedded-subscribe-form" novalidate>
