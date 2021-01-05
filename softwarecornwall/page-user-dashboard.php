@@ -13,6 +13,12 @@ get_header();
 				<article class="sd-left-col">
 					<div class="entry-content user-dashboard">
 						<?php 
+						echo do_shortcode('[um_loggedout]'.
+							'<h3>Log in to view your dashboard</h3>'
+							.'[/um_loggedout]');
+
+
+
 						$username = um_user('user_login');
 						echo do_shortcode( '[um_show_content roles="um_member,administrator"]'.
 						
