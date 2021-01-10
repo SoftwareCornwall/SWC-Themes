@@ -2225,21 +2225,6 @@ body .wpb_content_element .wpb_accordion_wrapper .wpb_accordion_content {
 	content: "\f056" !important;
 }
 
-.vc_separator .vc_sep_holder .vc_sep_line {
-	height: 2px !important;	
-}
-.vc_separator.vc_separator_align_center h2,
-.vc_separator.vc_separator_align_center h3,
-.vc_separator.vc_separator_align_center h5,
-.vc_separator.vc_separator_align_center h6 {
-	display: table-cell;
-	padding-bottom: 0;
-	padding-left: 0.8em;
-	padding-right: 0.8em;
-	white-space: pre;
-	
-}
-
 /* ------------------------------------------------------------------------ */
 /* Jobs Listings
 /* ------------------------------------------------------------------------ */
