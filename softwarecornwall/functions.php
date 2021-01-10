@@ -362,8 +362,11 @@ function swc_save_training_meta($post_id) {
     if (!wp_verify_nonce($_POST['training_meta_box_nonce'], basename(__FILE__)))
 		return;
 
-    if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE)  
-        return $post_id;  
+    if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE){
+		error_log('Auto saving post meta. Post ID: ' . $post_id  , 0);
+		return $post_id; 
+	}  
+         
 
     if ('page' == $_POST['post_type']) {  
         if (!current_user_can('edit_page', $post_id))  
