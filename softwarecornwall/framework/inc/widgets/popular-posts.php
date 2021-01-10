@@ -12,11 +12,10 @@ Author URI: http://skat.tf/
 class sd_popular_posts_widget extends WP_Widget {
 	
 	// Widget Settings
-	function sd_popular_posts_widget() {
-	
+	function __construct() {
 		$widget_ops = array( 'classname' => 'sd_popular_posts_widget', 'description' => __( 'A widget to display the popular posts.', 'sd-framework' ) );
 		$control_ops = "";
-		$this->WP_Widget( 'sd_popular_posts_widget', __( 'Popular Posts', 'sd-framework' ), $widget_ops, $control_ops );
+		parent::__construct( 'sd_popular_posts_widget', __( 'Popular Posts', 'sd-framework' ), $widget_ops, $control_ops );
 	}
 	
 	// Widget Output

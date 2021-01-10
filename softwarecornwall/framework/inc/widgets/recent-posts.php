@@ -12,12 +12,11 @@ Author URI: http://skat.tf/
 class sd_recent_posts_widget extends WP_Widget {
 	
 	// Widget Settings
-	function sd_recent_posts_widget() {
-	
-		$widget_ops = array( 'classname' => 'sd_recent_posts_widget', 'description' => __( 'A widget to display the recent posts.', 'sd-framework' ) );
+	function __construct() {
+        $widget_ops = array( 'classname' => 'sd_recent_posts_widget', 'description' => __( 'A widget to display the recent posts.', 'sd-framework' ) );
 		$control_ops = "";
-		$this->WP_Widget( 'sd_recent_posts_widget', __( 'Recent Posts', 'sd-framework' ), $widget_ops, $control_ops );
-	}
+		parent::__construct( 'sd_recent_posts_widget', __( 'Recent Posts', 'sd-framework' ), $widget_ops, $control_ops );
+    }
 	
 	// Widget Output
 	function widget( $args, $instance ) {
