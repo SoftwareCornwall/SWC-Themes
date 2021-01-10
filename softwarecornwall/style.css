@@ -386,7 +386,7 @@ h1 {
 }
 h2 {
 	font-size: 36px;
-	line-height: 30px;
+	line-height: 38px;
 }
 h3 {
 	font-size: 20px;
@@ -1211,7 +1211,7 @@ ol li ol li {
 /* 08. Blog Entry
 /* ------------------------------------------------------------------------ */
 .sd-blog-page {
-	margin-top: 80px;	
+	margin-top: 50px;	
 }
 .sd-blog-entry {
 	margin-bottom: 50px;	
@@ -1228,12 +1228,26 @@ ol li ol li {
 }
 .sd-entry-content ul,
 .sd-entry-content ol {
-	margin: 0;
+	margin: 15px 0;
 	padding: 0;
 }
 .sd-entry-content p {
 	margin-top: 0;
 }
+.sd-entry-content h2{
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+.sd-entry-content h3{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.sd-entry-content p:empty {
+	display: none;
+ }
+ .sd-entry-content .wp-block-buttons .wp-block-button {
+	margin-bottom: 15px
+ }
 .more-link {
 	border: 1px solid #0191c6;
 	border-radius: 3px;
