@@ -2386,6 +2386,27 @@ body .wpb_content_element .wpb_accordion_wrapper .wpb_accordion_content {
 	padding-bottom: 5em;
 }
 
+.training-list-date-wrapper {
+	font-size: 18px;
+}
+
+.training-list-date-wrapper span {
+	margin-left: 5px;
+	font-size: 22px;
+	font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+	.training-list-date-wrapper {
+		text-align: center;
+	}
+	
+	.training-list-date-wrapper span {
+		display: block;
+		margin-left: 0;
+	}	
+}
+
 /* ------------------------------------------------------------------------ */
 /* Ultimate Member Style Overrides
 /* ------------------------------------------------------------------------ */
