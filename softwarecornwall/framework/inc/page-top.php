@@ -69,7 +69,7 @@ if ( !is_category() && !is_tag() && !is_search() && !is_404() && !is_day() && !i
 		<?php $page_title = rwmb_meta( 'sd_page-title' );
 			
 			if ( !empty( $page_title ) ) :
-				echo $page_title;
+				echo '<h2>' . $page_title . '</h2>';
 			else :
 		?>
 			<h2 class="sd-styled-title">
