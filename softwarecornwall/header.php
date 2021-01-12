@@ -117,10 +117,5 @@ global $sd_data;
 		</div>
 	</div>
 </header>
-<!-- header end -->
-<?php if ( is_front_page() && $sd_data['sd_home_slider'] == '1' ) : ?>
-<?php if ( function_exists( putRevSlider( 'homeslider' )) ); ?>
-<?php endif; ?>
 
 <?php get_template_part( 'framework/inc/page-top' ); ?>
-

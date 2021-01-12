@@ -12,11 +12,10 @@ Author URI: http://www.skat.tf/
 class sd_social_icons_widget extends WP_Widget {
 	
 	// Widget Settings
-	function sd_social_icons_widget() {
-	
+	function __construct() {
 		$widget_ops = array( 'classname' => 'sd_social_icons_widget', 'description' => __( 'A widget that displays icons from your social profiles.', 'sd-framework' ) );
 		$control_ops = "";
-		$this->WP_Widget( 'sd_social_icons_widget', __( 'Social Icons', 'sd-framework' ), $widget_ops, $control_ops );
+		parent::__construct( 'sd_social_icons_widget', __( 'Social Icons', 'sd-framework' ), $widget_ops, $control_ops );
 	}
 	
 	// Widget Output
