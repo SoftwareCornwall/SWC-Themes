@@ -12,11 +12,10 @@ Author URI: http://www.skatdesign.com/
 class recent_comments_widget extends WP_Widget {
 	
 	// Widget Settings
-	function recent_comments_widget() {
-	
+	function __construct() {
 		$widget_ops = array( 'classname' => 'recent_comments_widget', 'description' => __('A widget that displays the recent comments.', 'framework') );
 		$control_ops = "";
-		$this->WP_Widget( 'recent_comments_widget', __('Custom Recent Comments', 'framework'), $widget_ops, $control_ops );
+		parent::__construct( 'recent_comments_widget', __('Custom Recent Comments', 'framework'), $widget_ops, $control_ops );
 	}
 	
 	// Widget Output

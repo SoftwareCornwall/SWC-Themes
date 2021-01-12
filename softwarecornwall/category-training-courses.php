@@ -33,22 +33,22 @@ get_header();
 			</div>
 
 			<div class="col-sm-10 col-sm-offset-1 category-description-wrapper" style="text-align: center;">
-			<!--pagination-->
-			<?php if ( $sd_data['sd_pagination_type'] == '1' ) : ?>
-				<?php if ( get_previous_posts_link() ) : ?>
-				<div class="sd-nav-previous">
-					<?php previous_posts_link( $sd_data['sd_blog_prev'] ); ?>
+				<!--pagination-->
+				<?php if ( $sd_data['sd_pagination_type'] == '1' ) : ?>
+					<?php if ( get_previous_posts_link() ) : ?>
+					<div class="sd-nav-previous">
+						<?php previous_posts_link( $sd_data['sd_blog_prev'] ); ?>
+					</div>
+					<?php endif; ?>
+					<?php if ( get_next_posts_link() ) : ?>
+					<div class="sd-nav-next">
+						<?php next_posts_link( $sd_data['sd_blog_next'] ); ?>
+					</div>
+					<?php endif; ?>
+				<?php else : sd_custom_pagination(); endif; ?>
+				<!--pagination end--> 
 				</div>
-				<?php endif; ?>
-				<?php if ( get_next_posts_link() ) : ?>
-				<div class="sd-nav-next">
-					<?php next_posts_link( $sd_data['sd_blog_next'] ); ?>
-				</div>
-				<?php endif; ?>
-			<?php else : sd_custom_pagination(); endif; ?>
-			<!--pagination end--> 
-				</div>
-				</div>
+			</div>
 		</div>
 	</div>
 </div>
