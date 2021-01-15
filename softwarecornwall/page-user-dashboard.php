@@ -24,9 +24,11 @@ get_header();
 							<p>Your profile is the window into your business on the Software Cornwall Website. Complete as much as you can, keep it up to date with fresh information and make your company stand out.</p>
 							<p>Add your latest news, press releases and event details to the website to promote your business.</br>
 								<a class="more-link" href="https://www.softwarecornwall.org/member/' . $username . '/?um_action=edit" title="Edit your profile">Update Your Business Profile</a> <a class="more-link" href="https://softwarecornwall.org/wp-admin/post-new.php" title="Add an news post">Add a News Item</a> <a class="more-link" href="https://softwarecornwall.org/wp-admin/post-new.php?post_type=tribe_events" title="Add an event">Add an Event</a>
-							</p>
+							</p>'.'[/um_show_content]' ); 
 								
-							<h3>Grow your team</h3>
+
+						echo do_shortcode( '[um_show_content roles="um_member,administrator,employer"]'.
+							'<h3>Grow your team</h3>
 							<p>Add your job to the jobs board to put the role in front of the right people to help grow your team.</br>
 								<a class="more-link" href="https://softwarecornwall.org/post-a-job/" title="Post a Job">Add a New Job</a> <a class="more-link" href="https://softwarecornwall.org/job-dashboard/" title="Jobs Dashboard">View Your Active Jobs</a> <a class="more-link" href="https://softwarecornwall.org/resumes/" title="View CV Bank">View CV Bank</a>
 							</p>'.'[/um_show_content]' ); 
@@ -55,7 +57,7 @@ get_header();
 							</p>'.'[/um_show_content]' ); 
 
 						// Everyone
-						echo do_shortcode( '[um_show_content roles="um_member,administrator,editor,candidate,author,subscriber"]'.
+						echo do_shortcode( '[um_show_content roles="um_member,administrator,editor,candidate,author,subscriber,employer"]'.
 						
 							'<h3>Your Account</h3>
 							<p>Update your personal information, reset your password and manage your data.</br>
@@ -63,7 +65,7 @@ get_header();
 							</p>'.'[/um_show_content]');
 
 						// Members and the team
-						echo do_shortcode( '[um_show_content roles="um_member,administrator,editor"]'. 
+						echo do_shortcode( '[um_show_content roles="um_member,administrator,editor, "]'. 
 						
 							'<h3>Contact Us</h3>
 							<p>Need a hand getting the most from your member benefits? Get in touch.</br>
