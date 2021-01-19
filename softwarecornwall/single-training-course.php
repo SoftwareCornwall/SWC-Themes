@@ -34,15 +34,21 @@ get_header(); ?>
 										<h3 class="sd-styled-title">Course <span class="sd-light">Content</span></h3>
 									</div>
 									<?php the_content(); ?>
-								</div>
-
-								<footer>
 									<div class="sd-prev-next-post clearfix">
 										<?php $bookLink = get_post_meta($post->ID, 'training_ticket_link', true); if ($bookLink) { ?>
 											<span class="sd-next-post"><a href="<?php echo $bookLink; ?>" title="Book <?php get_the_title();?> now" class="sd_blog_single_next">Book Now</a></span>
 										<?php }?>
 									</div>
-								</footer>
+
+									<h2>European Social Fund</h2>
+									<p>The European Social Fund is partially funding Software Cornwall to run this training project to provide development training for employees within the software industry. As a Software Cornwall member you will be receiving a discount to this course by email. This course is only available to those from the UK or EU. To participate in the training certain personal information will be required from attendants as proof of employment and eligibility to attend. This information is for the purposes of ensuring that the training will go to the correct participants. You will also be required to complete an evaluation form after the training as part of the attendance.</p>
+									<img 
+										src="https://softwarecornwall.org/wp-content/uploads/2020/10/ESF_logo.png" 
+										alt="European Social Fund Logo" 
+										loading="lazy" 
+										height="74px" width="360px"
+										style="width: 100%;"/>
+								</div>
 							</div>
 						</article>
 
