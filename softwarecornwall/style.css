@@ -2396,6 +2396,10 @@ body .wpb_content_element .wpb_accordion_wrapper .wpb_accordion_content {
 	font-weight: 700;
 }
 
+.side-eu-logo {
+	display: none;
+}
+
 @media screen and (min-width: 768px) {
 	.training-list-date-wrapper {
 		text-align: center;
@@ -2404,7 +2408,15 @@ body .wpb_content_element .wpb_accordion_wrapper .wpb_accordion_content {
 	.training-list-date-wrapper span {
 		display: block;
 		margin-left: 0;
-	}	
+	}
+
+	.side-eu-logo {
+		display: block;
+	}
+
+	.top-eu-logo {
+		display: none;
+	}
 }
 
 /* ------------------------------------------------------------------------ */

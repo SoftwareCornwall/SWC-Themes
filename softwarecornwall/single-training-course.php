@@ -9,8 +9,21 @@ get_header(); ?>
 <div class="sd-blog-page">
 	<div class="container">
 		<div class="row"> 
-			<div class="col-md-<?php if ( $sd_data['sd_blog_layout'] == '2' ) echo '12'; else echo '8'; ?> <?php if ( $sd_data['sd_sidebar_location'] == '2' ) echo 'pull-right'; ?>">
+			<div class="col-sm-8">
 				<div class="sd-left-col">
+					<div class="top-eu-logo">
+						<div class="sd-title-wrapper">
+							<h3 class="sd-styled-title">Part <span class="sd-light">Financed By:</span></h3>
+						</div>
+						<img 
+							src="https://softwarecornwall.org/wp-content/uploads/2020/10/ESF_logo.png" 
+							alt="European Social Fund Logo" 
+							loading="lazy" 
+							height="74px" width="360px"
+							style="width: 100%;"/>
+						</br></br>	
+					</div>
+
 					<?php if (have_posts()) : while (have_posts()) : the_post();?>
 
 						<article id="post-<?php the_ID(); ?>" <?php post_class( 'sd-blog-entry sd-single-blog-entry clearfix' ); ?>> 
@@ -23,7 +36,6 @@ get_header(); ?>
 									<?php the_content(); ?>
 								</div>
 
-								<?php if ( $sd_data['sd_blog_single_prev_next'] == '1' ) : ?>
 								<footer>
 									<div class="sd-prev-next-post clearfix">
 										<?php $bookLink = get_post_meta($post->ID, 'training_ticket_link', true); if ($bookLink) { ?>
@@ -31,7 +43,6 @@ get_header(); ?>
 										<?php }?>
 									</div>
 								</footer>
-								<?php endif; ?>
 							</div>
 						</article>
 
@@ -43,20 +54,22 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<div class="col-md-4">				
+			<div class="col-sm-4">				
 				<aside id="recent-posts-2" class="sd-sidebar-widget clearfix widget_recent_entries">
-				<div class="sd-title-wrapper">
-						<h3 class="sd-styled-title">Part <span class="sd-light">Financed By:</span></h3>
+					<div class="side-eu-logo">
+						<div class="sd-title-wrapper">
+							<h3 class="sd-styled-title">Part <span class="sd-light">Financed By:</span></h3>
+						</div>
+						<img 
+							src="https://softwarecornwall.org/wp-content/uploads/2020/10/ESF_logo.png" 
+							alt="European Social Fund Logo" 
+							loading="lazy" 
+							height="74px" width="360px"
+							style="width: 100%;"/>
+						</br></br>	
 					</div>
-					<img 
-						src="https://softwarecornwall.org/wp-content/uploads/2020/10/ESF_logo.png" 
-						alt="European Social Fund Logo" 
-						loading="lazy" 
-						height="74px" width="360px"
-						style="width: 100%;"/>
-					</br></br>	
-				
-				<div class="sd-title-wrapper">
+					
+					<div class="sd-title-wrapper">
 						<h3 class="sd-styled-title">Course <span class="sd-light">Details</span></h3>
 					</div>
 
@@ -89,7 +102,7 @@ get_header(); ?>
 						$bookLink = get_post_meta($post->ID, 'training_ticket_link', true); 
 						if ($bookLink) { ?>
 							<a href="<?php echo $bookLink; ?>" title="Book <?php get_the_title();?> now" class="more-link">Book Now</a></span>
-						<?php }?>
+						<?php } ?>
 					</p>
 				</aside>
 			</div>
