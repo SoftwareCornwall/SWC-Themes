@@ -2386,14 +2386,21 @@ body .wpb_content_element .wpb_accordion_wrapper .wpb_accordion_content {
 	padding-bottom: 5em;
 }
 
-.training-list-date-wrapper {
+.training-list-date-wrapper,
+.training-list-date-wrapper-single {
 	font-size: 18px;
 }
 
-.training-list-date-wrapper span {
+.training-list-date-wrapper span,
+.training-list-date-wrapper-single span {
 	margin-left: 5px;
 	font-size: 22px;
 	font-weight: 700;
+}
+
+.training-list-date-wrapper-single span {
+	margin-left: 2px;
+	display: block;
 }
 
 .side-eu-logo {
