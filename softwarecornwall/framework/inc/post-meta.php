@@ -36,12 +36,6 @@ $sd_blog_meta = $sd_data['sd_blog_post_meta'];
 			  }
 		?>
 		<?php endif; ?>
-		
-		<?php if ( $sd_blog_meta[5] == '1' ) : ?>
-		<li class="sd-meta-comments"> <i class="fa fa-comment"></i>
-			<?php comments_popup_link ( __( '0 comments', 'sd-framework' ), __( '1 Comment', 'sd-framework' ), __( ' % comments', 'sd-framework' ), 'comments-link', __( 'closed', 'sd-framework' ) ); ?>
-		</li>
-		<?php endif; ?>
 	</ul>
 </aside>
 <!-- post meta end --> 
