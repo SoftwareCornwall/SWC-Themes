@@ -48,6 +48,7 @@ function training_meta_box_html( $post ) { ?>
            value="<?php echo get_post_meta($post -> ID, 'training_ticket_link', true);?>" style="min-width:400px;"><br />
            
     <h2 style="font-size:18px; padding-left:0; font-weight: 700">Trainer Information</h2>
+    
     <label for="training_delivered_by" style="min-width:200px; display: inline-block;">Delivered By</label>
 	<input type="text" id="training_delivered_by" name="training_delivered_by" placeholder="Jerry Seinfeld"
            value="<?php echo get_post_meta($post -> ID, 'training_delivered_by', true);?>" style="min-width:400px;"><br />
@@ -74,7 +75,46 @@ function training_meta_box_html( $post ) { ?>
                 margin-top: -380px;
             }
         }
+        img.trainer_headshot_img {
+            border-radius: 50%;
+            border: 2px solid #2c448c;
+        }
     </style>
+
+    <h2 style="font-size:18px; padding-left:0; font-weight: 700">Trainer Headshot</h2>
+    <p>Images MUST be square. Don't forget to complete the alt information when uploading images to help visually impaired users.</p>
+
+    <?php $image = get_post_meta($post->ID, 'trainer_headshot', true); ?>
+    <a href="#" class="swc_upload_image_button button button-secondary"><?php _e('Upload Image'); ?></a>
+    <input type="text" name="trainer_headshot" id="trainer_headshot" value="<?php echo $image; ?>" style="visibility:hidden;" />
+
+    <img src="<?php echo $image ?>" class="trainer_headshot_img" id="trainer_headshot_img">
+
+    <script>
+        jQuery(function($){
+            $('body').on('click', '.swc_upload_image_button', function(e){
+                e.preventDefault();
+                
+                let button = $(this);
+                let aw_uploader = wp.media({
+                    title: 'Custom image',
+                    library : {
+                        type : 'image'
+                    },
+                    button: {
+                        text: 'Use this image'
+                    },
+                    multiple: false
+                }).on('select', function() {
+                    let attachment = aw_uploader.state().get('selection').first().toJSON();
+                    $('#trainer_headshot').val(attachment.url);
+                    $('#trainer_headshot_img').attr("src", attachment.url);
+                })
+                .open(); 
+            });
+        });
+    </script>
+
 <?php } 
 
 function swc_save_training_meta($post_id) {
@@ -93,7 +133,8 @@ function swc_save_training_meta($post_id) {
         "trainer_linkedin",
         "trainer_instagram",
         "trainer_website",
-        "trainer_bio"
+        "trainer_bio",
+        "trainer_headshot"
 	); 
 
     if (!wp_verify_nonce($_POST['training_meta_box_nonce'], basename(__FILE__)))
@@ -122,6 +163,7 @@ function swc_save_training_meta($post_id) {
         }  
     }
 }
-add_action('save_post', 'swc_save_training_meta'); 
+add_action('save_post', 'swc_save_training_meta');
+
 
 ?>

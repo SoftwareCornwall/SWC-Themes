@@ -2448,6 +2448,11 @@ body .wpb_content_element .wpb_accordion_wrapper .wpb_accordion_content {
 	font-size: 22px;
 }
 
+img.trainer_headshot_img {
+	border-radius: 50%;
+	border: 2px solid #2c448c;
+}
+
 /* ------------------------------------------------------------------------ */
 /* Ultimate Member Style Overrides
 /* ------------------------------------------------------------------------ */
