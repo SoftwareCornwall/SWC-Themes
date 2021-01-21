@@ -19,6 +19,7 @@ $trainer_twitter = get_post_meta($post->ID, 'trainer_twitter', true);
 $trainer_instagram = get_post_meta($post->ID, 'trainer_instagram', true);
 $trainer_bio = get_post_meta($post->ID, 'trainer_bio', true);
 $training_delivered_by = get_post_meta($post->ID, 'training_delivered_by', true);
+$trainer_headshot = get_post_meta($post->ID, 'trainer_headshot', true);
 
 // Add the trainer links to array so we can iterate over existing ones later
 $speaker_links = array();
@@ -67,9 +68,6 @@ try {
 									<h3 class="sd-styled-title">Course <span class="sd-light">Details</span></h3>
 								</div>
 								<div class="row">
-									<?php 
-										
-									?>
 									<div class="col-xs-2 col-md-1 col-xs-offset-3 col-md-offset-0 sd-entry-content"  style="text-align:center;">
 										<p class="training-list-date-wrapper-single"><?php if ($startDay) { echo $startDay; } ?><span><?php if ($startMonth) { echo $startMonth; } ?></span></p>
 									</div>
@@ -94,29 +92,7 @@ try {
 										<?php } ?> 
 									</div>
 								</div>
-							</div>
-							<div class="col-sm-4">
-								<div class="side-eu-logo">
-									<div class="sd-title-wrapper">
-										<h3 class="sd-styled-title">Part <span class="sd-light">Financed By:</span></h3>
-									</div>
-									<img 
-										src="https://softwarecornwall.org/wp-content/uploads/2020/10/ESF_logo.png" 
-										alt="European Social Fund Logo" 
-										loading="lazy" 
-										height="74px" width="360px"
-										style="width: 100%;"/>
-									</br></br>	
-								</div>
-							</div>
-						
-						</div>
-					</div>
-	
-				</div>
-			</div>
-			<div class="col-sm-8">
-				<div class="sd-left-col">
+								<div class="sd-left-col">
 
 					<?php if (have_posts()) : while (have_posts()) : the_post();?>
 
@@ -128,12 +104,13 @@ try {
 										<h3 class="sd-styled-title" style="margin-top:0px;">Course <span class="sd-light">Content</span></h3>
 									</div>
 									<?php the_content(); ?>
-									<div class="sd-prev-next-post clearfix">
+
+									<!-- <div class="sd-prev-next-post clearfix">
 										<?php  if ($bookLink) { ?>
 											<span class="sd-next-post"><a href="<?php echo $bookLink; ?>" title="Book <?php get_the_title();?> now" class="sd_blog_single_next">Book Now</a></span>
 										<?php }?>
 									</div>
-									<div class="clearfix"></br></br></div>
+									<div class="clearfix"></br></br></div> -->
 
 									<?php if ( $sd_data['sd_blog_featured_img'] == '1' ) : ?>
 											<?php if ( ( function_exists( 'has_post_thumbnail' ) ) && ( has_post_thumbnail() ) ) : ?>
@@ -164,26 +141,44 @@ try {
 						.</p>
 					<?php endif; ?>
 				</div>
-			</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="side-eu-logo">
+									<div class="sd-title-wrapper">
+										<h3 class="sd-styled-title">Part <span class="sd-light">Financed By:</span></h3>
+									</div>
+									<img 
+										src="https://softwarecornwall.org/wp-content/uploads/2020/10/ESF_logo.png" 
+										alt="European Social Fund Logo" 
+										loading="lazy" 
+										height="74px" width="360px"
+										style="width: 100%;"/>
+									</br></br>	
+								</div>
+								<aside id="recent-posts-2" class="sd-sidebar-widget clearfix widget_recent_entries">					
+									<div class="sd-title-wrapper">
+										<h3 class="sd-styled-title">Meet the <span class="sd-light">Trainer</span></h3>
+									</div>
 
-			<div class="col-sm-4">				
-				<aside id="recent-posts-2" class="sd-sidebar-widget clearfix widget_recent_entries">					
-					<div class="sd-title-wrapper">
-						<h3 class="sd-styled-title">Meet the <span class="sd-light">Trainer</span></h3>
+									<p style="margin-top:0; font-size:18px;"><strong><?php if ($training_delivered_by) { echo $training_delivered_by; }?></strong></p>
+									
+									<img src="<?php if ($trainer_headshot) { echo $trainer_headshot; } ?>" alt="<?php echo $training_delivered_by . ' headshot';?>"
+										height="400px" width="400px" loading="lazy" class="trainer_headshot_img">
+
+									<div class="sd-header-social trainer-social clearfix">
+										<?php
+										foreach ( $speaker_links as $font_class => $url ) { ?>
+												<a class="sd-bg-trans sd-header-<?php echo $font_class; ?>" href="<?php echo esc_url($url); ?>" title="<?php echo $font_class; ?>" target="_blank" rel="nofollow"><i class="fa fa-<?php echo $font_class; ?>"></i></a>
+											<?php } ?>
+									</div>
+									<div class="clearfix"></div>
+									
+									<p><?php  if ($trainer_bio) {  echo $trainer_bio; }?></br></p>
+								</aside>
+							</div>
+						</div>
 					</div>
-
-					<p style="margin-top:0; font-size:18px;"><strong><?php if ($training_delivered_by) { echo $training_delivered_by; }?></strong></p>
-
-					<div class="sd-header-social trainer-social clearfix">
-						<?php
-						foreach ( $speaker_links as $font_class => $url ) { ?>
-								<a class="sd-bg-trans sd-header-<?php echo $font_class; ?>" href="<?php echo esc_url($url); ?>" title="<?php echo $font_class; ?>" target="_blank" rel="nofollow"><i class="fa fa-<?php echo $font_class; ?>"></i></a>
-							<?php } ?>
-					</div>
-					<div class="clearfix"></div>
-					
-					<p><?php  if ($trainer_bio) {  echo $trainer_bio; }?></br></p>
-				</aside>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -82,7 +82,7 @@ function training_meta_box_html( $post ) { ?>
     </style>
 
     <h2 style="font-size:18px; padding-left:0; font-weight: 700">Trainer Headshot</h2>
-    <p>Images MUST be square. Don't forget to complete the alt information when uploading images to help visually impaired users.</p>
+    <p>Images MUST be square. Don't forget to complete the and title information when uploading images to help both visually impaired users use the site and us when looking for images in the future.</p>
 
     <?php $image = get_post_meta($post->ID, 'trainer_headshot', true); ?>
     <a href="#" class="swc_upload_image_button button button-secondary"><?php _e('Upload Image'); ?></a>

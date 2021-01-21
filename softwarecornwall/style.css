@@ -2450,7 +2450,9 @@ body .wpb_content_element .wpb_accordion_wrapper .wpb_accordion_content {
 
 img.trainer_headshot_img {
 	border-radius: 50%;
-	border: 2px solid #2c448c;
+	border: 5px solid #2c448c;
+	width: 100%;
+	margin-bottom: 20px;
 }
 
 /* ------------------------------------------------------------------------ */
