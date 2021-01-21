@@ -5,6 +5,7 @@
 /* ------------------------------------------------------------------------ */
 get_header(); 
 
+// Get all of the training custom fields upfront
 $is_live = get_post_meta($post->ID, 'training_is_live', true);
 $training_venue = get_post_meta($post->ID, 'training_venue', true);
 $time = get_post_meta($post->ID, 'training_start_time', true);
@@ -18,6 +19,13 @@ $trainer_twitter = get_post_meta($post->ID, 'trainer_twitter', true);
 $trainer_instagram = get_post_meta($post->ID, 'trainer_instagram', true);
 $trainer_bio = get_post_meta($post->ID, 'trainer_bio', true);
 $training_delivered_by = get_post_meta($post->ID, 'training_delivered_by', true);
+
+// Add the trainer links to array so we can iterate over existing ones later
+$speaker_links = array();
+if($trainer_website){ $speaker_links['globe'] = $trainer_website; }
+if($trainer_twitter){ $speaker_links['twitter'] = $trainer_twitter; }
+if($trainer_linkedin){ $speaker_links['linkedin'] = $trainer_linkedin; }
+if($trainer_instagram){ $speaker_links['instagram'] = $trainer_instagram; }
 
 // Convert date to display format
 try {
@@ -39,7 +47,6 @@ try {
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-
 				<div class="row">
 					<div class="col-sm-12">
 						<div class="top-eu-logo">
@@ -165,13 +172,16 @@ try {
 						<h3 class="sd-styled-title">Meet the <span class="sd-light">Trainer</span></h3>
 					</div>
 
-					<p>
-						Delivered By: <?php  if ($training_delivered_by) {  echo $training_delivered_by; }?></br>
-						<?php  if ($trainer_website) {  echo $trainer_website; }?></br>
-						<?php  if ($trainer_linkedin) {  echo $trainer_linkedin; }?></br>
-						<?php  if ($trainer_twitter) {  echo $trainer_twitter; }?></br>
-						<?php  if ($trainer_instagram) {  echo $trainer_instagram; }?></br>
-					</p>
+					<p style="margin-top:0; font-size:18px;"><strong><?php if ($training_delivered_by) { echo $training_delivered_by; }?></strong></p>
+
+					<div class="sd-header-social trainer-social clearfix">
+						<?php
+						foreach ( $speaker_links as $font_class => $url ) { ?>
+								<a class="sd-bg-trans sd-header-<?php echo $font_class; ?>" href="<?php echo esc_url($url); ?>" title="<?php echo $font_class; ?>" target="_blank" rel="nofollow"><i class="fa fa-<?php echo $font_class; ?>"></i></a>
+							<?php } ?>
+					</div>
+					<div class="clearfix"></div>
+					
 					<p><?php  if ($trainer_bio) {  echo $trainer_bio; }?></br></p>
 				</aside>
 			</div>

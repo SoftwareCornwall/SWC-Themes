@@ -719,7 +719,8 @@ ol li ol li {
 .sd-header-flickr:hover {
 	background-color: #ff0084;
 }
-.sd-header-rss:hover {
+.sd-header-rss:hover,
+.sd-header-globe:hover {
 	background-color: #ff8a00;
 }
 /* logo */
@@ -2424,6 +2425,27 @@ body .wpb_content_element .wpb_accordion_wrapper .wpb_accordion_content {
 	.top-eu-logo {
 		display: none;
 	}
+}
+
+.sd-header-social.trainer-social {
+	float: left;
+	border-left: none;
+	width: 100%;
+	font-size: 22px;
+}
+.sd-header-social.trainer-social a {
+	border-right: none;
+	color: #868685;
+	height: 27px;
+	width: 24%;
+}
+
+.sd-header-social.trainer-social a:hover {
+	color: #fff;
+}
+
+.sd-header-social.trainer-social.fa {
+	font-size: 22px;
 }
 
 /* ------------------------------------------------------------------------ */

@@ -17,7 +17,7 @@ function training_meta_box_html( $post ) { ?>
 	<input type="hidden" name="training_meta_box_nonce" value="<?php echo wp_create_nonce(basename(__FILE__)) ?>" />
     <p>Complete this section if this is a post for a training course run by Software Cornwall.</p>
     
-    <label for="training_is_live">Is this course bookable?</label><br>
+    <label for="training_is_live">Is this course currently bookable?</label><br>
     <input type="checkbox" id="training_is_live" name="training_is_live"
     <?php $is_live = get_post_meta($post->ID, 'training_is_live', true); if ($is_live) {  echo 'checked'; }?>>
     
