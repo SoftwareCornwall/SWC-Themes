@@ -5,6 +5,7 @@
 /* ------------------------------------------------------------------------ */
 get_header(); 
 
+$is_live = get_post_meta($post->ID, 'training_is_live', true);
 $training_venue = get_post_meta($post->ID, 'training_venue', true);
 $time = get_post_meta($post->ID, 'training_start_time', true);
 $endTime = get_post_meta($post->ID, 'training_end_time', true);
@@ -79,7 +80,11 @@ try {
 											<strong>Funded Price:</strong> <?php if ($training_funded_price) {  echo $training_funded_price; }?> (see description)
 									</div>
 									<div class="col-xs-12">
-										<p><em>Course dates and availability will be determined based on volume of interest. Please complete the <a href="https://share.hsforms.com/1GDF4Zm5iQUan1jnsvbfhOA3ddhf">Register your interest</a> form to go on the list.</em></p>
+										<?php if($is_live) { ?>
+											<p><a href="<?php echo $bookLink; ?>" title="Book <?php get_the_title();?> now" class="more-link">Book Now</a></span></p>
+										<?php } elseif ($bookLink) { ?>
+											<p><em>Course dates, price and availability will be determined based on volume of interest. Please complete the <a href="https://share.hsforms.com/1GDF4Zm5iQUan1jnsvbfhOA3ddhf">Register your interest</a> form to go on the list.</em></p>
+										<?php } ?> 
 									</div>
 								</div>
 							</div>
@@ -117,7 +122,7 @@ try {
 									</div>
 									<?php the_content(); ?>
 									<div class="sd-prev-next-post clearfix">
-										<?php $bookLink = get_post_meta($post->ID, 'training_ticket_link', true); if ($bookLink) { ?>
+										<?php  if ($bookLink) { ?>
 											<span class="sd-next-post"><a href="<?php echo $bookLink; ?>" title="Book <?php get_the_title();?> now" class="sd_blog_single_next">Book Now</a></span>
 										<?php }?>
 									</div>

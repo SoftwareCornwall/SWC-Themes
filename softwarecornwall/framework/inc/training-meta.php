@@ -18,7 +18,8 @@ function training_meta_box_html( $post ) { ?>
     <p>Complete this section if this is a post for a training course run by Software Cornwall.</p>
     
     <label for="training_is_live">Is this course bookable?</label><br>
-    <input type="checkbox" id="training_is_live" name="training_is_live">
+    <input type="checkbox" id="training_is_live" name="training_is_live"
+    <?php $is_live = get_post_meta($post->ID, 'training_is_live', true); if ($is_live) {  echo 'checked'; }?>>
     
     <h2 style="font-size:18px; padding-left:0; font-weight: 700">Course Details</h2>
 	<label for="training_start_date" style="min-width:200px; display: inline-block;">Start Date</label>
