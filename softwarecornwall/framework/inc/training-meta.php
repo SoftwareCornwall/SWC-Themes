@@ -4,22 +4,23 @@
 /* ------------------------------------------------------------------------ */
 
 function add_training_meta_box() {
-    $screens = [ 'post' ];
-    foreach ( $screens as $screen ) {
-        add_meta_box(
-            'swc_training_meta',     // Unique ID
-            'Training Details',  // Box title
-            'training_meta_box_html', // Content callback
-            $screen                  // Post type
-        );
-    }
+    add_meta_box(
+        'swc_training_meta',      // Unique ID
+        'Training Details',       // Box title
+        'training_meta_box_html', // Content callback
+        'post'                    // Post type
+    );
 }
 add_action( 'add_meta_boxes', 'add_training_meta_box' );
 
-// TODO - Not happy with having HTML in this file. Find a better solution if this gets edited in the future.
 function training_meta_box_html( $post ) { ?>
 	<input type="hidden" name="training_meta_box_nonce" value="<?php echo wp_create_nonce(basename(__FILE__)) ?>" />
-	<p>Complete this section if this is a post for a training course run by Software Cornwall.</p>
+    <p>Complete this section if this is a post for a training course run by Software Cornwall.</p>
+    
+    <label for="training_is_live">Is this course bookable?</label><br>
+    <input type="checkbox" id="training_is_live" name="training_is_live">
+    
+    <h2 style="font-size:18px; padding-left:0; font-weight: 700">Course Details</h2>
 	<label for="training_start_date" style="min-width:200px; display: inline-block;">Start Date</label>
 	<input type="text" id="training_start_date" name="training_start_date" placeholder="e.g 17/03/2021"
 		   value="<?php echo get_post_meta($post -> ID, "training_start_date", true);?>"><br />
@@ -41,16 +42,43 @@ function training_meta_box_html( $post ) { ?>
 	<label for="training_venue" style="min-width:200px; display: inline-block;">Training Venue</label>
 	<input type="text" id="training_venue" name="training_venue" placeholder="e.g Online / Heartlands"
 		   value="<?php echo get_post_meta($post -> ID, "training_venue", true);?>"><br />
-	<label for="training_delivered_by" style="min-width:200px; display: inline-block;">Delivered By</label>
-	<input type="text" id="training_delivered_by" name="training_delivered_by" placeholder="e.g Tony Edwards"
-		   value="<?php echo get_post_meta($post -> ID, 'training_delivered_by', true);?>"><br />
 	<label for="training_ticket_link" style="min-width:200px; display: inline-block;">Ticket Link</label>
 	<input type="text" id="training_ticket_link" name="training_ticket_link" placeholder="https://eventbrite.com/tktk"
-		   value="<?php echo get_post_meta($post -> ID, 'training_ticket_link', true);?>"><br />
+           value="<?php echo get_post_meta($post -> ID, 'training_ticket_link', true);?>" style="min-width:400px;"><br />
+           
+    <h2 style="font-size:18px; padding-left:0; font-weight: 700">Trainer Information</h2>
+    <label for="training_delivered_by" style="min-width:200px; display: inline-block;">Delivered By</label>
+	<input type="text" id="training_delivered_by" name="training_delivered_by" placeholder="Jerry Seinfeld"
+           value="<?php echo get_post_meta($post -> ID, 'training_delivered_by', true);?>" style="min-width:400px;"><br />
+    <label for="training_delivered_by" style="min-width:200px; display: inline-block;">Twitter Profile</label>
+	<input type="text" id="trainer_twitter" name="trainer_twitter" placeholder="https://twitter.com/trainerHandle"
+           value="<?php echo get_post_meta($post -> ID, 'trainer_twitter', true);?>" style="min-width:400px;"><br />
+    <label for="trainer_linkedin" style="min-width:200px; display: inline-block;">LinkedIn Profile</label>
+	<input type="text" id="trainer_linkedin" name="trainer_linkedin" placeholder="https://linkedin.com/trainerName"
+           value="<?php echo get_post_meta($post -> ID, 'trainer_linkedin', true);?>" style="min-width:400px;"><br />
+    <label for="trainer_instagram" style="min-width:200px; display: inline-block;">Instagram Profile</label>
+	<input type="text" id="trainer_instagram" name="trainer_instagram" placeholder="https://instagram.com/trainerHandle"
+           value="<?php echo get_post_meta($post -> ID, 'trainer_instagram', true);?>"style="min-width:400px;"><br />
+    <label for="trainer_website" style="min-width:200px; display: inline-block;">Delivered By</label>
+	<input type="text" id="trainer_website" name="trainer_website" placeholder="https://trainerwebsite.com"
+           value="<?php echo get_post_meta($post -> ID, 'trainer_website', true);?>" style="min-width:400px;"><br />
+    <label id="trainer_bio_label" for="trainer_bio" style="min-width:200px; display: inline-block;">Bio</label>
+    <textarea id="trainer_bio" name="trainer_bio" rows="10" cols="53" placeholder="Add a nice bio in here">
+        <?php echo get_post_meta($post -> ID, 'trainer_bio', true);?>
+    </textarea>
+
+    <style>
+        @media (min-width: 1114px) {
+            #trainer_bio_label { 
+                margin-top: -380px;
+            }
+        }
+    </style>
 <?php } 
 
 function swc_save_training_meta($post_id) {
     $custom_meta_fields = Array(
+        "training_is_live",
 		"training_start_date",
 		"training_end_date",
 		"training_start_time",
@@ -58,8 +86,13 @@ function swc_save_training_meta($post_id) {
 		"training_full_price",
 		"training_funded_price",
 		"training_venue",
-		"training_delivered_by",
-		"training_ticket_link"
+        "training_ticket_link",
+        "training_delivered_by",
+        "trainer_twitter",
+        "trainer_linkedin",
+        "trainer_instagram",
+        "trainer_website",
+        "trainer_bio"
 	); 
 
     if (!wp_verify_nonce($_POST['training_meta_box_nonce'], basename(__FILE__)))
