@@ -3,7 +3,35 @@
  * Template Name: Single - Training Course
  * Template Post Type: post
 /* ------------------------------------------------------------------------ */
-get_header(); ?>
+get_header(); 
+
+$training_venue = get_post_meta($post->ID, 'training_venue', true);
+$time = get_post_meta($post->ID, 'training_start_time', true);
+$endTime = get_post_meta($post->ID, 'training_end_time', true);
+$training_full_price = get_post_meta($post->ID, 'training_full_price', true);
+$training_funded_price = get_post_meta($post->ID, 'training_funded_price', true);
+$bookLink = get_post_meta($post->ID, 'training_ticket_link', true);
+$trainer_website = get_post_meta($post->ID, 'trainer_website', true);
+$trainer_linkedin = get_post_meta($post->ID, 'trainer_linkedin', true);
+$trainer_twitter = get_post_meta($post->ID, 'trainer_twitter', true);
+$trainer_instagram = get_post_meta($post->ID, 'trainer_instagram', true);
+$trainer_bio = get_post_meta($post->ID, 'trainer_bio', true);
+$training_delivered_by = get_post_meta($post->ID, 'training_delivered_by', true);
+
+// Convert date to display format
+try {
+	$date = get_post_meta($post->ID, 'training_start_date', true);
+	$endDate = get_post_meta($post->ID, 'training_end_date', true);
+	$dayParts = explode('/', $date);
+	$startDay = date('jS', mktime(0, 0, 0, $dayParts[0], 10));
+	$startMonth = date('M', mktime(0, 0, 0, $dayParts[1], 10));
+
+	$endDayParts = explode('/', $date);
+	$endDay = date('jS', mktime(0, 0, 0, $endDayParts[0], 10));
+	$endMonth = date('M', mktime(0, 0, 0, $endDayParts[1], 10));
+} catch (Exception $e) {
+	error_log('Caught exception: ' .  $e->getMessage(), 0);
+} ?>
 
 <!--Theme File: Single - Training Course-->
 <div class="sd-blog-page">
@@ -32,19 +60,7 @@ get_header(); ?>
 								</div>
 								<div class="row">
 									<?php 
-										try {
-											$date = get_post_meta($post->ID, 'training_start_date', true);
-											$endDate = get_post_meta($post->ID, 'training_end_date', true);
-											$dayParts = explode('/', $date);
-											$startDay = date('jS', mktime(0, 0, 0, $dayParts[0], 10));
-											$startMonth = date('M', mktime(0, 0, 0, $dayParts[1], 10));
-
-											$endDayParts = explode('/', $date);
-											$endDay = date('jS', mktime(0, 0, 0, $endDayParts[0], 10));
-											$endMonth = date('M', mktime(0, 0, 0, $endDayParts[1], 10));
-										} catch (Exception $e) {
-											error_log('Caught exception: ' .  $e->getMessage(), 0);
-										}
+										
 									?>
 									<div class="col-xs-2 col-md-1 col-xs-offset-3 col-md-offset-0 sd-entry-content"  style="text-align:center;">
 										<p class="training-list-date-wrapper-single"><?php if ($startDay) { echo $startDay; } ?><span><?php if ($startMonth) { echo $startMonth; } ?></span></p>
@@ -57,10 +73,10 @@ get_header(); ?>
 									</div>
 									<div class="clearfix visible-xs-block"></div>
 									<div class="col-sm-7 col-md-9">
-											<strong>Location:</strong> <?php $training_venue = get_post_meta($post->ID, 'training_venue', true); if ($training_venue) {  echo $training_venue; }?></br>
-											<strong>Times:</strong> <?php $time = get_post_meta($post->ID, 'training_start_time', true); if ($time) {  echo $time; }?> to <?php $endTime = get_post_meta($post->ID, 'training_end_time', true); if ($endTime) {  echo $endTime; }?></br>
-											<strong>Full Price:</strong> <?php $training_full_price = get_post_meta($post->ID, 'training_full_price', true); if ($training_full_price) {  echo $training_full_price; }?></br>
-											<strong>Funded Price:</strong> <?php $training_funded_price = get_post_meta($post->ID, 'training_funded_price', true); if ($training_funded_price) {  echo $training_funded_price; }?> (see description)
+											<strong>Location:</strong> <?php if ($training_venue) {  echo $training_venue; }?></br>
+											<strong>Times:</strong> <?php  if ($time) {  echo $time; }?> to <?php if ($endTime) {  echo $endTime; }?></br>
+											<strong>Full Price:</strong> <?php if ($training_full_price) {  echo $training_full_price; }?></br>
+											<strong>Funded Price:</strong> <?php if ($training_funded_price) {  echo $training_funded_price; }?> (see description)
 									</div>
 									<div class="col-xs-12">
 										<p><em>Course dates and availability will be determined based on volume of interest. Please complete the <a href="https://share.hsforms.com/1GDF4Zm5iQUan1jnsvbfhOA3ddhf">Register your interest</a> form to go on the list.</em></p>
@@ -145,15 +161,13 @@ get_header(); ?>
 					</div>
 
 					<p>
-						Delivered By: <?php $training_delivered_by = get_post_meta($post->ID, 'training_delivered_by', true); if ($training_delivered_by) {  echo $training_delivered_by; }?></br>
+						Delivered By: <?php  if ($training_delivered_by) {  echo $training_delivered_by; }?></br>
+						<?php  if ($trainer_website) {  echo $trainer_website; }?></br>
+						<?php  if ($trainer_linkedin) {  echo $trainer_linkedin; }?></br>
+						<?php  if ($trainer_twitter) {  echo $trainer_twitter; }?></br>
+						<?php  if ($trainer_instagram) {  echo $trainer_instagram; }?></br>
 					</p>
-					<p>
-						<?php 
-						$bookLink = get_post_meta($post->ID, 'training_ticket_link', true); 
-						if ($bookLink) { ?>
-							<a href="<?php echo $bookLink; ?>" title="Book <?php get_the_title();?> now" class="more-link">Book Now</a></span>
-						<?php } ?>
-					</p>
+					<p><?php  if ($trainer_bio) {  echo $trainer_bio; }?></br></p>
 				</aside>
 			</div>
 		</div>
