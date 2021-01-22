@@ -719,7 +719,8 @@ ol li ol li {
 .sd-header-flickr:hover {
 	background-color: #ff0084;
 }
-.sd-header-rss:hover {
+.sd-header-rss:hover,
+.sd-header-globe:hover {
 	background-color: #ff8a00;
 }
 /* logo */
@@ -2387,14 +2388,25 @@ body .wpb_content_element .wpb_accordion_wrapper .wpb_accordion_content {
 	padding-bottom: 5em;
 }
 
-.training-list-date-wrapper {
+.training-list-date-wrapper,
+.training-list-date-wrapper-single {
 	font-size: 18px;
 }
 
-.training-list-date-wrapper span {
+.training-list-date-wrapper span,
+.training-list-date-wrapper-single span {
 	margin-left: 5px;
 	font-size: 22px;
 	font-weight: 700;
+}
+
+.training-list-date-wrapper-single span {
+	margin-left: 2px;
+	display: block;
+}
+
+.side-eu-logo {
+	display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -2405,7 +2417,43 @@ body .wpb_content_element .wpb_accordion_wrapper .wpb_accordion_content {
 	.training-list-date-wrapper span {
 		display: block;
 		margin-left: 0;
-	}	
+	}
+
+	.side-eu-logo {
+		display: block;
+	}
+
+	.top-eu-logo {
+		display: none;
+	}
+}
+
+.sd-header-social.trainer-social {
+	float: left;
+	border-left: none;
+	width: 100%;
+	font-size: 22px;
+}
+.sd-header-social.trainer-social a {
+	border-right: none;
+	color: #868685;
+	height: 27px;
+	width: 24%;
+}
+
+.sd-header-social.trainer-social a:hover {
+	color: #fff;
+}
+
+.sd-header-social.trainer-social.fa {
+	font-size: 22px;
+}
+
+img.trainer_headshot_img {
+	border-radius: 50%;
+	border: 5px solid #2c448c;
+	width: 100%;
+	margin-bottom: 20px;
 }
 
 /* ------------------------------------------------------------------------ */
