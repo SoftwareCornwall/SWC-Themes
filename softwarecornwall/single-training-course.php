@@ -64,33 +64,40 @@ try {
 						</div>
 						<div class="row">
 							<div class="col-sm-8">
-								<div class="sd-title-wrapper">
-									<h3 class="sd-styled-title">Course <span class="sd-light">Details</span></h3>
-								</div>
+								
+								<?php if($is_live) { ?>
+									<div class="sd-title-wrapper">
+										<h3 class="sd-styled-title">Course <span class="sd-light">Details</span></h3>
+									</div>
+								<?php } ?>
+								
 								<div class="row">
-									<div class="col-xs-2 col-md-1 col-xs-offset-3 col-md-offset-0 sd-entry-content"  style="text-align:center;">
-										<p class="training-list-date-wrapper-single"><?php if ($startDay) { echo $startDay; } ?><span><?php if ($startMonth) { echo $startMonth; } ?></span></p>
-									</div>
-									<div class="col-xs-1 col-sm-1 sd-entry-content" style="text-align:center;">
-										to
-									</div>
-									<div class="col-xs-2 col-md-1 sd-entry-content"  style="text-align:center;">
-										<p class="training-list-date-wrapper-single"><?php if ($endDay) { echo $endDay; } ?><span><?php if ($endMonth) { echo $endMonth; } ?></span></p>
-									</div>
-									<div class="clearfix visible-xs-block"></div>
-									<div class="col-sm-7 col-md-9">
-											<strong>Location:</strong> <?php if ($training_venue) {  echo $training_venue; }?></br>
-											<strong>Times:</strong> <?php  if ($time) {  echo $time; }?> to <?php if ($endTime) {  echo $endTime; }?></br>
-											<strong>Full Price:</strong> <?php if ($training_full_price) {  echo $training_full_price; }?></br>
-											<strong>Funded Price:</strong> <?php if ($training_funded_price) {  echo $training_funded_price; }?> (see description)
-									</div>
-									<div class="col-xs-12">
-										<?php if($is_live) { ?>
+									<?php if($is_live) { ?>
+										<div class="col-xs-2 col-md-1 col-xs-offset-3 col-md-offset-0 sd-entry-content"  style="text-align:center;">
+											<p class="training-list-date-wrapper-single"><?php if ($startDay) { echo $startDay; } ?><span><?php if ($startMonth) { echo $startMonth; } ?></span></p>
+										</div>
+										<div class="col-xs-1 col-sm-1 sd-entry-content" style="text-align:center;">
+											to
+										</div>
+										<div class="col-xs-2 col-md-1 sd-entry-content"  style="text-align:center;">
+											<p class="training-list-date-wrapper-single"><?php if ($endDay) { echo $endDay; } ?><span><?php if ($endMonth) { echo $endMonth; } ?></span></p>
+										</div>
+										<div class="clearfix visible-xs-block"></div>
+										<div class="col-sm-7 col-md-9">
+												<strong>Location:</strong> <?php if ($training_venue) {  echo $training_venue; }?></br>
+												<strong>Times:</strong> <?php  if ($time) {  echo $time; }?> to <?php if ($endTime) {  echo $endTime; }?></br>
+												<strong>Full Price:</strong> <?php if ($training_full_price) {  echo $training_full_price; }?></br>
+												<strong>Funded Price:</strong> <?php if ($training_funded_price) {  echo $training_funded_price; }?> (see description)
+										</div>
+										<div class="col-xs-12">
 											<p><a href="<?php echo $bookLink; ?>" title="Book <?php get_the_title();?> now" class="more-link">Book Now</a></span></p>
-										<?php } elseif ($bookLink) { ?>
-											<p><em>Course dates, price and availability will be determined based on volume of interest. Please complete the <a href="https://share.hsforms.com/1GDF4Zm5iQUan1jnsvbfhOA3ddhf">Register your interest</a> form to go on the list.</em></p>
-										<?php } ?> 
-									</div>
+										</div>
+									<?php } else { ?>
+										<div class="col-xs-12">
+											<p style="margin-top: 0;"><strong>Location:</strong> <?php if ($training_venue) {  echo $training_venue; }?></br><em>Course dates, price and availability will be determined based on volume of interest.</em></p>
+											<a href="https://share.hsforms.com/1GDF4Zm5iQUan1jnsvbfhOA3ddhf" title="Register your interest" class="more-link training-more-link">Register Your Interest</a></span>
+										</div>
+									<?php } ?> 
 								</div>
 								<div class="sd-left-col">
 
@@ -104,24 +111,23 @@ try {
 										<h3 class="sd-styled-title" style="margin-top:0px;">Course <span class="sd-light">Content</span></h3>
 									</div>
 									<?php the_content(); ?>
-
-									<!-- <div class="sd-prev-next-post clearfix">
-										<?php  if ($bookLink) { ?>
-											<span class="sd-next-post"><a href="<?php echo $bookLink; ?>" title="Book <?php get_the_title();?> now" class="sd_blog_single_next">Book Now</a></span>
-										<?php }?>
-									</div>
-									<div class="clearfix"></br></br></div> -->
+									<?php if(!$is_live){ ?>
+										<h3 class="sd-styled-title">Register Your <span class="sd-light">Interest</span></h3>
+										<p style="margin-top: 0;"><em>Course dates, price and availability will be determined based on volume of interest.</em></p>
+										<a href="https://share.hsforms.com/1GDF4Zm5iQUan1jnsvbfhOA3ddhf" title="Register your interest" class="more-link training-more-link">Register Your Interest</a></span>
+										
+									<?php } ?> 
 
 									<?php if ( $sd_data['sd_blog_featured_img'] == '1' ) : ?>
-											<?php if ( ( function_exists( 'has_post_thumbnail' ) ) && ( has_post_thumbnail() ) ) : ?>
-												<div class="sd-entry-thumb">
-													<figure>
-														<?php $sd_layout = $sd_data['sd_blog_layout'];  $feat_img_size = ( ( $sd_layout == '2' ) ? 'large-post-image' : 'post-image' ); ?>
-														<?php the_post_thumbnail( $feat_img_size, ['height' => '374px', 'width' => '720px']); ?>
-													</figure>
-												</div>
-											<?php endif; ?>
+										<?php if ( ( function_exists( 'has_post_thumbnail' ) ) && ( has_post_thumbnail() ) ) : ?>
+											<div class="sd-entry-thumb">
+												<figure>
+													<?php $sd_layout = $sd_data['sd_blog_layout'];  $feat_img_size = ( ( $sd_layout == '2' ) ? 'large-post-image' : 'post-image' ); ?>
+													<?php the_post_thumbnail( $feat_img_size, ['height' => '374px', 'width' => '720px']); ?>
+												</figure>
+											</div>
 										<?php endif; ?>
+									<?php endif; ?>
 
 									<h2>European Social Fund</h2>
 									<p>The European Social Fund is partially funding Software Cornwall to run this training project to provide development training for employees within the software industry. As a Software Cornwall member you will be receiving a discount to this course by email. This course is only available to those from the UK or EU. To participate in the training certain personal information will be required from attendants as proof of employment and eligibility to attend. This information is for the purposes of ensuring that the training will go to the correct participants. You will also be required to complete an evaluation form after the training as part of the attendance.</p>
@@ -155,7 +161,7 @@ try {
 										style="width: 100%;"/>
 									</br></br>	
 								</div>
-								<aside id="recent-posts-2" class="sd-sidebar-widget clearfix widget_recent_entries">					
+								<aside id="recent-posts-2" class="sd-sidebar-widget clearfix widget_recent_entries trainer-sidebar">					
 									<div class="sd-title-wrapper">
 										<h3 class="sd-styled-title">Meet the <span class="sd-light">Trainer</span></h3>
 									</div>
@@ -163,13 +169,12 @@ try {
 									<p style="margin-top:0; font-size:18px;"><strong><?php if ($training_delivered_by) { echo $training_delivered_by; }?></strong></p>
 									
 									<img src="<?php if ($trainer_headshot) { echo $trainer_headshot; } ?>" alt="<?php echo $training_delivered_by . ' headshot';?>"
-										height="400px" width="400px" loading="lazy" class="trainer_headshot_img">
+										height="300px" width="300px" loading="lazy" class="trainer_headshot_img">
 
 									<div class="sd-header-social trainer-social clearfix">
-										<?php
-										foreach ( $speaker_links as $font_class => $url ) { ?>
-												<a class="sd-bg-trans sd-header-<?php echo $font_class; ?>" href="<?php echo esc_url($url); ?>" title="<?php echo $font_class; ?>" target="_blank" rel="nofollow"><i class="fa fa-<?php echo $font_class; ?>"></i></a>
-											<?php } ?>
+										<?php foreach ( $speaker_links as $font_class => $url ) { ?>
+											<a class="sd-bg-trans sd-header-<?php echo $font_class; ?>" href="<?php echo esc_url($url); ?>" title="<?php echo $font_class; ?>" target="_blank" rel="nofollow"><i class="fa fa-<?php echo $font_class; ?>"></i></a>
+										<?php } ?>
 									</div>
 									<div class="clearfix"></div>
 									

@@ -2451,7 +2451,14 @@ body .wpb_content_element .wpb_accordion_wrapper .wpb_accordion_content {
 img.trainer_headshot_img {
 	border-radius: 50%;
 	border: 5px solid #2c448c;
+	display: block;
 	width: 100%;
+	max-width: 250px;
+	margin: 0 auto 20px auto;
+}
+
+.training-more-link {
+	margin-top: 0;
 	margin-bottom: 20px;
 }
 
