@@ -4,6 +4,11 @@
 / Created for the training category page
 / ------------------------------------------------------------------------ */
 global $sd_data;
+
+$training_venue = get_post_meta($post->ID, 'training_venue', true);
+$training_delivered_by = get_post_meta($post->ID, 'training_delivered_by', true);
+$training_full_price = get_post_meta($post->ID, 'training_full_price', true);
+$training_funded_price = get_post_meta($post->ID, 'training_funded_price', true);
 ?>
 
 <div class="training_list_item sd-entry-wrapper clearfix">
@@ -11,12 +16,12 @@ global $sd_data;
     <div class="col-sm-8 sd-entry-content">
         <h3 class="sd-entry-title"><a href="<?php the_permalink(); ?>" title="<?php get_the_title();?>" rel="bookmark"><?php the_title(); ?></a></h3>
         <p>
-           Location: <?php $training_venue = get_post_meta($post->ID, 'training_venue', true); if ($training_venue) {  echo $training_venue; }?></br>     
-           Delivered By: <?php $training_delivered_by = get_post_meta($post->ID, 'training_delivered_by', true); if ($training_delivered_by) {  echo $training_delivered_by; }?>
+            <?php if ($training_venue) { ?>Location: <?php echo $training_venue; ?></br><?php } ?>
+            <?php if ($training_delivered_by) { ?>Delivered By: <?php echo $training_delivered_by; ?><?php } ?>
         </p>
         <p>
-            Full Price: <?php $training_full_price = get_post_meta($post->ID, 'training_full_price', true); if ($training_full_price) {  echo $training_full_price; }?> // 
-            Funded Price: <?php $training_funded_price = get_post_meta($post->ID, 'training_funded_price', true); if ($training_funded_price) {  echo $training_funded_price; }?>
+            <?php  if ($training_full_price) { ?>Full Price: <?php echo $training_full_price; ?> // <?php } ?>
+            <?php  if ($training_funded_price) { ?>Funded Price: <?php echo $training_funded_price; ?><?php } ?>
         </p>
     </div>
 

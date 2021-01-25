@@ -4,6 +4,20 @@
 / Created for the dedicated ELS page to display scheduled courses
 / ------------------------------------------------------------------------ */
 global $sd_data;
+
+$training_venue = get_post_meta($post->ID, 'training_venue', true);
+$training_delivered_by = get_post_meta($post->ID, 'training_delivered_by', true);
+$training_full_price = get_post_meta($post->ID, 'training_full_price', true);
+$training_funded_price = get_post_meta($post->ID, 'training_funded_price', true);
+
+try {
+    $date = get_post_meta($post->ID, 'training_start_date', true);
+    $trainingDate = strtotime(str_replace('/','-', $date));
+    $day = date('jS', $trainingDate);
+    $month = date('M', $trainingDate);
+} catch (Exception $e) {
+    error_log('Caught exception: ' .  $e->getMessage(), 0);
+}
 ?>
 
 <div class="training_list_item sd-entry-wrapper clearfix">
@@ -12,27 +26,16 @@ global $sd_data;
         <h3 class="sd-entry-title"><a href="<?php the_permalink(); ?>" title="<?php get_the_title();?>" rel="bookmark"><?php the_title(); ?></a></h3>
     </div>
     <div class="col-sm-1 sd-entry-content">
-    <?php 
-            try {
-                $date = get_post_meta($post->ID, 'training_start_date', true);
-                $trainingDate = strtotime(str_replace('/','-', $date));
-                $day = date('jS', $trainingDate);
-                $month = date('M', $trainingDate);
-            } catch (Exception $e) {
-                error_log('Caught exception: ' .  $e->getMessage(), 0);
-            }
-        ?>
         <p class="training-list-date-wrapper"><?php if ($day) { echo $day; } ?><span><?php if ($month) { echo $month; } ?></span></p>
     </div>
     <div class="col-sm-7 sd-entry-content">
-        
         <p>
-           Location: <?php $training_venue = get_post_meta($post->ID, 'training_venue', true); if ($training_venue) {  echo $training_venue; }?></br>     
-           Delivered By: <?php $training_delivered_by = get_post_meta($post->ID, 'training_delivered_by', true); if ($training_delivered_by) {  echo $training_delivered_by; }?>
+            <?php if ($training_venue) { ?>Location: <?php echo $training_venue; ?></br><?php } ?>
+            <?php if ($training_delivered_by) { ?>Delivered By: <?php echo $training_delivered_by; ?><?php } ?>
         </p>
         <p>
-            Full Price: <?php $training_full_price = get_post_meta($post->ID, 'training_full_price', true); if ($training_full_price) {  echo $training_full_price; }?> // 
-            Funded Price: <?php $training_funded_price = get_post_meta($post->ID, 'training_funded_price', true); if ($training_funded_price) {  echo $training_funded_price; }?>
+            <?php  if ($training_full_price) { ?>Full Price: <?php echo $training_full_price; ?> // <?php } ?>
+            <?php  if ($training_funded_price) { ?>Funded Price: <?php echo $training_funded_price; ?><?php } ?>
         </p>
     </div>
 
