@@ -90,7 +90,7 @@ try {
 												<strong>Funded Price:</strong> <?php if ($training_funded_price) {  echo $training_funded_price; }?> (see description)
 										</div>
 										<div class="col-xs-12">
-											<p><a href="<?php echo $bookLink; ?>" title="Book <?php get_the_title();?> now" class="more-link">Book Now</a></span></p>
+											<a href="<?php echo $bookLink; ?>" title="Book <?php get_the_title();?> now" class="more-link" style="margin-bottom:20px; margin-top:10px;">Book Now</a></span>
 										</div>
 									<?php } else { ?>
 										<div class="col-xs-12">

@@ -30,24 +30,67 @@ get_header();
 						'posts_per_page' => 4,
 						'orderby' => 'date',
 						'order' => 'DESC',
-						'cat' => get_cat_ID( 'Employer Led Skills Training Courses' )
+						'cat' => get_cat_ID( 'Employer Led Skills Training Courses' ),
+						'post_type' => 'post',
+						'meta_query' => array(
+							array(
+								'key' => 'training_is_live',
+								'value' => 'on',
+							)
+						),
 					);
 					$query = new WP_Query( $args );
 						
 					if ( $query->have_posts() ) :  ?>
 						<br />
 						<div class="col-xs-12 col-sm-12">
-							<h3>Upcoming Training Courses</h3>
+							<h2>Upcoming Training Courses</h2>
 						</div>
 						
 						<?php while ( $query->have_posts() ) : $query->the_post();?>
 						<br /><br />
 						<div class="col-xs-12">
 							<div class="row">
-								<?php get_template_part( 'partials/training-list-item-small' ); ?>
+								<?php get_template_part( 'partials/training-list-item-small-with-date' ); ?>
 							</div>
 						</div>
 					
+					<?php endwhile; endif; wp_reset_postdata();
+
+					$second_query = new WP_Query( 
+						array(
+							'post_type' => 'post',
+							'cat' => '336,353',
+							'relation' => 'OR', 
+							array(
+								'key' => 'training_is_live',
+								'compare' => 'NOT EXISTS'
+							),
+							array(
+								'key' => 'training_is_live',
+								'value' => '_wp_zero_value',
+								'compare' => '='
+							)
+						) 
+					);
+
+					if ( $second_query->have_posts() ) : ?> 
+
+						<br />
+						<div class="col-xs-12 col-sm-12">
+							<h2>Our Training Prospectus</h2>
+							<p>Based upon feedback from Cornwall's tech community, we're able to offer the following partially funded training courses. The course dates, price and availability will be determined based on volume of interest.</p>
+						</div>
+					
+					<?php while ( $second_query->have_posts() ) : $second_query->the_post(); ?>
+
+						<br /><br />
+						<div class="col-xs-12">
+							<div class="row">
+								<?php get_template_part( 'partials/training-list-item-prospectus' ); ?>
+							</div>
+						</div>
+
 					<?php endwhile; endif; wp_reset_postdata(); ?>
 				</div>
 			</div>
