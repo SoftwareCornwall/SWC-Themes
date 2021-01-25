@@ -77,6 +77,7 @@ get_header();
 							if (metadata_exists('post', get_the_ID(), 'training_delivered_by') && !metadata_exists('post', get_the_ID(), 'training_is_live')) : ?>
 								<div class="col-sm-6 col-md-4 col-lg-3 sd-entry-content">
 									<h3 class="sd-entry-title"><a href="<?php the_permalink(); ?>" title="<?php get_the_title();?>" rel="bookmark"><?php the_title(); ?></a></h3>
+									<p>Delivered By: <?php $training_delivered_by = get_post_meta($post->ID, 'training_delivered_by', true); if ($training_delivered_by) {  echo $training_delivered_by; }?></p>
 									<?php if ( ( function_exists( 'has_post_thumbnail') ) && ( has_post_thumbnail() ) ) : ?>
 										<figure>
 											<?php the_post_thumbnail( 'blog-grid-thumb', ['height' => 'auto', 'width' => '100%'] ); ?>

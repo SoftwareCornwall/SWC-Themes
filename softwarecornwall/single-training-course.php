@@ -84,10 +84,10 @@ try {
 										</div>
 										<div class="clearfix visible-xs-block"></div>
 										<div class="col-sm-7 col-md-9">
-												<strong>Location:</strong> <?php if ($training_venue) {  echo $training_venue; }?></br>
-												<strong>Times:</strong> <?php  if ($time) {  echo $time; }?> to <?php if ($endTime) {  echo $endTime; }?></br>
-												<strong>Full Price:</strong> <?php if ($training_full_price) {  echo $training_full_price; }?></br>
-												<strong>Funded Price:</strong> <?php if ($training_funded_price) {  echo $training_funded_price; }?> (see description)
+												<?php if ($training_venue) { ?><strong>Location:</strong> <?php echo $training_venue; ?></br><?php } ?>
+												<?php if ($time) { ?><strong>Times:</strong> <?php echo $time; ?> to <?php if ($endTime) {  echo $endTime; }?></br><?php } ?>
+												<?php if ($training_full_price) { ?><strong>Full Price:</strong> <?php echo $training_full_price; ?></br><?php } ?>
+												<?php if ($training_funded_price) { ?><strong>Funded Price:</strong> <?php echo $training_funded_price; ?> (see description)<?php } ?>
 										</div>
 										<div class="col-xs-12">
 											<a href="<?php echo $bookLink; ?>" title="Book <?php get_the_title();?> now" class="more-link" style="margin-bottom:20px; margin-top:10px;">Book Now</a></span>
@@ -115,7 +115,6 @@ try {
 										<h3 class="sd-styled-title">Register Your <span class="sd-light">Interest</span></h3>
 										<p style="margin-top: 0;"><em>Course dates, price and availability will be determined based on volume of interest.</em></p>
 										<a href="https://share.hsforms.com/1GDF4Zm5iQUan1jnsvbfhOA3ddhf" title="Register your interest" class="more-link training-more-link">Register Your Interest</a></span>
-										
 									<?php } ?> 
 
 									<?php if ( $sd_data['sd_blog_featured_img'] == '1' ) : ?>
@@ -142,9 +141,7 @@ try {
 						</article>
 
 					<?php endwhile; else: ?>
-					<p>
-						<?php _e( 'Sorry, no posts matched your criteria', 'sd-framework' ) ?>
-						.</p>
+					<p><?php _e( 'Sorry, no posts matched your criteria', 'sd-framework' ) ?>.</p>
 					<?php endif; ?>
 				</div>
 							</div>
@@ -165,17 +162,20 @@ try {
 									<div class="sd-title-wrapper">
 										<h3 class="sd-styled-title">Meet the <span class="sd-light">Trainer</span></h3>
 									</div>
-
-									<p style="margin-top:0; font-size:18px;"><strong><?php if ($training_delivered_by) { echo $training_delivered_by; }?></strong></p>
-									
-									<img src="<?php if ($trainer_headshot) { echo $trainer_headshot; } ?>" alt="<?php echo $training_delivered_by . ' headshot';?>"
+									<?php if ($training_delivered_by) { ?>
+										<p style="margin-top:0; font-size:18px;"><strong><?php echo $training_delivered_by; ?></strong></p>
+									<?php }
+									if ($trainer_headshot) { ?>
+									<img src="<?php echo $trainer_headshot; ?>" alt="<?php echo $training_delivered_by . ' headshot';?>"
 										height="300px" width="300px" loading="lazy" class="trainer_headshot_img">
-
+									<?php }
+									if (count($speaker_links) > 0) { ?>
 									<div class="sd-header-social trainer-social clearfix">
 										<?php foreach ( $speaker_links as $font_class => $url ) { ?>
 											<a class="sd-bg-trans sd-header-<?php echo $font_class; ?>" href="<?php echo esc_url($url); ?>" title="<?php echo $font_class; ?>" target="_blank" rel="nofollow"><i class="fa fa-<?php echo $font_class; ?>"></i></a>
 										<?php } ?>
 									</div>
+									<?php } ?>
 									<div class="clearfix"></div>
 									
 									<p><?php  if ($trainer_bio) {  echo $trainer_bio; }?></br></p>
