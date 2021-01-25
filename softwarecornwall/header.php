@@ -90,13 +90,13 @@ global $sd_data;
 	<div class="<?php if ( $sd_data['sd_sticky_header'] == '1' ) echo 'sd-sticky-header'; ?> clearfix">
     <div class="container">
 		
-			<h1 class="sd-logo">
+			<div class="sd-logo">
 				<?php if ( !empty($sd_data['sd_logo_upload']['url']) ) : ?>
 					<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"> <img src="<?php echo $sd_data['sd_logo_upload']['url']; ?>" alt="<?php echo get_bloginfo( 'name' ); ?>" /></a>
 				<?php else : ?>
 					<a name="top" href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"> <?php echo get_bloginfo( 'name' );	?> </a>
 				<?php endif; ?>
-			</h1>
+				</div>
 		<!-- logo end --> 
 		<nav class="sd-menu-wrapper hidden-xs">
 			<?php
