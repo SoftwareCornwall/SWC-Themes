@@ -84,7 +84,8 @@ get_header();
 							<p>Based upon feedback from Cornwall's tech community, we're able to offer the following partially funded training courses. The course dates, price and availability will be determined based on volume of interest.</p>
 						</div>
 					
-					<?php while ( $second_query->have_posts() ) : $second_query->the_post(); ?>
+					<?php while ( $second_query->have_posts() ) : $second_query->the_post(); 
+					if (metadata_exists('post', get_the_ID(), 'training_delivered_by')) : ?>
 
 						<br /><br />
 						<div class="col-xs-12">
@@ -93,7 +94,7 @@ get_header();
 							</div>
 						</div>
 
-					<?php endwhile; endif; wp_reset_postdata(); ?>
+					<?php endif; endwhile; endif; wp_reset_postdata(); ?>
 				</div>
 			</div>
 

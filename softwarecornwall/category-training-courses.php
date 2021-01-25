@@ -72,7 +72,8 @@ get_header();
 
 					<div class="col-xs-12">
 						<div class="row auto-clear">
-					<?php if ( $second_query->have_posts() ) :  while ( $second_query->have_posts() ) : $second_query->the_post(); ?>
+					<?php if ( $second_query->have_posts() ) :  while ( $second_query->have_posts() ) : $second_query->the_post();
+					if (metadata_exists('post', get_the_ID(), 'training_delivered_by')) : ?>
 						<div class="col-sm-6 col-md-4 col-lg-3 sd-entry-content">
 							<h3 class="sd-entry-title"><a href="<?php the_permalink(); ?>" title="<?php get_the_title();?>" rel="bookmark"><?php the_title(); ?></a></h3>
 							<?php if ( ( function_exists( 'has_post_thumbnail') ) && ( has_post_thumbnail() ) ) : ?>
@@ -82,7 +83,7 @@ get_header();
 							<?php endif; ?>
 							<?php the_excerpt('View Course'); ?>
 						</div>
-					<?php endwhile; else: ?>
+					<?php endif; endwhile; else: ?>
 						<div class="col-sm-6 col-md-4 col-lg-3 sd-entry-content">
 							<p><?php _e( 'Sorry, there are no upcoming training courses.', 'sd-framework' ) ?>.</p>
 						</div>
