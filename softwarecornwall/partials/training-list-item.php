@@ -11,9 +11,9 @@ global $sd_data;
         <?php 
             try {
                 $date = get_post_meta($post->ID, 'training_start_date', true);
-                $dayParts = explode('/', $date);
-                $day = date('jS', mktime(0, 0, 0, $dayParts[0], 10));
-                $month = date('M', mktime(0, 0, 0, $dayParts[1], 10));
+                $trainingDate = strtotime(str_replace('/','-', $date));
+                $day = date('jS', $trainingDate);
+                $month = date('M', $trainingDate);
             } catch (Exception $e) {
                 error_log('Caught exception: ' .  $e->getMessage(), 0);
             }
