@@ -31,14 +31,14 @@ if($trainer_instagram){ $speaker_links['instagram'] = $trainer_instagram; }
 // Convert date to display format
 try {
 	$date = get_post_meta($post->ID, 'training_start_date', true);
-	$endDate = get_post_meta($post->ID, 'training_end_date', true);
-	$dayParts = explode('/', $date);
-	$startDay = date('jS', mktime(0, 0, 0, $dayParts[0], 10));
-	$startMonth = date('M', mktime(0, 0, 0, $dayParts[1], 10));
+	$trainingDate = strtotime(str_replace('/','-', $date));
+	$startDay = date('jS', $trainingDate);
+	$startMonth = date('M', $trainingDate);
 
-	$endDayParts = explode('/', $date);
-	$endDay = date('jS', mktime(0, 0, 0, $endDayParts[0], 10));
-	$endMonth = date('M', mktime(0, 0, 0, $endDayParts[1], 10));
+	$endDate = get_post_meta($post->ID, 'training_end_date', true);
+	$trainingEndDate = strtotime(str_replace('/','-', $endDate));
+	$endDay = date('jS', $trainingEndDate);
+	$endMonth = date('M', $trainingEndDate);
 } catch (Exception $e) {
 	error_log('Caught exception: ' .  $e->getMessage(), 0);
 } ?>
