@@ -85,7 +85,7 @@ get_header();
 						</div>
 					
 					<?php while ( $second_query->have_posts() ) : $second_query->the_post(); 
-					if (metadata_exists('post', get_the_ID(), 'training_delivered_by')) : ?>
+						  if (metadata_exists('post', get_the_ID(), 'training_delivered_by') && !metadata_exists('post', get_the_ID(), 'training_is_live')) : ?>
 
 						<br /><br />
 						<div class="col-xs-12">
