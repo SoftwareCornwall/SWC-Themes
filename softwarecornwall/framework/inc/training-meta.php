@@ -61,7 +61,7 @@ function training_meta_box_html( $post ) { ?>
     <label for="trainer_instagram" style="min-width:200px; display: inline-block;">Instagram Profile</label>
 	<input type="text" id="trainer_instagram" name="trainer_instagram" placeholder="https://instagram.com/trainerHandle"
            value="<?php echo get_post_meta($post -> ID, 'trainer_instagram', true);?>"style="min-width:400px;"><br />
-    <label for="trainer_website" style="min-width:200px; display: inline-block;">Delivered By</label>
+    <label for="trainer_website" style="min-width:200px; display: inline-block;">Website</label>
 	<input type="text" id="trainer_website" name="trainer_website" placeholder="https://trainerwebsite.com"
            value="<?php echo get_post_meta($post -> ID, 'trainer_website', true);?>" style="min-width:400px;"><br />
     <label id="trainer_bio_label" for="trainer_bio" style="min-width:200px; display: inline-block;">Bio</label>
