@@ -20,7 +20,7 @@ get_header();
 				<div class="row" id="post-wrapper">
 					<div class="col-xs-12">
 						<div class="sd-title-wrapper">
-							<h3 class="sd-styled-title">Upcoming Training <span class="sd-light">Courses</span></h3>
+							<h2 class="sd-styled-title">Upcoming Training <span class="sd-light">Courses</span></h2>
 						</div>
 					</div>
 					<?php 
@@ -45,7 +45,8 @@ get_header();
 					
 					<div class="col-xs-12">
 						<div class="sd-title-wrapper">
-							<h3 class="sd-styled-title">Our Training <span class="sd-light">Prospectus</span></h3>
+							</br></br>
+							<h2 class="sd-styled-title">Our Training <span class="sd-light">Prospectus</span></h2>
 							<p>Based upon feedback from Cornwall's tech community, we're able to offer the following partially funded training courses. The course dates, price and availability will be determined based on volume of interest.</p>
 						</div>
 					</div>
