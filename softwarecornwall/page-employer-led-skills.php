@@ -32,6 +32,7 @@ get_header();
 						'order' => 'DESC',
 						'cat' => get_cat_ID( 'Employer Led Skills Training Courses' ),
 						'post_type' => 'post',
+						'posts_per_page' => -1,
 						'meta_query' => array(
 							array(
 								'key' => 'training_is_live',
@@ -61,7 +62,8 @@ get_header();
 						array(
 							'post_type' => 'post',
 							'cat' => '192,258',
-							'relation' => 'OR', 
+							'relation' => 'OR',
+							'posts_per_page' => -1,
 							array(
 								'key' => 'training_is_live',
 								'compare' => 'NOT EXISTS'

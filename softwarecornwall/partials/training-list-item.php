@@ -44,4 +44,3 @@ global $sd_data;
         <?php endif; ?>
     </div>
 </div>
-<hr>

@@ -27,6 +27,7 @@ get_header();
 					$my_query = new WP_Query( 
 						array(
 							'post_type' => 'post',
+							'posts_per_page' => -1,
 							'meta_query' => array(
 								array(
 									'key' => 'training_is_live',
@@ -55,6 +56,7 @@ get_header();
 						array(
 							'post_type' => 'post',
 							'cat' => '192,258',
+							'posts_per_page' => -1,
 							'relation' => 'OR', 
 							array(
 								'key' => 'training_is_live',
@@ -66,9 +68,11 @@ get_header();
 								'compare' => '='
 							)
 						) 
-					);
+					);?>
 
-					if ( $second_query->have_posts() ) :  while ( $second_query->have_posts() ) : $second_query->the_post(); ?>
+					<div class="col-xs-12">
+						<div class="row auto-clear">
+					<?php if ( $second_query->have_posts() ) :  while ( $second_query->have_posts() ) : $second_query->the_post(); ?>
 						<div class="col-sm-6 col-md-4 col-lg-3 sd-entry-content">
 							<h3 class="sd-entry-title"><a href="<?php the_permalink(); ?>" title="<?php get_the_title();?>" rel="bookmark"><?php the_title(); ?></a></h3>
 							<?php if ( ( function_exists( 'has_post_thumbnail') ) && ( has_post_thumbnail() ) ) : ?>
@@ -83,27 +87,8 @@ get_header();
 							<p><?php _e( 'Sorry, there are no upcoming training courses.', 'sd-framework' ) ?>.</p>
 						</div>
 					<?php endif; wp_reset_postdata();?>
-				
-					
-
-				</div>
-			</div>
-
-			<div class="col-sm-10 col-sm-offset-1 category-description-wrapper" style="text-align: center;">
-				<!--pagination-->
-				<?php if ( $sd_data['sd_pagination_type'] == '1' ) : ?>
-					<?php if ( get_previous_posts_link() ) : ?>
-						<div class="sd-nav-previous">
-							<?php previous_posts_link( $sd_data['sd_blog_prev'] ); ?>
-						</div>
-					<?php endif; ?>
-					<?php if ( get_next_posts_link() ) : ?>
-						<div class="sd-nav-next">
-							<?php next_posts_link( $sd_data['sd_blog_next'] ); ?>
-						</div>
-					<?php endif; ?>
-				<?php else : sd_custom_pagination(); endif; ?>
-				<!--pagination end--> 
+					</div>
+					</div>
 				</div>
 			</div>
 		</div>
