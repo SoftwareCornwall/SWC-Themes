@@ -60,7 +60,7 @@ get_header();
 					$second_query = new WP_Query( 
 						array(
 							'post_type' => 'post',
-							'cat' => '336,353',
+							'cat' => '192,258',
 							'relation' => 'OR', 
 							array(
 								'key' => 'training_is_live',

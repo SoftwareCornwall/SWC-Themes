@@ -54,7 +54,7 @@ get_header();
 					$second_query = new WP_Query( 
 						array(
 							'post_type' => 'post',
-							'cat' => '336,353',
+							'cat' => '192,258',
 							'relation' => 'OR', 
 							array(
 								'key' => 'training_is_live',
@@ -79,7 +79,9 @@ get_header();
 							<?php the_excerpt('View Course'); ?>
 						</div>
 					<?php endwhile; else: ?>
-						<p><?php _e( 'Sorry, there are no upcoming training courses.', 'sd-framework' ) ?>.</p>
+						<div class="col-sm-6 col-md-4 col-lg-3 sd-entry-content">
+							<p><?php _e( 'Sorry, there are no upcoming training courses.', 'sd-framework' ) ?>.</p>
+						</div>
 					<?php endif; wp_reset_postdata();?>
 				
 					
