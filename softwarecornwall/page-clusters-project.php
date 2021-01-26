@@ -9,8 +9,20 @@ get_header();
 <div class="sd-blog-page">
 	<div class="container">
 		<div class="row"> 
+			<div class="top-eu-logo col-sm-12">
+				<div class="sd-title-wrapper">
+					<h3 class="sd-styled-title">Part <span class="sd-light">Financed By:</span></h3>
+				</div>
+				<img 
+					src="https://softwarecornwall.org/wp-content/uploads/2020/10/ESF_logo.png" 
+					alt="European Social Fund Logo" 
+					loading="lazy" 
+					height="74px" width="360px"
+					style="width: 100%;"/>
+				</br></br>	
+			</div>
 			<!--left col-->
-			<div class="col-md-8 <?php if ( $sd_data['sd_sidebar_location'] == '2' ) echo 'pull-right'; ?>">
+			<div class="col-sm-8 <?php if ( $sd_data['sd_sidebar_location'] == '2' ) echo 'pull-right'; ?>">
 				<?php if (have_posts()) : while (have_posts()) : the_post();?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class( 'blog-entry page-entry clearfix' ); ?>> 
 						<!-- entry content -->
@@ -80,8 +92,8 @@ get_header();
 			</div>
 
 			<!--sidebar-->
-			<div class="col-md-4">
-				<aside id="recent-posts-2" class="sd-sidebar-widget clearfix widget_recent_entries">
+			<div class="col-sm-4">
+				<div class="side-eu-logo">
 					<div class="sd-title-wrapper">
 						<h3 class="sd-styled-title">Part <span class="sd-light">Financed By:</span></h3>
 					</div>
@@ -91,8 +103,8 @@ get_header();
 						loading="lazy" 
 						height="74px" width="360px"
 						style="width: 100%;"/>
-					</br></br>
-				</aside>
+					</br>	
+				</div>
 				<?php get_sidebar(); ?>
 			</div>
 			<!--sidebar end--> 
