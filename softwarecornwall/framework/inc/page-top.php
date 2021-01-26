@@ -25,37 +25,37 @@ if ( !is_category() && !is_tag() && !is_search() && !is_404() && !is_day() && !i
 	
 			<?php if ( have_posts() ) : ?>
 				<?php /* If this is a category archive */ if ( is_category() ) { ?>
-					<h2>
+					<h1>
 						<?php single_cat_title(); ?>
-					</h2>
+					</h1>
 	
 				<?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
-					<h2>
+					<h1>
 						<?php _e( 'Tagged as:', 'sd-framework' ); ?>
 						<?php single_tag_title(); ?>
-					</h2>
+					</h1>
 	
 				<?php /* If this is a daily archive */ } elseif ( is_day() ) { ?>
-					<h2>
+					<h1>
 						<?php _e( 'Archive for', 'sd-framework' ); ?>
 						<?php the_time( 'F jS, Y' ); ?>
-					</h2>
+					</h1>
 		
 				<?php /* If this is a monthly archive */ } elseif ( is_month() ) { ?>
-					<h2>
+					<h1>
 						<?php _e( 'Archive for', 'sd-framework' ); ?>
 						<?php the_time( 'F, Y' ); ?>
-					</h2>
+					</h1>
 				<?php /* If this is a yearly archive */ } elseif ( is_year() ) { ?>
-					<h2>
+					<h1>
 						<?php _e( 'Archive for', 'sd-framework' ); ?>
 						<?php the_time( 'Y' ); ?>
-					</h2>
+					</h1>
 
 				<?php /* If this is a paged archive */ } elseif ( isset( $_GET['paged']) && !empty( $_GET['paged']) ) { ?>
-					<h2>
+					<h1>
 						<?php _e( 'Archive', 'sd-framework' ); ?>
-					</h2>
+					</h1>
 	
 				<?php } elseif( tribe_is_month() && !is_tax() ) { ?>
 					<h1>Events Calendar</h1>
@@ -64,9 +64,9 @@ if ( !is_category() && !is_tag() && !is_search() && !is_404() && !is_day() && !i
 				<?php } elseif( tribe_is_event() && !tribe_is_day() && !is_single() ) { ?>
 					<h1> Events Calendar</h1>
 				<?php } else { ?>
-					<h2>
+					<h1>
 						<?php single_cat_title(); ?>
-					</h2>
+					</h1>
 				<?php } ?>
 			<?php endif; ?>
 			
@@ -85,14 +85,14 @@ if ( !is_category() && !is_tag() && !is_search() && !is_404() && !is_day() && !i
 			<?php endif; ?>
 
 		<?php elseif ( is_search() ) : ?>
-			<h2>
+			<h1>
 				<?php _e( 'Search Results for:', 'sd-framework' ); ?>
 				<?php $allsearch = new WP_Query( "s=$s&amp;showposts=-1" ); $key = esc_html( $s, 1 ); echo '"' . $key . '"'; wp_reset_query(); ?>
-			</h2>
+			</h1>
 		<?php elseif ( is_404() ) : ?>
-			<h2>
+			<h1>
 				<?php echo $sd_data['sd_404_title']; ?>
-			</h2>
+			</h1>
 		
 		
 		
@@ -106,9 +106,9 @@ if ( !is_category() && !is_tag() && !is_search() && !is_404() && !is_day() && !i
 				echo $page_title;
 			else :
 		?>
-			<h2 class="sd-styled-title">
+			<h1 class="sd-styled-title">
 				<?php wp_title( '' ); ?>
-			</h2>	
+			</h1>	
 			<?php endif; ?>
 		<?php endif; ?>
 		<!-- page title end --> 
