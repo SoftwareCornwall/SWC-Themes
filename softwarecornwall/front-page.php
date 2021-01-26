@@ -29,11 +29,8 @@ global $sd_data;
 	
 	<div class="container">
 		<div class="row">
-			<div class="col-md-10 col-md-offset-1">
-				<h2 style="text-align: center; color: #2c448c;"><strong>Welcome to Cornwall's Tech Community</strong></h2>
-				<p>We actively support outreach into education and provide <strong><a href="https://softwarecornwall.org/mission-to-mars/" title="Mission to Mars Work Experience">work experiences</a></strong> every year. Our <strong><a href="https://softwarecornwall.org/employer-led-skills/" title="technical software training in Cornwall">Employer Led Skills</a></strong> project, supported by funding from the European Social Fund, that will develop the skills and abilities of employees and those wishing to join the industry.</p>
-				<p>Software Cornwall represents one of the <strong><a href="https://softwarecornwall.org/news/reports/cornwalls-fast-growing-tech-sector-highlighted-in-national-report-technation-wearetechnation-technation/">fastest growing tech clusters in the UK</a></strong>.  Software Cornwall connects, promotes, represents and supports Cornwall's digital tech community.  We aim to be the best way to plug in to this fast-growing community.</p>
-				<p>If you run a tech business in Cornwall, then <strong><a href="https://www.softwarecornwall.org/register/" title="Become a Software Cornwall member">join our tech community</a></strong>, promote your business, network, <strong><a href="https://www.softwarecornwall.org/jobs-board/" title="Recruit Software Developer in Cornwall">recruit</a></strong> and support our tech education in Cornwall. Individuals and students can become <strong><a href="https://www.softwarecornwall.org/register/" title="Software Cornwall Individual Membership">In touch members</a></strong> for free. We are always pleased to welcome volunteers, and discuss opportunities for collaboration. Software Cornwall is a Not for Profit funded by membership. Visit our <strong><a href="https://www.softwarecornwall.org/jobs-board/" title="Software Jobs Baord for Cornwall">jobs board</a></strong> for the latest opportunities or submit your CV to our members via our <strong><a href="https://www.softwarecornwall.org/submit-resume/" title="Cornwall's Software CV Bank">CV Bank</a></strong></p>
+			<div class="col-md-10 col-md-offset-1" style="font-size:16px;">
+				<?php the_content(); ?>
 			</div>
 		</div>
 	</div>
