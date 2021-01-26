@@ -18,7 +18,11 @@ global $sd_data;
 						<h1 class="cover-text">Software Cornwall</h1>
 						<h2 class="cover-text">The Hub of Cornwall's Growing Tech Community</h2>
 						<p class="cover-text">
-							<a class="more-link" href="https://www.softwarecornwall.org/register">Become a member</a>
+						<?php if(is_user_logged_in()){ ?>
+							<a class="more-link dark-button" href="https://softwarecornwall.org/user-dashboard/" title="Manage your account">Your Account</a>
+						<?php } else { ?>
+							<a class="more-link dark-button" href="https://www.softwarecornwall.org/register" title="Join Software Cornwall">Become a member</a>
+						<?php } ?>
 						</p>
 					</div>
 				</div>

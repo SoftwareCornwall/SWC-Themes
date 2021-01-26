@@ -61,9 +61,11 @@ global $sd_data;
 		    	<li><?php if ( $sd_data['sd_top_bar_first_field_icon'] !== 'none' ) : ?><i class="<?php echo $sd_data['sd_top_bar_first_field_icon']; ?>"></i><?php endif; ?> <?php echo $sd_data['sd_top_bar_first_field']; ?></li>
 				<?php endif; ?>
 				
-				<?php if ( !empty( $sd_data['sd_top_bar_second_field'] ) ) : ?>
-			    <li><?php if ( $sd_data['sd_top_bar_second_field_icon'] !== 'none' ) : ?><i class="<?php echo $sd_data['sd_top_bar_second_field_icon']; ?>"></i><?php endif; ?> <?php echo $sd_data['sd_top_bar_second_field']; ?>
-				<?php endif; ?>
+				<?php if(is_user_logged_in()){ ?>
+					<li><i class="fa fa-user"></i> <a href="https://softwarecornwall.org/user-dashboard/">Your Account</a></li>
+				<?php } else { ?>
+					<li><i class="fa fa-user"></i> <a href="https://softwarecornwall.org/user-dashboard/">Login</a></li>
+				<?php } ?>
 				
 				<?php if ( !empty( $sd_data['sd_top_news'] ) ) : ?>
 			    <li class="hidden-sm"><span class="sd-news-span"><?php echo $sd_data['sd_top_news_word']; ?></span> <span class="sd-news-content-span"><?php echo $sd_data['sd_top_news']; ?></span></li>
