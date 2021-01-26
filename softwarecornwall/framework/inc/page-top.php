@@ -57,6 +57,12 @@ if ( !is_category() && !is_tag() && !is_search() && !is_404() && !is_day() && !i
 						<?php _e( 'Archive', 'sd-framework' ); ?>
 					</h2>
 	
+				<?php } elseif( tribe_is_month() && !is_tax() ) { ?>
+					<h1>Events Calendar</h1>
+				<?php } elseif( tribe_is_month() && is_tax() ) { ?>
+					<h1><?php echo 'Events Calendar' . ' &raquo; ' . single_term_title('', false);?></h1>
+				<?php } elseif( tribe_is_event() && !tribe_is_day() && !is_single() ) { ?>
+					<h1> Events Calendar</h1>
 				<?php } else { ?>
 					<h2>
 						<?php single_cat_title(); ?>
