@@ -154,7 +154,7 @@ button {
 								<ul class="package">
 									<li class="header">Medium</li>
 									<li>6-16 people</li>
-									<li class="gray">£521/year</li>
+									<li class="gray">£512/year</li>
 									
 									<li class="gray">
 									<?php echo do_shortcode('[wp_stripe_checkout_v3 price="price_1Hs3a6AyX7phdOBZchZhqnbs" mode="subscription" button_text="Purchase" cancel_url="https://softwarecornwall.org/become-a-member/"]'); ?>
