@@ -21,7 +21,7 @@ global $sd_data;
 						<?php if(is_user_logged_in()){ ?>
 							<a class="more-link dark-button" href="https://softwarecornwall.org/user-dashboard/" title="Manage your account">Your Account</a>
 						<?php } else { ?>
-							<a class="more-link dark-button" href="https://www.softwarecornwall.org/register" title="Join Software Cornwall">Become a member</a>
+							<a class="more-link dark-button" href="https://www.softwarecornwall.org/become-a-member" title="Join Software Cornwall">Become a member</a>
 						<?php } ?>
 						</p>
 					</div>
