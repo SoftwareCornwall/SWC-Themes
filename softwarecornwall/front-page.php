@@ -95,7 +95,7 @@ global $sd_data;
 			<div class="col-md-4">
 				<h3>Join <strong><span style="color: #2c448c;">Software Cornwall</span></strong></h3>
 				<p>Software Cornwall represents and supports its <strong><a href="https://softwarecornwall.org/members/" title="Software Cornwall Membership Directory">member organisations</a></strong>, as well as student, mentors and volunteers. We welcome new members. We aim to deliver <strong><a href="https://softwarecornwall.org/membership-benefits/" title="Benefits of becoming a Software Cornwall member">direct benefits</a></strong> to your business and support the growing tech community in Cornwall.</p>
-				<p><a class="more-link" href="https://www.softwarecornwall.org/register" title="Become a part of Cornwall's software community">Become a member</a></p>
+				<p><a class="more-link" href="https://www.softwarecornwall.org/become-a-member/" title="Become a part of Cornwall's software community">Become a member</a></p>
 			</div>
 			<div class="col-md-4">
 				<h3>Get <strong><span style="color: #2c448c;">Trained</span></strong></h3>
