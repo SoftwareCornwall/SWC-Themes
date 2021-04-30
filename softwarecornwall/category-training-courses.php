@@ -28,7 +28,11 @@ get_header();
 						array(
 							'post_type' => 'post',
 							'posts_per_page' => -1,
+							"orderby" => 'meta_value_date',
+							"meta_key" => 'training_start_date',
+							"order" => 'ASC',
 							'meta_query' => array(
+								
 								array(
 									'key' => 'training_is_live',
 									'value' => 'on',
