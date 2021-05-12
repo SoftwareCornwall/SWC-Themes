@@ -49,3 +49,28 @@ trackException:function q(r,s){return n("exception",null,null,null,null,r,s)}}})
 (window,"UA-52675354-1",{anonymizeIp:true,colorDepth:true,characterSet:true,screenSize:true,language:true});
 </script>
 <!-- End of Google Analytics code -->
+
+<!-- Add UTM links to things -->
+<script>
+    jQuery(document).ready(function() {
+        var pathname = window.location.pathname;
+        
+        if(pathname.includes('/job/')){
+            jQuery('a').each(function() {
+                if(location.hostname === this.hostname || !this.hostname.length) {
+                    // nothing to do yet
+                } else {
+                    var oldUrl = jQuery(this).attr("href"); // Get current url
+                    var jobTitle = jQuery('h1').text().replace(' - Software Cornwall', '')
+                    var newUrl = oldUrl + `?utm_source=software-cornwall&utm_medium=website&utm_campaign=${jobTitle.trim().replace(' ', '-').toLowerCase()}&utm_content=apply-now-button`;
+                    jQuery(this).attr("href", newUrl);
+                }
+            });
+        }
+    });
+
+    // Refactor to use this when needed
+    function constructUTMString(oldURL, source, medium, campaign, content){
+
+    }
+</script>
