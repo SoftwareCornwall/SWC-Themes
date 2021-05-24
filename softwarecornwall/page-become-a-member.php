@@ -132,10 +132,10 @@ button {
 								<ul class="package">
 									<li class="header">Micro</li>
 									<li>1-2 People</li>
-									<li class="gray">£128/year</li>
+									<li class="gray">£128/year*</li>
 									
 									<li class="gray">
-									<?php echo do_shortcode('[wp_stripe_checkout_v3 price="price_1Hs3XVAyX7phdOBZmGLoHym7" mode="subscription" button_text="Purchase" cancel_url="https://softwarecornwall.org/become-a-member/"]'); ?>
+									<?php echo do_shortcode('[wp_stripe_checkout_v3 price="price_1IslerAyX7phdOBZ6dpvd8HB" mode="subscription" button_text="Purchase" cancel_url="https://softwarecornwall.org/become-a-member/"]'); ?>
 									</li>
 								</ul>
 							</div>
@@ -143,10 +143,10 @@ button {
 								<ul class="package">
 									<li class="header">Small</li>
 									<li>3-5 people</li>
-									<li class="gray">£256/year</li>
+									<li class="gray">£256/year*</li>
 									
 									<li class="gray">
-									<?php echo do_shortcode('[wp_stripe_checkout_v3 price="price_1Hs3YeAyX7phdOBZlF3BwNG3" mode="subscription" button_text="Purchase" cancel_url="https://softwarecornwall.org/become-a-member/"]'); ?>
+									<?php echo do_shortcode('[wp_stripe_checkout_v3 price="price_1IslmiAyX7phdOBZlxcDIl2v" mode="subscription" button_text="Purchase" cancel_url="https://softwarecornwall.org/become-a-member/"]'); ?>
 									</li>
 								</ul>
 							</div>
@@ -154,10 +154,10 @@ button {
 								<ul class="package">
 									<li class="header">Medium</li>
 									<li>6-16 people</li>
-									<li class="gray">£512/year</li>
+									<li class="gray">£512/year*</li>
 									
 									<li class="gray">
-									<?php echo do_shortcode('[wp_stripe_checkout_v3 price="price_1Hs3a6AyX7phdOBZchZhqnbs" mode="subscription" button_text="Purchase" cancel_url="https://softwarecornwall.org/become-a-member/"]'); ?>
+									<?php echo do_shortcode('[wp_stripe_checkout_v3 price="price_1Isln3AyX7phdOBZr2lQ51Nk" mode="subscription" button_text="Purchase" cancel_url="https://softwarecornwall.org/become-a-member/"]'); ?>
 									</li>
 								</ul>
 							</div>
@@ -165,10 +165,10 @@ button {
 								<ul class="package">
 									<li class="header">Large</li>  
 									<li>17-49 people</li>
-									<li class="gray">£1,024/year</li>
+									<li class="gray">£1,024/year*</li>
 									
 									<li class="gray">
-									<?php echo do_shortcode('[wp_stripe_checkout_v3 price="price_1Hs3brAyX7phdOBZn2IjXbLk" mode="subscription" button_text="Purchase" cancel_url="https://softwarecornwall.org/become-a-member/"]'); ?>
+									<?php echo do_shortcode('[wp_stripe_checkout_v3 price="price_1IslnVAyX7phdOBZCNponlWG" mode="subscription" button_text="Purchase" cancel_url="https://softwarecornwall.org/become-a-member/"]'); ?>
 									</li>
 								</ul>
 							</div>
@@ -176,10 +176,10 @@ button {
 								<ul class="package">
 									<li class="header">Enterprise</li>
 									<li>50+ people</li>
-									<li class="gray">£2,048/year</li>
+									<li class="gray">£2,048/year*</li>
 									
 									<li class="gray">
-									<?php echo do_shortcode('[wp_stripe_checkout_v3 price="price_1Hs3crAyX7phdOBZzs0roJ8V" mode="subscription" button_text="Purchase" cancel_url="https://softwarecornwall.org/become-a-member/"]'); ?>
+									<?php echo do_shortcode('[wp_stripe_checkout_v3 price="price_1Islr9AyX7phdOBZlGjfMXAE" mode="subscription" button_text="Purchase" cancel_url="https://softwarecornwall.org/become-a-member/"]'); ?>
 									</li>
 								</ul>
 							</div>
