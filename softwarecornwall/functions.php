@@ -10,7 +10,8 @@ define( 'SD_FRAMEWORK_CSS', get_template_directory_uri() .'/framework/css/' );
 define( 'SD_FRAMEWORK_JS', get_template_directory_uri() .'/framework/js/' );
 
 // Define content width
-if ( ! isset( $content_width ) ) $content_width = 1170;
+//if ( ! isset( $content_width ) ) $content_width = 1170;
+if ( ! isset( $content_width ) ) $content_width = 750;
 
 /* ------------------------------------------------------------------------ */
 /* Localization
