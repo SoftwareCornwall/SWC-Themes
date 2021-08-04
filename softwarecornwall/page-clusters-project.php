@@ -11,7 +11,7 @@ get_header();
 		<div class="row"> 
 			<div class="top-eu-logo col-sm-12">
 				<div class="sd-title-wrapper">
-					<h3 class="sd-styled-title">Part <span class="sd-light">Financed By:</span></h3>
+					<h3 class="sd-styled-title">Part <span class="sd-light">Funded By:</span></h3>
 				</div>
 				<img 
 					src="https://softwarecornwall.org/wp-content/uploads/2020/10/ESF_logo.png" 
