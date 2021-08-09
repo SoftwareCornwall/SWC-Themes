@@ -146,7 +146,7 @@ button {
 									<li class="gray">£256/year*</li>
 									
 									<li class="gray">
-									<?php echo do_shortcode('[wp_stripe_checkout_v3 price="price_1IslmiAyX7phdOBZlxcDIl2v" mode="subscription" button_text="Purchase" cancel_url="https://softwarecornwall.org/become-a-member/"]'); ?>
+									<?php echo do_shortcode('[wp_stripe_checkout_v3 price="price_1JMVufAyX7phdOBZCsiR7iej" mode="subscription" button_text="Purchase" cancel_url="https://softwarecornwall.org/become-a-member/"]'); ?>
 									</li>
 								</ul>
 							</div>
