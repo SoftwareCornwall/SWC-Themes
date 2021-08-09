@@ -47,7 +47,7 @@ if ( $sd_newsletter !== '1' ) {
 	<div class="sd-copyright">
 		<div class="container">
 			Copyright © <?php echo date("Y"); ?> Software Cornwall Ltd is a Not for Profit funded by its members - 
-			<a href="https://softwarecornwall.org/privacy-policy/" title="Software Cornwall Privacy Policy">Privacy Policy</a>
+			<a href="/privacy-policy/" title="Software Cornwall Privacy Policy">Privacy Policy</a>
 		</div>
 	</div>
 	<?php endif; ?>
