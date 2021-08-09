@@ -1,10 +1,11 @@
 <?php 
 /* ------------------------------------------------------------------------ */
-/* Theme Employer Led skills page
+/* Theme Clusters Page Template
 /* ------------------------------------------------------------------------ */
 get_header(); 
 ?>
 <!--left col-->
+<!-- Clusters page template -->
 
 <div class="sd-blog-page">
 	<div class="container">
