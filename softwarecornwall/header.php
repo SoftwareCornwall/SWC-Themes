@@ -66,27 +66,9 @@ global $sd_data;
 				<?php } else { ?>
 					<li><i class="fa fa-user"></i> <a href="/user-dashboard/">Login</a></li>
 				<?php } ?>
-
-				<style>
-					.sd-header-left-options .sd-search-sumbit{
-						width:15%;
-						height: 46px;
-					}
-					.sd-header-left-options .sd-search-input {
-						width: 85%;
-						height: 46px;
-					}
-					.sd-header-left-options li.search-wrap {
-						padding-left: 0;
-					}
-					.sd-header-left-options .sd-search i {
-						top: 17px;
-					}
-				</style>
-				<li class="search-wrap"><?php get_search_form( )?></li>
 				
 				<?php if ( !empty( $sd_data['sd_top_news'] ) ) : ?>
-			    <!-- <li class="hidden-sm"><span class="sd-news-span"><?php echo $sd_data['sd_top_news_word']; ?></span> <span class="sd-news-content-span"><?php echo $sd_data['sd_top_news']; ?></span></li> -->
+					<li class="hidden-sm"><span class="sd-news-span"><?php echo $sd_data['sd_top_news_word']; ?></span> <span class="sd-news-content-span"><?php echo $sd_data['sd_top_news']; ?></span></li>
 				<?php endif; ?>
 				
 	    	</ul>
