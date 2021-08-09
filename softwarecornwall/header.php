@@ -62,9 +62,9 @@ global $sd_data;
 				<?php endif; ?>
 				
 				<?php if(is_user_logged_in()){ ?>
-					<li><i class="fa fa-user"></i> <a href="https://softwarecornwall.org/user-dashboard/">Your Account</a></li>
+					<li><i class="fa fa-user"></i> <a href="/user-dashboard/">Your Account</a></li>
 				<?php } else { ?>
-					<li><i class="fa fa-user"></i> <a href="https://softwarecornwall.org/user-dashboard/">Login</a></li>
+					<li><i class="fa fa-user"></i> <a href="/user-dashboard/">Login</a></li>
 				<?php } ?>
 
 				<style>
