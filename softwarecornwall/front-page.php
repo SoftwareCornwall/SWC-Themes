@@ -87,7 +87,7 @@ global $sd_data;
 			<div class="col-md-12 homepage-jobs-wrapper">
 				<h2 style="text-align: center;"><strong>Latest </strong><span class="sd-light">Jobs</span></h2>
 				<h3 style="text-align: center;"><a href="/jobs-board/" title="Software Industry Jobs in the South West"><strong><span class="sd-colored sd-light">find your perfect job</span></strong></a></h3>
-				<link rel='stylesheet' id='wp-job-manager-frontend-css'  href='/wp-content/plugins/wp-job-manager/assets/css/frontend.css?ver=1.34.3' type='text/css' media='all' />
+				<link rel='stylesheet' id='wp-job-manager-frontend-css'  href='/wp-content/plugins/wp-job-manager/assets/dist/css/frontend.css' type='text/css' media='all' />
 				<p><?php echo do_shortcode("[jobs]"); ?></p>
 				<p style="text-align: center;">If you are looking for a job in Cornwall's tech community please <strong><a href="/submit-resume/">submit your CV</a></strong> to our CV Bank so our members can find you</p>
 			</div>
