@@ -15,13 +15,9 @@ global $sd_data;
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 col-md-offset-6 cover-content">
-						<h1 class="cover-text">Software Cornwall</h1>
-						<h2 class="cover-text">The Hub of Cornwall's Growing Tech Community</h2>
+						<img src="https://softwarecornwall.org/wp-content/uploads/2023/11/Primary-Light.png">
 						<p class="cover-text">
-						<?php if(is_user_logged_in()){ ?>
-							<a class="more-link dark-button" href="/user-dashboard/" title="Manage your account">Your Account</a>
-						<?php } else { ?>
-							<a class="more-link dark-button" href="/become-a-member" title="Join Software Cornwall">Become a member</a>
+							<a class="more-link pink-button" href="https://www.cornwallfestivaloftech.co.uk" title="Cornwall Festival of Tech">Find out more</a>
 						<?php } ?>
 						</p>
 					</div>
