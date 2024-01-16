@@ -50,18 +50,7 @@ try {
 			<div class="col-sm-12">
 				<div class="row">
 					<div class="col-sm-12">
-						<div class="top-eu-logo">
-							<div class="sd-title-wrapper">
-								<h3 class="sd-styled-title">Part <span class="sd-light">Financed By:</span></h3>
-							</div>
-							<img 
-								src="https://softwarecornwall.org/wp-content/uploads/2020/10/ESF_logo.png" 
-								alt="European Social Fund Logo" 
-								loading="lazy" 
-								height="74px" width="360px"
-								style="width: 100%;"/>
-							</br></br>	
-						</div>
+						
 						<div class="row">
 							<div class="col-sm-8">
 								
@@ -128,14 +117,7 @@ try {
 										<?php endif; ?>
 									<?php endif; ?>
 
-									<h2>European Social Fund</h2>
-									<p>The European Social Fund is partially funding Software Cornwall to run this training project to provide development training for employees within the software industry. As a Software Cornwall member you will be receiving a discount to this course by email. This course is only available to those from the UK or EU. To participate in the training certain personal information will be required from attendants as proof of employment and eligibility to attend. This information is for the purposes of ensuring that the training will go to the correct participants. You will also be required to complete an evaluation form after the training as part of the attendance.</p>
-									<img 
-										src="https://softwarecornwall.org/wp-content/uploads/2020/10/ESF_logo.png" 
-										alt="European Social Fund Logo" 
-										loading="lazy" 
-										height="74px" width="360px"
-										style="width: 100%;"/>
+									
 								</div>
 							</div>
 						</article>
@@ -146,18 +128,7 @@ try {
 				</div>
 							</div>
 							<div class="col-sm-4">
-								<div class="side-eu-logo">
-									<div class="sd-title-wrapper">
-										<h3 class="sd-styled-title">Part <span class="sd-light">Financed By:</span></h3>
-									</div>
-									<img 
-										src="https://softwarecornwall.org/wp-content/uploads/2020/10/ESF_logo.png" 
-										alt="European Social Fund Logo" 
-										loading="lazy" 
-										height="74px" width="360px"
-										style="width: 100%;"/>
-									</br></br>	
-								</div>
+								
 								<aside id="recent-posts-2" class="sd-sidebar-widget clearfix widget_recent_entries trainer-sidebar">					
 									<div class="sd-title-wrapper">
 										<h3 class="sd-styled-title">Meet the <span class="sd-light">Trainer</span></h3>
