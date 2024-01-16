@@ -10,18 +10,7 @@ get_header();
 <div class="sd-blog-page">
 	<div class="container">
 		<div class="row"> 
-			<div class="top-eu-logo col-sm-12">
-				<div class="sd-title-wrapper">
-					<h3 class="sd-styled-title">Part <span class="sd-light">Funded By:</span></h3>
-				</div>
-				<img 
-					src="https://softwarecornwall.org/wp-content/uploads/2020/10/ESF_logo.png" 
-					alt="European Social Fund Logo" 
-					loading="lazy" 
-					height="74px" width="360px"
-					style="width: 100%;"/>
-				</br></br>	
-			</div>
+			
 			<!--left col-->
 			<div class="col-sm-8 <?php if ( $sd_data['sd_sidebar_location'] == '2' ) echo 'pull-right'; ?>">
 				<?php if (have_posts()) : while (have_posts()) : the_post();?>
@@ -80,32 +69,13 @@ get_header();
 					</div>
 
 					</br></br>
-					<h2>European Social Fund</h2>
-					<p>The European Social Fund is partially funding Software Cornwall to run this project to help up skill Cornish people, ready to enter the software industry. This course is only available to those from the UK or EU. To participate in the training certain personal information will be required from attendants as proof of employment and eligibility to attend. This information is for the purposes of ensuring that the training will go to the correct participants. You will also be required to complete an evaluation form after the training as part of the attendance.</p>
-					<img 
-						src="https://softwarecornwall.org/wp-content/uploads/2020/10/ESF_logo.png" 
-						alt="European Social Fund Logo" 
-						loading="lazy" 
-						height="74px" width="360px"
-						style="width: 100%;"/>
-					</br></br>
+					
 
 			</div>
 
 			<!--sidebar-->
 			<div class="col-sm-4">
-				<div class="side-eu-logo">
-					<div class="sd-title-wrapper">
-						<h3 class="sd-styled-title">Part <span class="sd-light">Financed By:</span></h3>
-					</div>
-					<img 
-						src="https://softwarecornwall.org/wp-content/uploads/2020/10/ESF_logo.png" 
-						alt="European Social Fund Logo" 
-						loading="lazy" 
-						height="74px" width="360px"
-						style="width: 100%;"/>
-					</br>	
-				</div>
+				
 				<?php get_sidebar(); ?>
 			</div>
 			<!--sidebar end--> 
