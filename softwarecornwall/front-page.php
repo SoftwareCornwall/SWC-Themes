@@ -18,7 +18,6 @@ global $sd_data;
 						<img src="https://softwarecornwall.org/wp-content/uploads/2023/11/Primary-Light.png">
 						<p class="cover-text">
 							<a class="more-link pink-button" href="https://www.cornwallfestivaloftech.co.uk" title="Cornwall Festival of Tech">Find out more</a>
-						<?php } ?>
 						</p>
 					</div>
 				</div>
